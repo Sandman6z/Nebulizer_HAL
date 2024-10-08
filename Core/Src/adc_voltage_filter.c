@@ -1,4 +1,4 @@
-#include "adc_filter.h"
+#include "adc_voltage_filter.h"
 #include <stdint.h>
 
 #define N 11    //N值的选取：3~14
@@ -13,7 +13,7 @@ char filter()
     // 采样
     for (count = 0; count < N; count++)
     {
-        Value_buf[count] = get_ad();        //get_ad()get_ad()get_ad()get_ad()get_ad()get_ad()get_ad()get_ad()get_ad()get_ad()get_ad()get_ad()get_ad()get_ad()get_ad()get_ad()
+        //Value_buf[count] = get_ad();        //get_ad()get_ad()get_ad()get_ad()get_ad()get_ad()get_ad()get_ad()get_ad()get_ad()get_ad()get_ad()get_ad()get_ad()get_ad()get_ad()
     }
 
     // 排序

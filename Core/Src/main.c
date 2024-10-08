@@ -35,7 +35,7 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-
+//#define ENABLE_BUTTON 1  // 1 启用按钮功能, 0 禁用按钮功能
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -98,7 +98,8 @@ int main(void)
   MX_TIM17_Init();
   /* USER CODE BEGIN 2 */
   HAL_ADC_Start(&hadc1);
-  HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_3);
+  HAL_ADC_Start_DMA(&hadc1, (uint32_t *)ADC_Value, 100)
+  //HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_3);
   HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
   HAL_TIM_Base_Start_IT(&htim14); // 启动TIM14的定时器中断
   HAL_TIM_Base_Start_IT(&htim16); // 启动TIM16的定时器中断
