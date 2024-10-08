@@ -60,7 +60,6 @@
     "main.h": "c",
     "led.h": "c",
     "tim.h": "c",
-    "stm32c0xx_hal.h": "c",
-    "stdint.h": "c"
+    "stm32c0xx_hal.h": "c"
   }
 }
