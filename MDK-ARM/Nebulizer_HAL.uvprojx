@@ -400,16 +400,6 @@
               <FilePath>..\Core\Src\led.c</FilePath>
             </File>
             <File>
-              <FileName>adc_current_filter.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Core\Src\adc_current_filter.c</FilePath>
-            </File>
-            <File>
-              <FileName>adc_voltage_filter.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Core\Src\adc_voltage_filter.c</FilePath>
-            </File>
-            <File>
               <FileName>main.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Core/Src/main.c</FilePath>
@@ -494,6 +484,16 @@
               <FileName>stm32c0xx_hal_msp.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Core/Src/stm32c0xx_hal_msp.c</FilePath>
+            </File>
+            <File>
+              <FileName>median_average_filtering.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\median_average_filtering.c</FilePath>
+            </File>
+            <File>
+              <FileName>weighted_moving_average_filter.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\weighted_moving_average_filter.c</FilePath>
             </File>
           </Files>
         </Group>

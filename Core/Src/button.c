@@ -4,18 +4,17 @@
 
 #if ENABLE_BUTTON
 // 初始化按钮
-void Button_Init(void) {
+void Button_Init(void)
+{
     // 假设这是与硬件相关的按钮初始化代码
     printf("Button Initialized.\n");
 }
 
 // 处理按钮的功能
-void Button_Process(void) {
+void Button_Process(void)
+{
     // 例如按钮的状态检测和响应
     printf("Button Pressed.\n");
 }
-#else
-// 如果没有启用按钮，定义空函数避免编译错误
-void Button_Init(void) {}
-void Button_Process(void) {}
+
 #endif

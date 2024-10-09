@@ -61,6 +61,7 @@
     "led.h": "c",
     "tim.h": "c",
     "stm32c0xx_hal.h": "c",
-    "stdint.h": "c"
+    "stdint.h": "c",
+    "adc_current_filter.h": "c"
   }
 }
