@@ -134,11 +134,11 @@
             <RunIndependent>0</RunIndependent>
             <UpdateFlashBeforeDebugging>1</UpdateFlashBeforeDebugging>
             <Capability>1</Capability>
-            <DriverSelection>4107</DriverSelection>
+            <DriverSelection>4101</DriverSelection>
           </Flash1>
           <bUseTDR>1</bUseTDR>
           <Flash2>STLink\ST-LINKIII-KEIL_SWO.dll</Flash2>
-          <Flash3></Flash3>
+          <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
           <pFcarmOut></pFcarmOut>
           <pFcarmGrp></pFcarmGrp>
@@ -400,6 +400,21 @@
               <FilePath>..\Core\Src\led.c</FilePath>
             </File>
             <File>
+              <FileName>median_average_filtering.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\median_average_filtering.c</FilePath>
+            </File>
+            <File>
+              <FileName>weighted_moving_average_filter.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\weighted_moving_average_filter.c</FilePath>
+            </File>
+            <File>
+              <FileName>adc_calc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\adc_calc.c</FilePath>
+            </File>
+            <File>
               <FileName>main.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Core/Src/main.c</FilePath>
@@ -484,16 +499,6 @@
               <FileName>stm32c0xx_hal_msp.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Core/Src/stm32c0xx_hal_msp.c</FilePath>
-            </File>
-            <File>
-              <FileName>median_average_filtering.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Core\Src\median_average_filtering.c</FilePath>
-            </File>
-            <File>
-              <FileName>weighted_moving_average_filter.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Core\Src\weighted_moving_average_filter.c</FilePath>
             </File>
           </Files>
         </Group>

@@ -25,7 +25,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "median_average_filtering.h"
+#include "adc_calc.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -35,7 +36,7 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-#define ENABLE_BUTTON 0  // 1 启用功能, 0 禁用功能
+#define ENABLE_BUTTON 0 // 1 启用功能, 0 禁用功能
 #define WEIGHTED_MOVING_AVERAGE_FILTER 0
 /* USER CODE END PD */
 
@@ -47,7 +48,9 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-uint32_t ADC_Value[100]; // 声明一个数组来存储ADC采样结果
+uint32_t ADC_Value[77]; // 声明�?个数组来存储ADC采样结果
+uint16_t filtered_adc_values[7]; // 过滤后的ADC�?
+uint16_t filtered_voltage[7];     // 过滤后的电压�?
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -98,8 +101,8 @@ int main(void)
   MX_TIM16_Init();
   MX_TIM17_Init();
   /* USER CODE BEGIN 2 */
-  HAL_ADC_Start_DMA(&hadc1, (uint32_t *)ADC_Value, 100);
-  //HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_3);
+  HAL_ADC_Start_DMA(&hadc1, (uint32_t *)ADC_Value, 77);
+  HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_3);
   HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
   HAL_TIM_Base_Start_IT(&htim14); // 启动TIM14的定时器中断
   HAL_TIM_Base_Start_IT(&htim16); // 启动TIM16的定时器中断
@@ -113,14 +116,25 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-//    HAL_GPIO_WritePin(LED_Alarm_GPIO_Port, LED_Alarm_Pin, GPIO_PIN_RESET);
-//    HAL_GPIO_WritePin(LED_Normal_GPIO_Port, LED_Normal_Pin, GPIO_PIN_SET);
-//    HAL_Delay(500);
-//    HAL_GPIO_WritePin(LED_Alarm_GPIO_Port, LED_Alarm_Pin, GPIO_PIN_SET);
-//    HAL_GPIO_WritePin(LED_Normal_GPIO_Port, LED_Normal_Pin, GPIO_PIN_RESET);
-//    HAL_Delay(500);
+//    for (int channel = 0; channel < 7; channel++)
+//    {
+//      // 选择当前通道的数�?
+//      uint16_t *channel_data = (uint16_t *)&ADC_Value[channel * 11]; // 每个通道11个�??
+//      filtered_adc_values[channel] = MedianAverageFilter(channel_data, 11);
+//      // 然后将过滤后的ADC值转换为电压
+//      for (int i = 0; i < 7; i++)
+//      {
+//        filtered_voltage[i] = ADC_To_Voltage(filtered_adc_values[i]);
+//      }
+//    }
 
-    
+    //    HAL_GPIO_WritePin(LED_Alarm_GPIO_Port, LED_Alarm_Pin, GPIO_PIN_RESET);
+    //    HAL_GPIO_WritePin(LED_Normal_GPIO_Port, LED_Normal_Pin, GPIO_PIN_SET);
+    //    HAL_Delay(500);
+    //    HAL_GPIO_WritePin(LED_Alarm_GPIO_Port, LED_Alarm_Pin, GPIO_PIN_SET);
+    //    HAL_GPIO_WritePin(LED_Normal_GPIO_Port, LED_Normal_Pin, GPIO_PIN_RESET);
+    //    HAL_Delay(500);
+
     // if (HAL_ADC_PollForConversion(&hadc1, 10) == HAL_OK)
     // {
     //   uint32_t adcValue = HAL_ADC_GetValue(&hadc1);

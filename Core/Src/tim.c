@@ -21,7 +21,35 @@
 #include "tim.h"
 
 /* USER CODE BEGIN 0 */
+/*
++-------------------+----------+
+|  Frequency (kHz)  |  Period  |
++-------------------+----------+
+|       100         |   479    |
+|       101         |   474    |
+|       102         |   469    |
+|       103         |   465    |
+|       104         |   460    |
+|       105         |   456    |
+|       106         |   451    |
+|       107         |   447    |
+|       108         |   443    |
+|       109         |   439    |
+|       110         |   435    |
+|       111         |   431    |
+|       112         |   427    |
+|       113         |   423    |
+|       114         |   420    |
+|       115         |   416    |
+|       116         |   412    |
+|       117         |   409    |
+|       118         |   405    |
+|       119         |   402    |
+|       120         |   399    |
++-------------------+----------+
+*/
 
+#define freq 451
 /* USER CODE END 0 */
 
 TIM_HandleTypeDef htim1;
@@ -48,7 +76,7 @@ void MX_TIM1_Init(void)
   htim1.Instance = TIM1;
   htim1.Init.Prescaler = 0;
   htim1.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim1.Init.Period = 479;
+  htim1.Init.Period = freq;
   htim1.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim1.Init.RepetitionCounter = 0;
   htim1.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
@@ -64,7 +92,7 @@ void MX_TIM1_Init(void)
     Error_Handler();
   }
   sConfigOC.OCMode = TIM_OCMODE_PWM1;
-  sConfigOC.Pulse = 0;
+  sConfigOC.Pulse = freq / 2;
   sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
   sConfigOC.OCNPolarity = TIM_OCNPOLARITY_HIGH;
   sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;

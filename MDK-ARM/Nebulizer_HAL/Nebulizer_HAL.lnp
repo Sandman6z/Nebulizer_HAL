@@ -1,6 +1,9 @@
 --cpu Cortex-M0+
 "nebulizer_hal\startup_stm32c031xx.o"
 "nebulizer_hal\led.o"
+"nebulizer_hal\median_average_filtering.o"
+"nebulizer_hal\weighted_moving_average_filter.o"
+"nebulizer_hal\adc_calc.o"
 "nebulizer_hal\main.o"
 "nebulizer_hal\gpio.o"
 "nebulizer_hal\adc.o"
@@ -8,8 +11,6 @@
 "nebulizer_hal\tim.o"
 "nebulizer_hal\stm32c0xx_it.o"
 "nebulizer_hal\stm32c0xx_hal_msp.o"
-"nebulizer_hal\median_average_filtering.o"
-"nebulizer_hal\weighted_moving_average_filter.o"
 "nebulizer_hal\stm32c0xx_hal.o"
 "nebulizer_hal\stm32c0xx_hal_adc.o"
 "nebulizer_hal\stm32c0xx_hal_adc_ex.o"
