@@ -1992,11 +1992,11 @@ Image Symbol Table
     [Anonymous Symbol]                       0x20000000   Section        0  stm32c0xx_hal.o(.data..L_MergedGlobals)
     .bss                                     0x20000010   Section       96  libspace.o(.bss)
     [Anonymous Symbol]                       0x20000070   Section        0  main.o(.bss..L_MergedGlobals)
-    Heap_Mem                                 0x200003f0   Data         512  startup_stm32c031xx.o(HEAP)
-    HEAP                                     0x200003f0   Section      512  startup_stm32c031xx.o(HEAP)
-    Stack_Mem                                0x200005f0   Data        1024  startup_stm32c031xx.o(STACK)
-    STACK                                    0x200005f0   Section     1024  startup_stm32c031xx.o(STACK)
-    __initial_sp                             0x200009f0   Data           0  startup_stm32c031xx.o(STACK)
+    Heap_Mem                                 0x20000358   Data         512  startup_stm32c031xx.o(HEAP)
+    HEAP                                     0x20000358   Section      512  startup_stm32c031xx.o(HEAP)
+    Stack_Mem                                0x20000558   Data        1024  startup_stm32c031xx.o(STACK)
+    STACK                                    0x20000558   Section     1024  startup_stm32c031xx.o(STACK)
+    __initial_sp                             0x20000958   Data           0  startup_stm32c031xx.o(STACK)
 
     Global Symbols
 
@@ -2220,15 +2220,15 @@ Image Symbol Table
     voltage3                                 0x20000070   Data           4  main.o(.bss..L_MergedGlobals)
     voltage1                                 0x20000074   Data           4  main.o(.bss..L_MergedGlobals)
     voltage2                                 0x20000078   Data           4  main.o(.bss..L_MergedGlobals)
-    adcBuffer                                0x2000007c   Data         308  main.o(.bss.adcBuffer)
-    hadc1                                    0x200001b0   Data         100  adc.o(.bss.hadc1)
-    hdma_adc1                                0x20000214   Data          92  adc.o(.bss.hdma_adc1)
-    htim1                                    0x20000270   Data          76  tim.o(.bss.htim1)
-    htim14                                   0x200002bc   Data          76  tim.o(.bss.htim14)
-    htim16                                   0x20000308   Data          76  tim.o(.bss.htim16)
-    htim17                                   0x20000354   Data          76  tim.o(.bss.htim17)
-    htim3                                    0x200003a0   Data          76  tim.o(.bss.htim3)
-    uwTick                                   0x200003ec   Data           4  stm32c0xx_hal.o(.bss.uwTick)
+    adcBuffer                                0x2000007c   Data         154  main.o(.bss.adcBuffer)
+    hadc1                                    0x20000118   Data         100  adc.o(.bss.hadc1)
+    hdma_adc1                                0x2000017c   Data          92  adc.o(.bss.hdma_adc1)
+    htim1                                    0x200001d8   Data          76  tim.o(.bss.htim1)
+    htim14                                   0x20000224   Data          76  tim.o(.bss.htim14)
+    htim16                                   0x20000270   Data          76  tim.o(.bss.htim16)
+    htim17                                   0x200002bc   Data          76  tim.o(.bss.htim17)
+    htim3                                    0x20000308   Data          76  tim.o(.bss.htim3)
+    uwTick                                   0x20000354   Data           4  stm32c0xx_hal.o(.bss.uwTick)
 
 
 
@@ -2406,7 +2406,7 @@ Memory Map of the image
     0x08002ee4   0x08002ee4   0x00000020   Data   RO         1210    Region$$Table       anon$$obj.o
 
 
-    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08002f08, Size: 0x000009f0, Max: 0x00003000, ABSOLUTE)
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08002f08, Size: 0x00000958, Max: 0x00003000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -2415,17 +2415,18 @@ Memory Map of the image
     0x2000000c   0x08002f14   0x00000004   PAD
     0x20000010        -       0x00000060   Zero   RW         1074    .bss                c_p.l(libspace.o)
     0x20000070        -       0x0000000c   Zero   RW           66    .bss..L_MergedGlobals  main.o
-    0x2000007c        -       0x00000134   Zero   RW           64    .bss.adcBuffer      main.o
-    0x200001b0        -       0x00000064   Zero   RW           90    .bss.hadc1          adc.o
-    0x20000214        -       0x0000005c   Zero   RW           91    .bss.hdma_adc1      adc.o
-    0x20000270        -       0x0000004c   Zero   RW          128    .bss.htim1          tim.o
-    0x200002bc        -       0x0000004c   Zero   RW          130    .bss.htim14         tim.o
-    0x20000308        -       0x0000004c   Zero   RW          131    .bss.htim16         tim.o
-    0x20000354        -       0x0000004c   Zero   RW          132    .bss.htim17         tim.o
-    0x200003a0        -       0x0000004c   Zero   RW          129    .bss.htim3          tim.o
-    0x200003ec        -       0x00000004   Zero   RW          236    .bss.uwTick         stm32c0xx_hal.o
-    0x200003f0        -       0x00000200   Zero   RW            2    HEAP                startup_stm32c031xx.o
-    0x200005f0        -       0x00000400   Zero   RW            1    STACK               startup_stm32c031xx.o
+    0x2000007c        -       0x0000009a   Zero   RW           64    .bss.adcBuffer      main.o
+    0x20000116   0x08002f14   0x00000002   PAD
+    0x20000118        -       0x00000064   Zero   RW           90    .bss.hadc1          adc.o
+    0x2000017c        -       0x0000005c   Zero   RW           91    .bss.hdma_adc1      adc.o
+    0x200001d8        -       0x0000004c   Zero   RW          128    .bss.htim1          tim.o
+    0x20000224        -       0x0000004c   Zero   RW          130    .bss.htim14         tim.o
+    0x20000270        -       0x0000004c   Zero   RW          131    .bss.htim16         tim.o
+    0x200002bc        -       0x0000004c   Zero   RW          132    .bss.htim17         tim.o
+    0x20000308        -       0x0000004c   Zero   RW          129    .bss.htim3          tim.o
+    0x20000354        -       0x00000004   Zero   RW          236    .bss.uwTick         stm32c0xx_hal.o
+    0x20000358        -       0x00000200   Zero   RW            2    HEAP                startup_stm32c031xx.o
+    0x20000558        -       0x00000400   Zero   RW            1    STACK               startup_stm32c031xx.o
 
 
 ==============================================================================
@@ -2438,7 +2439,7 @@ Image component sizes
        360         32          0          0        192       6747   adc.o
         48          4          0          0          0       1789   dma.o
        164         12          0          0          0       2242   gpio.o
-       276         40          0          0        320       3569   main.o
+       276         40          0          0        166       3611   main.o
         56         26        192          0       1536        616   startup_stm32c031xx.o
        120          8          0          8          4       6543   stm32c0xx_hal.o
       2384         80          0          0          0      23290   stm32c0xx_hal_adc.o
@@ -2456,9 +2457,9 @@ Image component sizes
        936         48          0          0        380      10692   tim.o
 
     ----------------------------------------------------------------------
-     10192        556        288         12       2436     202779   Object Totals
+     10192        556        288         12       2284     202821   Object Totals
          0          0         32          0          0          0   (incl. Generated)
-        18          0          0          0          4          0   (incl. Padding)
+        18          0          0          0          6          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
@@ -2512,14 +2513,14 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     11684        588        352         12       2532     203191   Grand Totals
-     11684        588        352         12       2532     203191   ELF Image Totals
+     11684        588        352         12       2380     203233   Grand Totals
+     11684        588        352         12       2380     203233   ELF Image Totals
      11684        588        352         12          0          0   ROM Totals
 
 ==============================================================================
 
     Total RO  Size (Code + RO Data)                12036 (  11.75kB)
-    Total RW  Size (RW Data + ZI Data)              2544 (   2.48kB)
+    Total RW  Size (RW Data + ZI Data)              2392 (   2.34kB)
     Total ROM Size (Code + RO Data + RW Data)      12048 (  11.77kB)
 
 ==============================================================================

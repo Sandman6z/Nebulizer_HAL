@@ -49,7 +49,7 @@
 
 /* USER CODE BEGIN PV */
 #define ADC_BUFFER_SIZE 77
-uint32_t adcBuffer[ADC_BUFFER_SIZE];
+uint16_t adcBuffer[ADC_BUFFER_SIZE];
 
 //uint32_t ADC_Value[ADC_BUFFER_SIZE]; // 声明数组来存储ADC采样结果
 //uint16_t filtered_adc_values[7]; // 过滤后的ADC
