@@ -50,9 +50,10 @@
 /* USER CODE BEGIN PV */
 #define ADC_BUFFER_SIZE 77
 uint32_t adcBuffer[ADC_BUFFER_SIZE];
-uint32_t ADC_Value[ADC_BUFFER_SIZE]; // 声明�?个数组来存储ADC采样结果
-uint16_t filtered_adc_values[7]; // 过滤后的ADC�?
-uint16_t filtered_voltage[7];     // 过滤后的电压�?
+
+//uint32_t ADC_Value[ADC_BUFFER_SIZE]; // 声明数组来存储ADC采样结果
+//uint16_t filtered_adc_values[7]; // 过滤后的ADC
+//uint16_t filtered_voltage[7];     // 过滤后的电压
 float voltage1, voltage2, voltage3 = 0;
 /* USER CODE END PV */
 
@@ -64,6 +65,7 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+
 
 /* USER CODE END 0 */
 
@@ -114,6 +116,26 @@ int main(void)
   HAL_TIM_Base_Start_IT(&htim14); // 启动TIM14的定时器中断
   HAL_TIM_Base_Start_IT(&htim16); // 启动TIM16的定时器中断
   HAL_TIM_Base_Start_IT(&htim17); // 启动TIM17的定时器中断
+    
+//        for (uint32_t freq = START_FREQ; freq <= END_FREQ; freq += STEP_FREQ)
+//    {
+//        // 设置PWM频率
+//        __HAL_TIM_SET_AUTORELOAD(&htim2, (SystemCoreClock / (2 * freq)) - 1);
+//        __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, (SystemCoreClock / (4 * freq))); // 50% 占空比 
+//        // 启动PWM 
+//        HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_1); 
+//        // 延迟一段时间，让系统稳定
+//        HAL_Delay(1000);                                                              // 例如延迟1秒 
+//        // 读取电压和电流
+//        float voltage = readVoltage();
+//        float current = readCurrent();                                                                                // 计算功率
+//        float power = voltage * current;                                                                              // 打印结果
+//        printf("Frequency: %d Hz, Voltage: %.2f V, Current: %.2f A, Power: %.2f W\n", freq, voltage, current, power); // 可以在这里添加更多数据采集和处理代码
+//    } // 测试完成后，关闭PWM输出
+//    HAL_TIM_PWM_Stop(&htim2, TIM_CHANNEL_1);
+    
+    
+    
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -123,14 +145,16 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+
+      
       voltage1 = (adcBuffer[0] * 3.3f) / 4095.0f;
       voltage2 = (adcBuffer[1] * 3.3f) / 4095.0f;
       voltage3 = (adcBuffer[2] * 3.3f) / 4095.0f;
       
 //    for (int channel = 0; channel < 7; channel++)
 //    {
-//      // 选择当前通道的数�?
-//      uint16_t *channel_data = (uint16_t *)&ADC_Value[channel * 11]; // 每个通道11个�??
+//      // 选择当前通道的数�?
+//      uint16_t *channel_data = (uint16_t *)&ADC_Value[channel * 11]; // 每个通道11个�??
 //      filtered_adc_values[channel] = MedianAverageFilter(channel_data, 11);
 //      // 然后将过滤后的ADC值转换为电压
 //      for (int i = 0; i < 7; i++)
