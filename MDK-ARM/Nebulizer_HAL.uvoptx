@@ -125,7 +125,6 @@
         <SetRegEntry>
           <Number>0</Number>
           <Key>DLGUARM</Key>
-          <Name>??峷?</Name>
         </SetRegEntry>
         <SetRegEntry>
           <Number>0</Number>
@@ -244,6 +243,11 @@
           <count>16</count>
           <WinNumber>1</WinNumber>
           <ItemText>ADC_Value[1]</ItemText>
+        </Ww>
+        <Ww>
+          <count>17</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>adcBuffer[7],0x0A</ItemText>
         </Ww>
       </WatchWindow1>
       <Tracepoint>
