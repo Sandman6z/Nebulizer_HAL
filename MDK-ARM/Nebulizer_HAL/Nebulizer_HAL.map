@@ -3010,7 +3010,7 @@ Image component sizes
        608         60          0          0        192       6466   adc.o
         52          4          0          0          0       1799   dma.o
        216         16          0          0          0       1977   gpio.o
-       394         48          0          4        462       2225   main.o
+       394         48          0          4        462       2238   main.o
         56         26        192          0       1536        616   startup_stm32c031xx.o
        204         16          0          5          4       6247   stm32c0xx_hal.o
       4028        100          0          0          0      17495   stm32c0xx_hal_adc.o
@@ -3028,7 +3028,7 @@ Image component sizes
       1164         64          0          0        380       8902   tim.o
 
     ----------------------------------------------------------------------
-     16800        770        288         16       2576     144910   Object Totals
+     16800        770        288         16       2576     144923   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         22          0          0          3          2          0   (incl. Padding)
 
@@ -3084,8 +3084,8 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     18152        806        352         16       2672     145322   Grand Totals
-     18152        806        352         16       2672     145322   ELF Image Totals
+     18152        806        352         16       2672     145335   Grand Totals
+     18152        806        352         16       2672     145335   ELF Image Totals
      18152        806        352         16          0          0   ROM Totals
 
 ==============================================================================

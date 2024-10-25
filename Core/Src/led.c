@@ -4,6 +4,8 @@
 #include "stm32c0xx_it.h"
 #include "stm32c0xx_hal_tim.h"
 
+#
+
 // 全局计数器
 uint16_t led_alarm_time_counter = 0;  // LED_Alarm闪烁计数器
 uint16_t h_led_time_counter = 0;      // H_LED呼吸灯计数器

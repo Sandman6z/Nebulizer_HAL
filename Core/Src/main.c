@@ -43,6 +43,17 @@
 #define START_FREQ 108000    // 起始频率 108kHz
 #define END_FREQ 132000      // 结束频率 132kHz
 #define STEP_FREQ 500        // 步进频率 0.5kHz，即 500Hz
+
+/*
+0 IN1 	PA1		button
+1 TEMP
+2 VREF
+3 VDD
+4 VSS
+5 IN17	PB0		current
+6 IN18	PB1		voltage
+*/
+
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -53,16 +64,16 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-uint16_t adcBuffer[ADC_BUFFER_SIZE];
+volatile uint16_t adcBuffer[ADC_BUFFER_SIZE];
 volatile float ADC_Value[ADC_BUFFER_SIZE]; // 声明数组来存储ADC采样结果
 uint16_t filtered_adc_values[7]; // 过滤后的ADC
 uint16_t filtered_voltage[7];     // 过滤后的电压
 
 
-float voltage = 0.0f, current = 0.0f, power = 0.0f;  // 电压、电流�?�功�?
-float max_power = 0.0f;  // �?大功�?
-uint32_t best_freq = START_FREQ;  // �?佳频�?
-uint32_t freq = 130000;
+float voltage = 0.0f, current = 0.0f, power = 0.0f;  // 电压、电流�?�功�?
+float max_power = 0.0f;  // �?大功�?
+uint32_t best_freq = START_FREQ;  // �?佳频�?
+volatile uint32_t freq = 130000;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -126,26 +137,6 @@ int main(void)
   HAL_TIM_Base_Start_IT(&htim17); // 启动TIM17的定时器中断
     
     
-    
-//        for (uint32_t freq = START_FREQ; freq <= END_FREQ; freq += STEP_FREQ)
-//    {
-//        // 设置PWM频率
-//        __HAL_TIM_SET_AUTORELOAD(&htim2, (SystemCoreClock / (2 * freq)) - 1);
-//        __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, (SystemCoreClock / (4 * freq))); // 50% 占空�? 
-//        // 启动PWM 
-//        HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_1); 
-//        // 延迟�?段时间，让系统稳�?
-//        HAL_Delay(1000);                                                              // 例如延迟1�? 
-//        // 读取电压和电�?
-//        float voltage = readVoltage();
-//        float current = readCurrent();                                                                                // 计算功率
-//        float power = voltage * current;                                                                              // 打印结果
-//        printf("Frequency: %d Hz, Voltage: %.2f V, Current: %.2f A, Power: %.2f W\n", freq, voltage, current, power); // 可以在这里添加更多数据采集和处理代码
-//    } // 测试完成后，关闭PWM输出
-//    HAL_TIM_PWM_Stop(&htim2, TIM_CHANNEL_1);
-    
-    
-    
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -154,18 +145,20 @@ int main(void)
 //  {
 //      // 设置PWM频率
 //      __HAL_TIM_SET_AUTORELOAD(&htim1, (SystemCoreClock / freq) - 1);
-//      __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, (SystemCoreClock / (2 * freq))); // 50% 占空�?
+//      __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, (SystemCoreClock / (2 * freq))); // 50% 占空�?
 //      HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
 
-//      HAL_Delay(500); // 延迟，确保系统稳�?
+//      HAL_Delay(500); // 延迟，确保系统稳�?
 
-//      // 读取电压和电流（假设IN17和IN18分别是电压和电流通道�?
+//      // 读取电压和电流（假设IN17和IN18分别是电压和电流通道�?
 //      voltage = (adcBuffer[0] * 3.3f) / 4095.0f;  // IN17电压
 //      current = (adcBuffer[1] * 3.3f) / 4095.0f;  // IN18电流
 
 //      power = voltage * current; // 计算功率
+//        printf("Frequency: %d Hz, Voltage: %.2f V, Current: %.2f A, Power: %.2f W\n", freq, voltage, current, power); // 可以在这里添加更多数据采集和处理代码
+//    } // 测试完成后，关闭PWM输出
 
-//      // 判断�?大功�?
+//      // 判断�?大功�?
 //      if (power > max_power)
 //      {
 //          max_power = power;
@@ -173,13 +166,13 @@ int main(void)
 //      }
 //  }
 
-//  // 扫频完成后，设置TIM1为最佳频�?
+//  // 扫频完成后，设置TIM1为最佳频�?
 //  __HAL_TIM_SET_AUTORELOAD(&htim1, (SystemCoreClock / best_freq) - 1);
-//  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, (SystemCoreClock / (2 * best_freq))); // 50% 占空�?
+//  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, (SystemCoreClock / (2 * best_freq))); // 50% 占空�?
 //  HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
 
   __HAL_TIM_SET_AUTORELOAD(&htim1, (SystemCoreClock / freq) - 1);
-  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_3, (SystemCoreClock / (2 * freq))); // 50% 占空�?
+  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_3, (SystemCoreClock / (2 * freq))); // 50% 占空�?
   HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_3);
 
   while (1)
@@ -191,11 +184,12 @@ int main(void)
       for (int i = 0; i < ADC_BUFFER_SIZE; i++) 
       {
         ADC_Value[i] = (adcBuffer[i] * 3.3f) / 4095.0f;
+        // printf("Frequency: %d Hz, Voltage: %.2f V, Current: %.2f A\n", freq, voltage, current); // 可以在这里添加更多数据采集和处理代码
     }
       
 //    for (int channel = 0; channel < 7; channel++)
 //    {
-//      // 选择当前通道的数�??
+//      // 选择当前通道的数�??
 //      uint16_t *channel_data = (uint16_t *)&ADC_Value[channel * 11]; // 每个通道11个�??
 //      filtered_adc_values[channel] = MedianAverageFilter(channel_data, 11);
 //      // 然后将过滤后的ADC值转换为电压
