@@ -31,6 +31,16 @@
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
+typedef struct
+{
+  uint8_t button; // IN1 PA1
+  float MCU_Temperature;
+  float MCU_Vref;
+  float MCU_VDD;
+  float MCU_VSS;
+  float current_MOS; // IN17  PB0
+  float voltage_MOS; // IN18  PB1
+} ADCData;
 
 /* USER CODE END PTD */
 
@@ -40,19 +50,9 @@
 #define WEIGHTED_MOVING_AVERAGE_FILTER 0
 
 #define ADC_BUFFER_SIZE 77
-#define START_FREQ 108000    // 起始频率 108kHz
-#define END_FREQ 132000      // 结束频率 132kHz
-#define STEP_FREQ 500        // 步进频率 0.5kHz，即 500Hz
-
-/*
-0 IN1 	PA1		button
-1 TEMP
-2 VREF
-3 VDD
-4 VSS
-5 IN17	PB0		current
-6 IN18	PB1		voltage
-*/
+#define START_FREQ 108000 // 起始频率 108kHz
+#define END_FREQ 132000   // 结束频率 132kHz
+#define STEP_FREQ 500     // 步进频率 0.5kHz，即 500Hz
 
 /* USER CODE END PD */
 
@@ -66,13 +66,11 @@
 /* USER CODE BEGIN PV */
 volatile uint16_t adcBuffer[ADC_BUFFER_SIZE];
 volatile float ADC_Value[ADC_BUFFER_SIZE]; // 声明数组来存储ADC采样结果
-uint16_t filtered_adc_values[7]; // 过滤后的ADC
-uint16_t filtered_voltage[7];     // 过滤后的电压
+uint16_t filtered_adc_values[7];           // 过滤后的ADC
+uint16_t filtered_voltage[7];              // 过滤后的电压
 
-
-float voltage = 0.0f, current = 0.0f, power = 0.0f;  // 电压、电流�?�功�?
-float max_power = 0.0f;  // �?大功�?
-uint32_t best_freq = START_FREQ;  // �?佳频�?
+float max_power = 0.0f;
+uint32_t best_freq = START_FREQ; // 最佳频率
 volatile uint32_t freq = 130000;
 /* USER CODE END PV */
 
@@ -85,13 +83,12 @@ void SystemClock_Config(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
-
 /* USER CODE END 0 */
 
 /**
-  * @brief  The application entry point.
-  * @retval int
-  */
+ * @brief  The application entry point.
+ * @retval int
+ */
 int main(void)
 {
 
@@ -125,51 +122,50 @@ int main(void)
   MX_TIM16_Init();
   MX_TIM17_Init();
   /* USER CODE BEGIN 2 */
-    if (HAL_ADC_Start_DMA(&hadc1, (uint32_t*)adcBuffer, ADC_BUFFER_SIZE) != HAL_OK)
-    {
-      Error_Handler();
-    }
+  if (HAL_ADC_Start_DMA(&hadc1, (uint32_t *)adcBuffer, ADC_BUFFER_SIZE) != HAL_OK)
+  {
+    Error_Handler();
+  }
 
-  //HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_3);
+  // HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_3);
   HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
   HAL_TIM_Base_Start_IT(&htim14); // 启动TIM14的定时器中断
   HAL_TIM_Base_Start_IT(&htim16); // 启动TIM16的定时器中断
   HAL_TIM_Base_Start_IT(&htim17); // 启动TIM17的定时器中断
-    
-    
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-//   for (uint32_t freq = START_FREQ; freq <= END_FREQ; freq += STEP_FREQ)
-//  {
-//      // 设置PWM频率
-//      __HAL_TIM_SET_AUTORELOAD(&htim1, (SystemCoreClock / freq) - 1);
-//      __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, (SystemCoreClock / (2 * freq))); // 50% 占空�?
-//      HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
+  //   for (uint32_t freq = START_FREQ; freq <= END_FREQ; freq += STEP_FREQ)
+  //  {
+  //      // 设置PWM频率
+  //      __HAL_TIM_SET_AUTORELOAD(&htim1, (SystemCoreClock / freq) - 1);
+  //      __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, (SystemCoreClock / (2 * freq))); // 50% 占空�?
+  //      HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
 
-//      HAL_Delay(500); // 延迟，确保系统稳�?
+  //      HAL_Delay(500); // 延迟，确保系统稳�?
 
-//      // 读取电压和电流（假设IN17和IN18分别是电压和电流通道�?
-//      voltage = (adcBuffer[0] * 3.3f) / 4095.0f;  // IN17电压
-//      current = (adcBuffer[1] * 3.3f) / 4095.0f;  // IN18电流
+  //      // 读取电压和电流（假设IN17和IN18分别是电压和电流通道�?
+  //      voltage = (adcBuffer[0] * 3.3f) / 4095.0f;  // IN17电压
+  //      current = (adcBuffer[1] * 3.3f) / 4095.0f;  // IN18电流
 
-//      power = voltage * current; // 计算功率
-//        printf("Frequency: %d Hz, Voltage: %.2f V, Current: %.2f A, Power: %.2f W\n", freq, voltage, current, power); // 可以在这里添加更多数据采集和处理代码
-//    } // 测试完成后，关闭PWM输出
+  //      power = voltage * current; // 计算功率
+  //        printf("Frequency: %d Hz, Voltage: %.2f V, Current: %.2f A, Power: %.2f W\n", freq, voltage, current, power); // 可以在这里添加更多数据采集和处理代码
+  //    } // 测试完成后，关闭PWM输出
 
-//      // 判断�?大功�?
-//      if (power > max_power)
-//      {
-//          max_power = power;
-//          best_freq = freq;
-//      }
-//  }
+  //      // 判断�?大功�?
+  //      if (power > max_power)
+  //      {
+  //          max_power = power;
+  //          best_freq = freq;
+  //      }
+  //  }
 
-//  // 扫频完成后，设置TIM1为最佳频�?
-//  __HAL_TIM_SET_AUTORELOAD(&htim1, (SystemCoreClock / best_freq) - 1);
-//  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, (SystemCoreClock / (2 * best_freq))); // 50% 占空�?
-//  HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
+  //  // 扫频完成后，设置TIM1为最佳频�?
+  //  __HAL_TIM_SET_AUTORELOAD(&htim1, (SystemCoreClock / best_freq) - 1);
+  //  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, (SystemCoreClock / (2 * best_freq))); // 50% 占空�?
+  //  HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
 
   __HAL_TIM_SET_AUTORELOAD(&htim1, (SystemCoreClock / freq) - 1);
   __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_3, (SystemCoreClock / (2 * freq))); // 50% 占空�?
@@ -180,24 +176,50 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+    ADCData adcData = {0};
 
-      for (int i = 0; i < ADC_BUFFER_SIZE; i++) 
+    for (int i = 0; i < ADC_BUFFER_SIZE; i++)
+    {
+      ADC_Value[i] = (adcBuffer[i] * 3.3f) / 4095.0f;
+
+      switch (i % 7)
       {
-        ADC_Value[i] = (adcBuffer[i] * 3.3f) / 4095.0f;
-        // printf("Frequency: %d Hz, Voltage: %.2f V, Current: %.2f A\n", freq, voltage, current); // 可以在这里添加更多数据采集和处理代码
+      case 0:
+        adcData.button = (ADC_Value[i] > 1.65f) ? 1 : 0;
+        break;
+      case 1:
+        adcData.MCU_Temperature = ADC_Value[i];
+        break;
+      case 2:
+        adcData.MCU_Vref = ADC_Value[i];
+        break;
+      case 3:
+        adcData.MCU_VDD = ADC_Value[i];
+        break;
+      case 4:
+        adcData.MCU_VSS = ADC_Value[i];
+        break;
+      case 5:
+        adcData.current_MOS = ADC_Value[i];
+        break;
+      case 6:
+        adcData.voltage_MOS = ADC_Value[i];
+        break;
+      }
+      // printf("Frequency: %d Hz, Voltage: %.2f V, Current: %.2f A\n", freq, voltage, current); // 可以在这里添加更多数据采集和处理代码
     }
-      
-//    for (int channel = 0; channel < 7; channel++)
-//    {
-//      // 选择当前通道的数�??
-//      uint16_t *channel_data = (uint16_t *)&ADC_Value[channel * 11]; // 每个通道11个�??
-//      filtered_adc_values[channel] = MedianAverageFilter(channel_data, 11);
-//      // 然后将过滤后的ADC值转换为电压
-//      for (int i = 0; i < 7; i++)
-//      {
-//        filtered_voltage[i] = ADC_To_Voltage(filtered_adc_values[i]);
-//      }
-//    }
+
+    //    for (int channel = 0; channel < 7; channel++)
+    //    {
+    //      // 选择当前通道的数�??
+    //      uint16_t *channel_data = (uint16_t *)&ADC_Value[channel * 11]; // 每个通道11个�??
+    //      filtered_adc_values[channel] = MedianAverageFilter(channel_data, 11);
+    //      // 然后将过滤后的ADC值转换为电压
+    //      for (int i = 0; i < 7; i++)
+    //      {
+    //        filtered_voltage[i] = ADC_To_Voltage(filtered_adc_values[i]);
+    //      }
+    //    }
 
     //    HAL_GPIO_WritePin(LED_Alarm_GPIO_Port, LED_Alarm_Pin, GPIO_PIN_RESET);
     //    HAL_GPIO_WritePin(LED_Normal_GPIO_Port, LED_Normal_Pin, GPIO_PIN_SET);
@@ -215,17 +237,17 @@ int main(void)
 }
 
 /**
-  * @brief System Clock Configuration
-  * @retval None
-  */
+ * @brief System Clock Configuration
+ * @retval None
+ */
 void SystemClock_Config(void)
 {
   RCC_OscInitTypeDef RCC_OscInitStruct = {0};
   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
 
   /** Initializes the RCC Oscillators according to the specified parameters
-  * in the RCC_OscInitTypeDef structure.
-  */
+   * in the RCC_OscInitTypeDef structure.
+   */
   RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
   RCC_OscInitStruct.HSIDiv = RCC_HSI_DIV1;
@@ -236,9 +258,8 @@ void SystemClock_Config(void)
   }
 
   /** Initializes the CPU, AHB and APB buses clocks
-  */
-  RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
-                              |RCC_CLOCKTYPE_PCLK1;
+   */
+  RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK | RCC_CLOCKTYPE_SYSCLK | RCC_CLOCKTYPE_PCLK1;
   RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_HSI;
   RCC_ClkInitStruct.SYSCLKDivider = RCC_SYSCLK_DIV1;
   RCC_ClkInitStruct.AHBCLKDivider = RCC_HCLK_DIV1;
@@ -255,9 +276,9 @@ void SystemClock_Config(void)
 /* USER CODE END 4 */
 
 /**
-  * @brief  This function is executed in case of error occurrence.
-  * @retval None
-  */
+ * @brief  This function is executed in case of error occurrence.
+ * @retval None
+ */
 void Error_Handler(void)
 {
   /* USER CODE BEGIN Error_Handler_Debug */
@@ -269,14 +290,14 @@ void Error_Handler(void)
   /* USER CODE END Error_Handler_Debug */
 }
 
-#ifdef  USE_FULL_ASSERT
+#ifdef USE_FULL_ASSERT
 /**
-  * @brief  Reports the name of the source file and the source line number
-  *         where the assert_param error has occurred.
-  * @param  file: pointer to the source file name
-  * @param  line: assert_param error line source number
-  * @retval None
-  */
+ * @brief  Reports the name of the source file and the source line number
+ *         where the assert_param error has occurred.
+ * @param  file: pointer to the source file name
+ * @param  line: assert_param error line source number
+ * @retval None
+ */
 void assert_failed(uint8_t *file, uint32_t line)
 {
   /* USER CODE BEGIN 6 */
