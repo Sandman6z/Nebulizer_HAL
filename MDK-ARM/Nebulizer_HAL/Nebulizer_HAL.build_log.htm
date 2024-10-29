@@ -25,12 +25,86 @@ Dialog DLL:      TARMCM1.DLL V1.14.6.0
  
 <h2>Project:</h2>
 C:\Users\zbn02\Desktop\Nebulizer_HAL\MDK-ARM\Nebulizer_HAL.uvprojx
-Project File Date:  10/22/2024
+Project File Date:  10/29/2024
 
 <h2>Output:</h2>
 *** Using Compiler 'V6.22', folder: 'C:\Program Files\Keil_v5\ARM\ARMCLANG\Bin'
 Build target 'Nebulizer_HAL'
-"Nebulizer_HAL\Nebulizer_HAL.axf" - 0 Error(s), 0 Warning(s).
+../Core/Src/sweep_freq.c(4): error: unknown type name 'uint32_t'
+    4 | uint32_t best_freq = START_FREQ; // 最佳频率
+      | ^
+../Core/Src/sweep_freq.c(4): error: use of undeclared identifier 'START_FREQ'
+    4 | uint32_t best_freq = START_FREQ; // 最佳频率
+      |                      ^
+../Core/Src/sweep_freq.c(5): error: unknown type name 'uint32_t'
+    5 | volatile uint32_t freq = 130000;
+      |          ^
+../Core/Src/sweep_freq.c(10): error: unknown type name 'uint8_t'
+   10 |   uint8_t button; // IN1 PA1
+      |   ^
+../Core/Src/sweep_freq.c(21): error: unknown type name 'uint16_t'
+   21 | uint16_t adcValue()
+      | ^
+../Core/Src/sweep_freq.c(23): error: use of undeclared identifier 'ADC_BUFFER_SIZE'
+   23 |     for (int i = 0; i < ADC_BUFFER_SIZE; i++)
+      |                         ^
+../Core/Src/sweep_freq.c(25): error: use of undeclared identifier 'ADC_Value'
+   25 |         ADC_Value[i] = (adcBuffer[i] * 3.3f) / 4095.0f;
+      |         ^
+../Core/Src/sweep_freq.c(25): error: use of undeclared identifier 'adcBuffer'
+   25 |         ADC_Value[i] = (adcBuffer[i] * 3.3f) / 4095.0f;
+      |                         ^
+../Core/Src/sweep_freq.c(30): error: use of undeclared identifier 'ADC_Value'
+   30 |             adcData.button = (ADC_Value[i] > 1.65f) ? 1 : 0;
+      |                               ^
+../Core/Src/sweep_freq.c(33): error: use of undeclared identifier 'ADC_Value'
+   33 |             adcData.MCU_Temperature = ADC_Value[i];
+      |                                       ^
+../Core/Src/sweep_freq.c(36): error: use of undeclared identifier 'ADC_Value'
+   36 |             adcData.MCU_Vref = ADC_Value[i];
+      |                                ^
+../Core/Src/sweep_freq.c(39): error: use of undeclared identifier 'ADC_Value'
+   39 |             adcData.MCU_VDD = ADC_Value[i];
+      |                               ^
+../Core/Src/sweep_freq.c(42): error: use of undeclared identifier 'ADC_Value'
+   42 |             adcData.MCU_VSS = ADC_Value[i];
+      |                               ^
+../Core/Src/sweep_freq.c(45): error: use of undeclared identifier 'ADC_Value'
+   45 |             adcData.current_MOS = ADC_Value[i];
+      |                                   ^
+../Core/Src/sweep_freq.c(48): error: use of undeclared identifier 'ADC_Value'
+   48 |             adcData.voltage_MOS = ADC_Value[i];
+      |                                   ^
+../Core/Src/sweep_freq.c(55): error: unknown type name 'uint16_t'
+   55 | uint16_t sweep_freq()
+      | ^
+../Core/Src/sweep_freq.c(57): error: use of undeclared identifier 'uint32_t'
+   57 |     for (uint32_t freq = START_FREQ; freq <= END_FREQ; freq += STEP_FREQ)
+      |          ^
+../Core/Src/sweep_freq.c(57): error: use of undeclared identifier 'END_FREQ'
+   57 |     for (uint32_t freq = START_FREQ; freq <= END_FREQ; freq += STEP_FREQ)
+      |                                              ^
+../Core/Src/sweep_freq.c(57): error: use of undeclared identifier 'STEP_FREQ'
+   57 |     for (uint32_t freq = START_FREQ; freq <= END_FREQ; freq += STEP_FREQ)
+      |                                                                ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling sweep_freq.c...
+../Core/Src/main.c(168): error: use of undeclared identifier 'freq'
+  168 |   __HAL_TIM_SET_AUTORELOAD(&htim1, (SystemCoreClock / freq) - 1);
+      |                                                       ^
+../Core/Src/main.c(168): error: use of undeclared identifier 'freq'
+../Core/Src/main.c(169): error: use of undeclared identifier 'freq'
+  169 |   __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_3, (SystemCoreClock / (2 * freq))); // 50% 占空�?
+      |                                                                        ^
+../Core/Src/main.c(169): error: use of undeclared identifier 'freq'
+../Core/Src/main.c(169): error: use of undeclared identifier 'freq'
+../Core/Src/main.c(169): error: use of undeclared identifier 'freq'
+../Core/Src/main.c(169): error: use of undeclared identifier 'freq'
+../Core/Src/main.c(169): error: use of undeclared identifier 'freq'
+8 errors generated.
+compiling main.c...
+"Nebulizer_HAL\Nebulizer_HAL.axf" - 27 Error(s), 0 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -52,7 +126,8 @@ Package Vendor: Keil
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE@6.1.0
-Build Time Elapsed:  00:00:03
+Target not created.
+Build Time Elapsed:  00:00:04
 </pre>
 </body>
 </html>

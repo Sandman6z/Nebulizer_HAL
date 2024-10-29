@@ -69,9 +69,7 @@ volatile float ADC_Value[ADC_BUFFER_SIZE]; // 声明数组来存储ADC采样结�
 uint16_t filtered_adc_values[7];           // 过滤后的ADC
 uint16_t filtered_voltage[7];              // 过滤后的电压
 
-float max_power = 0.0f;
-uint32_t best_freq = START_FREQ; // 最佳频率
-volatile uint32_t freq = 130000;
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
