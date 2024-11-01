@@ -3,8 +3,8 @@
 #include "adc.h"
 #include "tim.h"
 
-#define START_FREQ 103000
-#define END_FREQ 113000
+#define START_FREQ 108000
+#define END_FREQ 115000
 #define STEP_FREQ 500 
 
 uint32_t best_freq = START_FREQ;
@@ -39,7 +39,6 @@ void adcValue(void)
             adcData.voltage_MOS = ADC_Value[i];
             break;
         }
-        // printf("Frequency: %d Hz, adcData.voltage_MOS: %.2f V, adcData.current_MOS: %.2f A\n", freq, adcData.voltage_MOS, adcData.current_MOS); // 可以在这里添加更多数据采集和处理代码
     }
 }
 
@@ -57,19 +56,6 @@ void sweepFreq(void)
         HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_3);
 
         HAL_Delay(1500); // 延迟，确保系统稳定
-
-        // 读取电压和电流（假设IN17和IN18分别是电压和电流通道）
-        adcData.current_MOS = ADC_Value[5];
-        adcData.voltage_MOS = ADC_Value[6];
-
-        power = adcData.voltage_MOS * adcData.current_MOS;
-
-        // 判断最大功率
-        if (power > max_power)
-        {
-            max_power = power;
-            best_freq = freq;
-        }
 
         // 停止PWM输出
         HAL_TIM_PWM_Stop(&htim1, TIM_CHANNEL_3);
