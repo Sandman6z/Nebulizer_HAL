@@ -25,6 +25,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "sweep_freq.h"
 #include "median_average_filtering.h"
 #include "adc_calc.h"
 /* USER CODE END Includes */
@@ -39,11 +40,6 @@
 #define ENABLE_BUTTON 0 // 1 启用功能, 0 禁用功能
 #define WEIGHTED_MOVING_AVERAGE_FILTER 0
 
-#define ADC_BUFFER_SIZE 77
-#define START_FREQ 108000 // 起始频率 108kHz
-#define END_FREQ 132000   // 结束频率 132kHz
-#define STEP_FREQ 500     // 步进频率 0.5kHz，即 500Hz
-
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -54,6 +50,8 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
+ADCData adcData = {0};
+
 volatile uint16_t adcBuffer[ADC_BUFFER_SIZE];
 volatile float ADC_Value[ADC_BUFFER_SIZE]; // 声明数组来存储ADC采样结果
 uint16_t filtered_adc_values[7];           // 过滤后的ADC
@@ -124,40 +122,43 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  SWEEP_FREQ();
+  sweepFreq();
+  // 扫频完成后，设置TIM1为最佳频率
+  __HAL_TIM_SET_AUTORELOAD(&htim1, (SystemCoreClock / best_freq) - 1);
+  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_3, (SystemCoreClock / (2 * best_freq))); // 50% 占空�?
+  HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_3);
 
-while (1)
-{
-  /* USER CODE END WHILE */
+  while (1)
+  {
+    /* USER CODE END WHILE */
 
-  /* USER CODE BEGIN 3 */
+    /* USER CODE BEGIN 3 */
 
+    //    for (int channel = 0; channel < 7; channel++)
+    //    {
+    //      // 选择当前通道的数�??
+    //      uint16_t *channel_data = (uint16_t *)&ADC_Value[channel * 11]; // 每个通道11个�??
+    //      filtered_adc_values[channel] = MedianAverageFilter(channel_data, 11);
+    //      // 然后将过滤后的ADC值转换为电压
+    //      for (int i = 0; i < 7; i++)
+    //      {
+    //        filtered_voltage[i] = ADC_To_Voltage(filtered_adc_values[i]);
+    //      }
+    //    }
 
-  //    for (int channel = 0; channel < 7; channel++)
-  //    {
-  //      // 选择当前通道的数�??
-  //      uint16_t *channel_data = (uint16_t *)&ADC_Value[channel * 11]; // 每个通道11个�??
-  //      filtered_adc_values[channel] = MedianAverageFilter(channel_data, 11);
-  //      // 然后将过滤后的ADC值转换为电压
-  //      for (int i = 0; i < 7; i++)
-  //      {
-  //        filtered_voltage[i] = ADC_To_Voltage(filtered_adc_values[i]);
-  //      }
-  //    }
+    //    HAL_GPIO_WritePin(LED_Alarm_GPIO_Port, LED_Alarm_Pin, GPIO_PIN_RESET);
+    //    HAL_GPIO_WritePin(LED_Normal_GPIO_Port, LED_Normal_Pin, GPIO_PIN_SET);
+    //    HAL_Delay(500);
+    //    HAL_GPIO_WritePin(LED_Alarm_GPIO_Port, LED_Alarm_Pin, GPIO_PIN_SET);
+    //    HAL_GPIO_WritePin(LED_Normal_GPIO_Port, LED_Normal_Pin, GPIO_PIN_RESET);
+    //    HAL_Delay(500);
 
-  //    HAL_GPIO_WritePin(LED_Alarm_GPIO_Port, LED_Alarm_Pin, GPIO_PIN_RESET);
-  //    HAL_GPIO_WritePin(LED_Normal_GPIO_Port, LED_Normal_Pin, GPIO_PIN_SET);
-  //    HAL_Delay(500);
-  //    HAL_GPIO_WritePin(LED_Alarm_GPIO_Port, LED_Alarm_Pin, GPIO_PIN_SET);
-  //    HAL_GPIO_WritePin(LED_Normal_GPIO_Port, LED_Normal_Pin, GPIO_PIN_RESET);
-  //    HAL_Delay(500);
-
-  // if (HAL_ADC_PollForConversion(&hadc1, 10) == HAL_OK)
-  // {
-  //   uint32_t adcValue = HAL_ADC_GetValue(&hadc1);
-  // }
-}
-/* USER CODE END 3 */
+    // if (HAL_ADC_PollForConversion(&hadc1, 10) == HAL_OK)
+    // {
+    //   uint32_t adcValue = HAL_ADC_GetValue(&hadc1);
+    // }
+  }
+  /* USER CODE END 3 */
 }
 
 /**

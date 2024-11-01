@@ -11,6 +11,7 @@
 "nebulizer_hal\tim.o"
 "nebulizer_hal\stm32c0xx_it.o"
 "nebulizer_hal\stm32c0xx_hal_msp.o"
+"nebulizer_hal\sweep_freq.o"
 "nebulizer_hal\stm32c0xx_hal.o"
 "nebulizer_hal\stm32c0xx_hal_adc.o"
 "nebulizer_hal\stm32c0xx_hal_adc_ex.o"

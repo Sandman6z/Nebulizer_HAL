@@ -1,24 +1,15 @@
 #include "sweep_freq.h"
+#include "main.h"
+#include "adc.h"
+#include "tim.h"
 
-float max_power = 0.0f;
-uint32_t best_freq = START_FREQ; // 最佳频率
-volatile uint32_t freq = 130000;
+#define START_FREQ 103000
+#define END_FREQ 113000
+#define STEP_FREQ 500 
 
+uint32_t best_freq = START_FREQ;
 
-typedef struct
-{
-  uint8_t button; // IN1 PA1
-  float MCU_Temperature;
-  float MCU_Vref;
-  float MCU_VDD;
-  float MCU_VSS;
-  float current_MOS; // IN17  PB0
-  float voltage_MOS; // IN18  PB1
-} ADCData;
-
-ADCData adcData = {0};
-
-uint16_t adcValue()
+void adcValue(void)
 {
     for (int i = 0; i < ADC_BUFFER_SIZE; i++)
     {
@@ -48,39 +39,39 @@ uint16_t adcValue()
             adcData.voltage_MOS = ADC_Value[i];
             break;
         }
-        // printf("Frequency: %d Hz, Voltage: %.2f V, Current: %.2f A\n", freq, voltage, current); // 可以在这里添加更多数据采集和处理代码
+        // printf("Frequency: %d Hz, adcData.voltage_MOS: %.2f V, adcData.current_MOS: %.2f A\n", freq, adcData.voltage_MOS, adcData.current_MOS); // 可以在这里添加更多数据采集和处理代码
     }
 }
 
-uint16_t sweep_freq()
+void sweepFreq(void)
 {
+    float power, max_power = 0.0f;
+    
+    uint32_t freq = START_FREQ;
+
     for (uint32_t freq = START_FREQ; freq <= END_FREQ; freq += STEP_FREQ)
     {
         // 设置PWM频率
         __HAL_TIM_SET_AUTORELOAD(&htim1, (SystemCoreClock / freq) - 1);
-        __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, (SystemCoreClock / (2 * freq))); // 50% 占空�?
-        HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
+        __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_3, (SystemCoreClock / (2 * freq))); // 50% 占空比
+        HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_3);
 
-        HAL_Delay(500); // 延迟，确保系统稳�?
+        HAL_Delay(1500); // 延迟，确保系统稳定
 
-        // 读取电压和电流（假设IN17和IN18分别是电压和电流通道�?
-        // voltage = (adcBuffer[0] * 3.3f) / 4095.0f; // IN17电压
-        current = (adcBuffer[1] * 3.3f) / 4095.0f; // IN18电流
+        // 读取电压和电流（假设IN17和IN18分别是电压和电流通道）
+        adcData.current_MOS = ADC_Value[5];
+        adcData.voltage_MOS = ADC_Value[6];
 
-        power = voltage * current;                                                                                    // 计算功率
-        printf("Frequency: %d Hz, Voltage: %.2f V, Current: %.2f A, Power: %.2f W\n", freq, voltage, current, power); // 可以在这里添加更多数据采集和处理代码
-    } // 测试完成后，关闭PWM输出
+        power = adcData.voltage_MOS * adcData.current_MOS;
 
-    // 判断�?大功�?
-    if (power > max_power)
-    {
-        max_power = power;
-        best_freq = freq;
+        // 判断最大功率
+        if (power > max_power)
+        {
+            max_power = power;
+            best_freq = freq;
+        }
+
+        // 停止PWM输出
+        HAL_TIM_PWM_Stop(&htim1, TIM_CHANNEL_3);
     }
-}
-
-// 扫频完成后，设置TIM1为最佳频率
-__HAL_TIM_SET_AUTORELOAD(&htim1, (SystemCoreClock / freq) - 1);
-__HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_3, (SystemCoreClock / (2 * best_freq))); // 50% 占空�?
-HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_3);
 }
