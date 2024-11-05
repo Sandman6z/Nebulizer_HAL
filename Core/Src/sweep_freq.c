@@ -3,8 +3,8 @@
 #include "adc.h"
 #include "tim.h"
 
-#define START_FREQ 108000
-#define END_FREQ 115000
+#define START_FREQ 120000
+#define END_FREQ 130000
 #define STEP_FREQ 500 
 
 uint32_t best_freq = START_FREQ;
@@ -44,7 +44,7 @@ void adcValue(void)
 
 void sweepFreq(void)
 {
-    float power, max_power = 0.0f;
+    float max_current = 0.0f;
     
     uint32_t freq = START_FREQ;
 
@@ -55,7 +55,13 @@ void sweepFreq(void)
         __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_3, (SystemCoreClock / (2 * freq))); // 50% 占空比
         HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_3);
 
-        HAL_Delay(1500); // 延迟，确保系统稳定
+        HAL_Delay(1000); // 延迟，确保系统稳定
+
+        if(adcData.current_MOS > max_current)
+        {
+            max_current = adcData.current_MOS;
+            best_freq = freq;
+        }
 
         // 停止PWM输出
         HAL_TIM_PWM_Stop(&htim1, TIM_CHANNEL_3);

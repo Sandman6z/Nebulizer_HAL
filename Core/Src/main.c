@@ -40,7 +40,7 @@
 #define ENABLE_BUTTON 0 // 1 启用功能, 0 禁用功能
 #define WEIGHTED_MOVING_AVERAGE_FILTER 0
 
-#define SELECT_FREQ 110000
+#define SELECT_FREQ 120000
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -119,14 +119,15 @@ int main(void)
   HAL_TIM_Base_Start_IT(&htim16); // 启动TIM16的定时器中断
   HAL_TIM_Base_Start_IT(&htim17); // 启动TIM17的定时器中断
 
+  adcValue();
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   sweepFreq();
   // 扫频完成后，设置TIM1为最佳频率
-  __HAL_TIM_SET_AUTORELOAD(&htim1, (SystemCoreClock / SELECT_FREQ) - 1);
-  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_3, (SystemCoreClock / (2 * SELECT_FREQ))); // 50% 占空�?
+  __HAL_TIM_SET_AUTORELOAD(&htim1, (SystemCoreClock / best_freq) - 1);
+  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_3, (SystemCoreClock / (2 * best_freq))); // 50% 占空�?
   HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_3);
 
   while (1)
