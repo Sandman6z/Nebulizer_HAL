@@ -3,9 +3,9 @@
 #include "adc.h"
 #include "tim.h"
 
-#define START_FREQ 120000
+#define START_FREQ 125000
 #define END_FREQ 130000
-#define STEP_FREQ 500 
+#define STEP_FREQ 500
 
 uint32_t best_freq = START_FREQ;
 
@@ -42,10 +42,22 @@ void adcValue(void)
     }
 }
 
+float calculateCurrentIntegral(uint16_t *adcBuffer, size_t N, float samplingFrequency)
+{
+    float integral = 0.0f;
+    float deltaT = 1.0f / samplingFrequency;
+
+    for (size_t i = 0; i < N; i++)
+    {
+        integral += adcBuffer[i] * deltaT;
+    }
+
+    return integral;
+}
+
 void sweepFreq(void)
 {
-    float max_current = 0.0f;
-    
+    float max_integral = 0.0f;
     uint32_t freq = START_FREQ;
 
     for (uint32_t freq = START_FREQ; freq <= END_FREQ; freq += STEP_FREQ)
@@ -57,10 +69,14 @@ void sweepFreq(void)
 
         HAL_Delay(1000); // 延迟，确保系统稳定
 
-        if(adcData.current_MOS > max_current)
+        // 计算当前频率下的积分值
+        float integral = calculateCurrentIntegral(adcBuffer, ADC_BUFFER_SIZE, samplingFrequency);
+
+        // 比较并更新最大积分值和最佳频率
+        if (integral > max_integral)
         {
-            max_current = adcData.current_MOS;
-            best_freq = freq;
+            max_integral = integral;
+            best_freq = freq; // best_freq 就是拥有最大积分值的最佳频率
         }
 
         // 停止PWM输出

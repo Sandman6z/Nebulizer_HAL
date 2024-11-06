@@ -90,7 +90,7 @@ extern "C"
 #define PluginCheck_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
-#define ADC_BUFFER_SIZE 77
+#define ADC_BUFFER_SIZE 7
 
 
   /* Exported variables --------------------------------------------------------*/
