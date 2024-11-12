@@ -505,6 +505,26 @@
               <FileType>1</FileType>
               <FilePath>..\Core\Src\sweep_freq.c</FilePath>
             </File>
+            <File>
+              <FileName>button.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\button.c</FilePath>
+            </File>
+            <File>
+              <FileName>fault.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\fault.c</FilePath>
+            </File>
+            <File>
+              <FileName>FSM.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\FSM.c</FilePath>
+            </File>
+            <File>
+              <FileName>func.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\func.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

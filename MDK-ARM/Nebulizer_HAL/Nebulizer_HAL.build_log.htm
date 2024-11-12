@@ -22,45 +22,179 @@ Dialog DLL:      TARMCM1.DLL V1.14.6.0
  
 <h2>Project:</h2>
 C:\Users\Bitch\Desktop\Nebulizer_HAL\MDK-ARM\Nebulizer_HAL.uvprojx
-Project File Date:  11/05/2024
+Project File Date:  11/12/2024
 
 <h2>Output:</h2>
 *** Using Compiler 'V6.21', folder: 'C:\Program Files\Keil_v5\ARM\ARMCLANG\Bin'
 Build target 'Nebulizer_HAL'
-compiling weighted_moving_average_filter.c...
-assembling startup_stm32c031xx.s...
-compiling adc.c...
-compiling median_average_filtering.c...
-compiling adc_calc.c...
-compiling tim.c...
-compiling dma.c...
-compiling sweep_freq.c...
-compiling main.c...
-compiling stm32c0xx_hal_msp.c...
-compiling stm32c0xx_it.c...
 compiling led.c...
-compiling stm32c0xx_hal.c...
+../Core/Src/button.c(1): error: 'config.h' file not found
+    1 | #include "config.h"
+      |          ^~~~~~~~~~
+1 error generated.
+compiling button.c...
+../Core/Src/FSM.c(4): error: use of undeclared identifier 'currentState'
+    4 |     switch (currentState)
+      |             ^
+../Core/Src/FSM.c(6): error: use of undeclared identifier 'STATE_STANDBY'
+    6 |     case STATE_STANDBY:
+      |          ^
+../Core/Src/FSM.c(7): error: call to undeclared function 'isSweepRequested'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |         if (isSweepRequested())
+      |             ^
+../Core/Src/FSM.c(9): error: use of undeclared identifier 'currentState'
+    9 |             currentState = STATE_FREQUENCY_SWEEP;
+      |             ^
+../Core/Src/FSM.c(9): error: use of undeclared identifier 'STATE_FREQUENCY_SWEEP'
+    9 |             currentState = STATE_FREQUENCY_SWEEP;
+      |                            ^
+../Core/Src/FSM.c(10): error: call to undeclared function 'startFrequencySweep'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   10 |             startFrequencySweep();
+      |             ^
+../Core/Src/FSM.c(14): error: use of undeclared identifier 'STATE_FREQUENCY_SWEEP'
+   14 |     case STATE_FREQUENCY_SWEEP:
+      |          ^
+../Core/Src/FSM.c(15): error: call to undeclared function 'isFaultDetected'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   15 |         if (isFaultDetected())
+      |             ^
+../Core/Src/FSM.c(17): error: use of undeclared identifier 'currentState'
+   17 |             currentState = STATE_FAULT;
+      |             ^
+../Core/Src/FSM.c(17): error: use of undeclared identifier 'STATE_FAULT'
+   17 |             currentState = STATE_FAULT;
+      |                            ^
+../Core/Src/FSM.c(18): error: call to undeclared function 'handleFault'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   18 |             handleFault();
+      |             ^
+../Core/Src/FSM.c(20): error: call to undeclared function 'isSweepComplete'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   20 |         else if (isSweepComplete())
+      |                  ^
+../Core/Src/FSM.c(22): error: use of undeclared identifier 'best_freq'
+   22 |             best_freq = getBestFrequency();
+      |             ^
+../Core/Src/FSM.c(22): error: call to undeclared function 'getBestFrequency'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   22 |             best_freq = getBestFrequency();
+      |                         ^
+../Core/Src/FSM.c(23): error: use of undeclared identifier 'currentState'
+   23 |             currentState = STATE_PAUSE;
+      |             ^
+../Core/Src/FSM.c(23): error: use of undeclared identifier 'STATE_PAUSE'
+   23 |             currentState = STATE_PAUSE;
+      |                            ^
+../Core/Src/FSM.c(27): error: use of undeclared identifier 'STATE_PAUSE'
+   27 |     case STATE_PAUSE:
+      |          ^
+../Core/Src/FSM.c(28): error: call to undeclared function 'isAtomizeRequested'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   28 |         if (isAtomizeRequested())
+      |             ^
+../Core/Src/FSM.c(30): error: use of undeclared identifier 'currentState'
+   30 |             currentState = STATE_ATOMIZE;
+      |             ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling FSM.c...
+compiling median_average_filtering.c...
+../Core/Src/fault.c(1): error: 'fault.h' file not found
+    1 | #include "fault.h"
+      |          ^~~~~~~~~
+1 error generated.
+compiling fault.c...
+compiling weighted_moving_average_filter.c...
+compiling adc_calc.c...
+../Core/Src/func.c(1): error: 'control.h' file not found
+    1 | #include "control.h"
+      |          ^~~~~~~~~~~
+1 error generated.
+compiling func.c...
+compiling stm32c0xx_hal_msp.c...
 compiling gpio.c...
+compiling adc.c...
+compiling dma.c...
+../Core/Src/main.c(139): error: call to undeclared function 'systemStateMachine'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  139 |     systemStateMachine(); // 状态机调度
+      |     ^
+1 error generated.
+compiling main.c...
+../Core/Src/tim.c(476): error: invalid operands to binary expression ('TIM_HandleTypeDef *' and 'TIM_HandleTypeDef')
+  476 |    if (htim == htim14)
+      |        ~~~~ ^  ~~~~~~
+../Core/Src/tim.c(478): error: use of undeclared identifier 'I_cur'
+  478 |       I_cur /= cnt;
+      |       ^
+../Core/Src/tim.c(478): error: use of undeclared identifier 'cnt'
+  478 |       I_cur /= cnt;
+      |                ^
+../Core/Src/tim.c(479): error: use of undeclared identifier 'I_cur'
+  479 |       if (I_cur > I_max)
+      |           ^
+../Core/Src/tim.c(479): error: use of undeclared identifier 'I_max'
+  479 |       if (I_cur > I_max)
+      |                   ^
+../Core/Src/tim.c(481): error: use of undeclared identifier 'Imax'
+  481 |         Imax = Icur;
+      |         ^
+../Core/Src/tim.c(481): error: use of undeclared identifier 'Icur'
+  481 |         Imax = Icur;
+      |                ^
+../Core/Src/tim.c(482): error: use of undeclared identifier 'BestFreq'
+  482 |         BestFreq = Fcur;
+      |         ^
+../Core/Src/tim.c(482): error: use of undeclared identifier 'Fcur'
+  482 |         BestFreq = Fcur;
+      |                    ^
+../Core/Src/tim.c(484): error: use of undeclared identifier 'I_sum'
+  484 |       I_sum = 0;
+      |       ^
+../Core/Src/tim.c(485): error: use of undeclared identifier 'cnt'
+  485 |       cnt = 0;
+      |       ^
+11 errors generated.
+compiling tim.c...
+../Core/Src/sweep_freq.c(21): error: use of undeclared identifier 'ADCData'
+   21 |             ADCData.button = (ADC_Value[i] > 1.65f) ? 1 : 0;
+      |             ^
+../Core/Src/sweep_freq.c(24): error: use of undeclared identifier 'ADCData'
+   24 |             ADCData.MCU_Temperature = ADC_Value[i];
+      |             ^
+../Core/Src/sweep_freq.c(27): error: use of undeclared identifier 'ADCData'
+   27 |             ADCData.MCU_Vref = ADC_Value[i];
+      |             ^
+../Core/Src/sweep_freq.c(30): error: use of undeclared identifier 'ADCData'
+   30 |             ADCData.MCU_VDD = ADC_Value[i];
+      |             ^
+../Core/Src/sweep_freq.c(33): error: use of undeclared identifier 'ADCData'
+   33 |             ADCData.MCU_VSS = ADC_Value[i];
+      |             ^
+../Core/Src/sweep_freq.c(36): error: use of undeclared identifier 'ADCData'
+   36 |             ADCData.current_MOS = ADC_Value[i];
+      |             ^
+../Core/Src/sweep_freq.c(39): error: use of undeclared identifier 'ADCData'
+   39 |             ADCData.voltage_MOS = ADC_Value[i];
+      |             ^
+../Core/Src/sweep_freq.c(73): error: use of undeclared identifier 'samplingFrequency'
+   73 |         float integral = calculateCurrentIntegral(adcBuffer, ADC_BUFFER_SIZE, samplingFrequency);
+      |                                                                               ^
+8 errors generated.
+compiling sweep_freq.c...
+compiling stm32c0xx_it.c...
+compiling stm32c0xx_hal.c...
 compiling stm32c0xx_hal_adc_ex.c...
 compiling stm32c0xx_hal_dma_ex.c...
-compiling stm32c0xx_hal_adc.c...
-compiling stm32c0xx_hal_dma.c...
 compiling stm32c0xx_hal_rcc.c...
+compiling stm32c0xx_hal_dma.c...
 compiling stm32c0xx_hal_rcc_ex.c...
-compiling stm32c0xx_hal_flash.c...
-compiling stm32c0xx_hal_gpio.c...
-compiling system_stm32c0xx.c...
-compiling stm32c0xx_hal_exti.c...
-compiling stm32c0xx_hal_pwr_ex.c...
 compiling stm32c0xx_hal_pwr.c...
-compiling stm32c0xx_hal_cortex.c...
+compiling stm32c0xx_hal_adc.c...
+compiling stm32c0xx_hal_flash.c...
+compiling stm32c0xx_hal_pwr_ex.c...
+compiling stm32c0xx_hal_gpio.c...
 compiling stm32c0xx_hal_flash_ex.c...
+compiling stm32c0xx_hal_cortex.c...
+compiling stm32c0xx_hal_exti.c...
+compiling system_stm32c0xx.c...
 compiling stm32c0xx_hal_tim_ex.c...
 compiling stm32c0xx_hal_tim.c...
-linking...
-Program Size: Code=19380 RO-data=352 RW-data=16 ZI-data=2704  
-FromELF: creating hex file...
-"Nebulizer_HAL\Nebulizer_HAL.axf" - 0 Error(s), 0 Warning(s).
+"Nebulizer_HAL\Nebulizer_HAL.axf" - 42 Error(s), 0 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -83,6 +217,7 @@ Package Vendor: Keil
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE@5.6.0
+Target not created.
 Build Time Elapsed:  00:00:01
 </pre>
 </body>

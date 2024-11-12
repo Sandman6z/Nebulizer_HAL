@@ -4,13 +4,13 @@
 #include "stm32c0xx_it.h"
 #include "stm32c0xx_hal_tim.h"
 
-#
+#ifdef ENABLE_LED
 
 // 全局计数器
-uint16_t led_alarm_time_counter = 0;  // LED_Alarm闪烁计数器
-uint16_t h_led_time_counter = 0;      // H_LED呼吸灯计数器
-uint16_t l_led_time_counter = 0;      // L_LED呼吸灯计数器
-uint16_t proc_led_time_counter = 0;   // LED_Proc1~5顺序控制计数器
+uint16_t led_alarm_time_counter = 0; // LED_Alarm闪烁计数器
+uint16_t h_led_time_counter = 0;     // H_LED呼吸灯计数器
+uint16_t l_led_time_counter = 0;     // L_LED呼吸灯计数器
+uint16_t proc_led_time_counter = 0;  // LED_Proc1~5顺序控制计数器
 
 // 当前LED索引
 static uint8_t current_proc_led = 0;
@@ -123,7 +123,7 @@ void update_H_LED_Breathe(void)
         h_led_breathe_value++;
         if (h_led_breathe_value >= 255)
         {
-            breathe_direction = 0;  // 反向
+            breathe_direction = 0; // 反向
         }
     }
     else
@@ -131,7 +131,7 @@ void update_H_LED_Breathe(void)
         h_led_breathe_value--;
         if (h_led_breathe_value == 0)
         {
-            breathe_direction = 1;  // 反向
+            breathe_direction = 1; // 反向
         }
     }
 
@@ -150,7 +150,7 @@ void update_L_LED_Breathe(void)
         l_led_breathe_value++;
         if (l_led_breathe_value >= 255)
         {
-            breathe_direction = 0;  // 反向
+            breathe_direction = 0; // 反向
         }
     }
     else
@@ -158,10 +158,12 @@ void update_L_LED_Breathe(void)
         l_led_breathe_value--;
         if (l_led_breathe_value == 0)
         {
-            breathe_direction = 1;  // 反向
+            breathe_direction = 1; // 反向
         }
     }
 
     // 通过PWM控制亮度
     __HAL_TIM_SET_COMPARE(&htim17, TIM_CHANNEL_1, l_led_breathe_value);
 }
+
+#endif

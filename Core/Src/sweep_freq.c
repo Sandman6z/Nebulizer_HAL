@@ -18,25 +18,25 @@ void adcValue(void)
         switch (i % 7)
         {
         case 0:
-            adcData.button = (ADC_Value[i] > 1.65f) ? 1 : 0;
+            ADCData.button = (ADC_Value[i] > 1.65f) ? 1 : 0;
             break;
         case 1:
-            adcData.MCU_Temperature = ADC_Value[i];
+            ADCData.MCU_Temperature = ADC_Value[i];
             break;
         case 2:
-            adcData.MCU_Vref = ADC_Value[i];
+            ADCData.MCU_Vref = ADC_Value[i];
             break;
         case 3:
-            adcData.MCU_VDD = ADC_Value[i];
+            ADCData.MCU_VDD = ADC_Value[i];
             break;
         case 4:
-            adcData.MCU_VSS = ADC_Value[i];
+            ADCData.MCU_VSS = ADC_Value[i];
             break;
         case 5:
-            adcData.current_MOS = ADC_Value[i];
+            ADCData.current_MOS = ADC_Value[i];
             break;
         case 6:
-            adcData.voltage_MOS = ADC_Value[i];
+            ADCData.voltage_MOS = ADC_Value[i];
             break;
         }
     }

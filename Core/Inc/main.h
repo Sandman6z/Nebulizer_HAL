@@ -46,7 +46,17 @@ extern "C"
     float MCU_VSS;
     float current_MOS; // IN17  PB0
     float voltage_MOS; // IN18  PB1
-  } ADCData;
+  } ADCData_t;
+
+// 定义状态枚举
+typedef enum
+{
+  STATE_STANDBY,
+  STATE_FREQUENCY_SWEEP,
+  STATE_PAUSE,
+  STATE_ATOMIZE,
+  STATE_FAULT
+} SystemState_t;
 
   /* USER CODE END ET */
 
@@ -90,13 +100,17 @@ extern "C"
 #define PluginCheck_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
+#define ENABLE_LED
+// #define ENABLE_BUTTON
+// #define WEIGHTED_MOVING_AVERAGE_FILTER
+
 #define ADC_BUFFER_SIZE 7
 
 
   /* Exported variables --------------------------------------------------------*/
 extern volatile uint16_t adcBuffer[ADC_BUFFER_SIZE];
 extern volatile float ADC_Value[ADC_BUFFER_SIZE]; // ???????ADC????
-extern ADCData adcData;
+extern ADCData_t adcData;
 
 
   /* USER CODE END Private defines */

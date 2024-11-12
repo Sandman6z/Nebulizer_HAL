@@ -37,8 +37,6 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-#define ENABLE_BUTTON 0 // 1 启用功能, 0 禁用功能
-#define WEIGHTED_MOVING_AVERAGE_FILTER 0
 
 #define SELECT_FREQ 120000
 /* USER CODE END PD */
@@ -51,7 +49,6 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-ADCData adcData = {0};
 
 volatile uint16_t adcBuffer[ADC_BUFFER_SIZE];
 volatile float ADC_Value[ADC_BUFFER_SIZE]; // 声明数组来存储ADC采样结果
@@ -108,6 +105,9 @@ int main(void)
   MX_TIM16_Init();
   MX_TIM17_Init();
   /* USER CODE BEGIN 2 */
+  SystemState_t currentState = STATE_STANDBY;
+  ADCData_t adcData = {0};
+
   if (HAL_ADC_Start_DMA(&hadc1, (uint32_t *)adcBuffer, ADC_BUFFER_SIZE) != HAL_OK)
   {
     Error_Handler();
@@ -119,7 +119,7 @@ int main(void)
   HAL_TIM_Base_Start_IT(&htim16); // 启动TIM16的定时器中断
   HAL_TIM_Base_Start_IT(&htim17); // 启动TIM17的定时器中断
 
-  adcValue();
+  // adcValue();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -135,7 +135,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-
+    systemStateMachine(); // 状态机调度
   }
   /* USER CODE END 3 */
 }
