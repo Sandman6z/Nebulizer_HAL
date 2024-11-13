@@ -25,6 +25,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "FSM.h"
 #include "sweep_freq.h"
 #include "median_average_filtering.h"
 #include "adc_calc.h"
@@ -49,6 +50,8 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
+SystemState_t currentState = STATE_FREQ_SWEEP;
+ADCData_t adcData = {0};
 
 volatile uint16_t adcBuffer[ADC_BUFFER_SIZE];
 volatile float ADC_Value[ADC_BUFFER_SIZE]; // 声明数组来存储ADC采样结果
@@ -105,8 +108,6 @@ int main(void)
   MX_TIM16_Init();
   MX_TIM17_Init();
   /* USER CODE BEGIN 2 */
-  SystemState_t currentState = STATE_STANDBY;
-  ADCData_t adcData = {0};
 
   if (HAL_ADC_Start_DMA(&hadc1, (uint32_t *)adcBuffer, ADC_BUFFER_SIZE) != HAL_OK)
   {

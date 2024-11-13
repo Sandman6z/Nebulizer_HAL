@@ -1,5 +1,6 @@
 #include "FSM.h"
 #include "main.h"
+#include "func.h"
 
 // 系统状态机
 void systemStateMachine(void)
@@ -9,22 +10,25 @@ void systemStateMachine(void)
     case STATE_STANDBY:
         if (isSweepRequested())
         {
-            currentState = STATE_FREQUENCY_SWEEP;
+            currentState = STATE_FREQ_SWEEP;
             startFrequencySweep();
         }
         break;
 
-    case STATE_FREQUENCY_SWEEP:
-        if (isFaultDetected())
-        {
-            currentState = STATE_FAULT;
-            handleFault();
-        }
-        else if (isSweepComplete())
-        {
-            best_freq = getBestFrequency();
-            currentState = STATE_PAUSE;
-        }
+    case STATE_FREQ_SWEEP:
+        // if (isFaultDetected())
+        // {
+        //     currentState = STATE_FAULT;
+        //     handleFault();
+        // }
+        // else if (isSweepComplete())
+        // {
+        //     sweepFreq();
+        //     currentState = STATE_PAUSE;
+        // }
+        
+        sweepFreq();
+
         break;
 
     case STATE_PAUSE:
@@ -57,7 +61,7 @@ void systemStateMachine(void)
         if (isFaultCleared())
         {
             currentState = STATE_STANDBY;
-            clearFaultStatus();
+            // clearFaultStatus();
         }
         break;
 

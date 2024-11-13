@@ -48,16 +48,6 @@ extern "C"
     float voltage_MOS; // IN18  PB1
   } ADCData_t;
 
-// 定义状态枚举
-typedef enum
-{
-  STATE_STANDBY,
-  STATE_FREQUENCY_SWEEP,
-  STATE_PAUSE,
-  STATE_ATOMIZE,
-  STATE_FAULT
-} SystemState_t;
-
   /* USER CODE END ET */
 
   /* Exported constants --------------------------------------------------------*/
@@ -111,6 +101,8 @@ typedef enum
 extern volatile uint16_t adcBuffer[ADC_BUFFER_SIZE];
 extern volatile float ADC_Value[ADC_BUFFER_SIZE]; // ???????ADC????
 extern ADCData_t adcData;
+
+extern SystemState_t currentState;
 
 
   /* USER CODE END Private defines */
