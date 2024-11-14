@@ -483,6 +483,9 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
       }
       I_sum = 0;
       cnt = 0;
+
+
+      // cnt++
    }
    
 }
