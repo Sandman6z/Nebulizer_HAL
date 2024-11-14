@@ -123,11 +123,11 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-//  sweepFreq();
+  sweepFreq();
   // 扫频完成后，设置TIM1为最佳频率
-  __HAL_TIM_SET_AUTORELOAD(&htim1, (SystemCoreClock / SELECT_FREQ) - 1);
-  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_3, (SystemCoreClock / (2 * SELECT_FREQ))); // 50% 占空�?
-  HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_3);
+//  __HAL_TIM_SET_AUTORELOAD(&htim1, (SystemCoreClock / SELECT_FREQ) - 1);
+//  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_3, (SystemCoreClock / (1.5f * SELECT_FREQ))); // 50% 占空�?
+//  HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_3);
 
   while (1)
   {
