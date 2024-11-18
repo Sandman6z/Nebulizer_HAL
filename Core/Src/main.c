@@ -108,6 +108,15 @@ int main(void)
   MX_TIM16_Init();
   MX_TIM17_Init();
   /* USER CODE BEGIN 2 */
+  HAL_GPIO_WritePin(L_LED_GPIO_Port, L_LED_Pin, GPIO_PIN_SET);
+  HAL_GPIO_WritePin(H_LED_GPIO_Port, H_LED_Pin, GPIO_PIN_SET);
+  HAL_GPIO_WritePin(LED_Alarm_GPIO_Port, LED_Alarm_Pin, GPIO_PIN_SET);
+  HAL_GPIO_WritePin(LED_Proc1_GPIO_Port, LED_Proc1_Pin, GPIO_PIN_SET);
+  HAL_GPIO_WritePin(LED_Proc2_GPIO_Port, LED_Proc2_Pin, GPIO_PIN_SET);
+  HAL_GPIO_WritePin(LED_Proc4_GPIO_Port, LED_Proc4_Pin, GPIO_PIN_SET);
+  HAL_GPIO_WritePin(LED_Proc5_GPIO_Port, LED_Proc5_Pin, GPIO_PIN_SET);
+  
+  
   if (HAL_ADC_Start_DMA(&hadc1, (uint32_t *)adcBuffer, ADC_BUFFER_SIZE) != HAL_OK)
   {
     Error_Handler();
