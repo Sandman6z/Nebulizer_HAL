@@ -23,20 +23,19 @@
 #define __MAIN_H
 
 #ifdef __cplusplus
-extern "C"
-{
+extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32c0xx_hal.h"
 
-  /* Private includes ----------------------------------------------------------*/
-  /* USER CODE BEGIN Includes */
+/* Private includes ----------------------------------------------------------*/
+/* USER CODE BEGIN Includes */
 
-  /* USER CODE END Includes */
+/* USER CODE END Includes */
 
-  /* Exported types ------------------------------------------------------------*/
-  /* USER CODE BEGIN ET */
+/* Exported types ------------------------------------------------------------*/
+/* USER CODE BEGIN ET */
   typedef struct
   {
     uint8_t button; // IN1 PA1
@@ -48,20 +47,20 @@ extern "C"
     float voltage_MOS; // IN18  PB1
   } ADCData;
 
-  /* USER CODE END ET */
+/* USER CODE END ET */
 
-  /* Exported constants --------------------------------------------------------*/
-  /* USER CODE BEGIN EC */
+/* Exported constants --------------------------------------------------------*/
+/* USER CODE BEGIN EC */
 
-  /* USER CODE END EC */
+/* USER CODE END EC */
 
-  /* Exported macro ------------------------------------------------------------*/
-  /* USER CODE BEGIN EM */
+/* Exported macro ------------------------------------------------------------*/
+/* USER CODE BEGIN EM */
 
-  /* USER CODE END EM */
+/* USER CODE END EM */
 
-  /* Exported functions prototypes ---------------------------------------------*/
-  void Error_Handler(void);
+/* Exported functions prototypes ---------------------------------------------*/
+void Error_Handler(void);
 
 /* USER CODE BEGIN EFP */
 
@@ -82,6 +81,10 @@ extern "C"
 #define LED_Proc4_GPIO_Port GPIOA
 #define LED_Proc5_Pin GPIO_PIN_7
 #define LED_Proc5_GPIO_Port GPIOA
+#define ADC_CURRENT_Pin GPIO_PIN_0
+#define ADC_CURRENT_GPIO_Port GPIOB
+#define ADC_VOLTAGE_Pin GPIO_PIN_1
+#define ADC_VOLTAGE_GPIO_Port GPIOB
 #define H_LED_Pin GPIO_PIN_15
 #define H_LED_GPIO_Port GPIOA
 #define LED_Normal_Pin GPIO_PIN_6
@@ -99,7 +102,7 @@ extern volatile float ADC_Value[ADC_BUFFER_SIZE]; // ???????ADC????
 extern ADCData adcData;
 
 
-  /* USER CODE END Private defines */
+/* USER CODE END Private defines */
 
 #ifdef __cplusplus
 }

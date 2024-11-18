@@ -4,6 +4,7 @@
 "nebulizer_hal\median_average_filtering.o"
 "nebulizer_hal\weighted_moving_average_filter.o"
 "nebulizer_hal\adc_calc.o"
+"nebulizer_hal\sweep_freq.o"
 "nebulizer_hal\main.o"
 "nebulizer_hal\gpio.o"
 "nebulizer_hal\adc.o"
@@ -11,7 +12,6 @@
 "nebulizer_hal\tim.o"
 "nebulizer_hal\stm32c0xx_it.o"
 "nebulizer_hal\stm32c0xx_hal_msp.o"
-"nebulizer_hal\sweep_freq.o"
 "nebulizer_hal\stm32c0xx_hal.o"
 "nebulizer_hal\stm32c0xx_hal_adc.o"
 "nebulizer_hal\stm32c0xx_hal_adc_ex.o"
@@ -29,6 +29,10 @@
 "nebulizer_hal\stm32c0xx_hal_tim.o"
 "nebulizer_hal\stm32c0xx_hal_tim_ex.o"
 "nebulizer_hal\system_stm32c0xx.o"
+"nebulizer_hal\segger_rtt.o"
+"nebulizer_hal\segger_rtt_printf.o"
+"nebulizer_hal\retarget.o"
+"nebulizer_hal\bsp_adc.o"
 --strict --scatter "Nebulizer_HAL\Nebulizer_HAL.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
