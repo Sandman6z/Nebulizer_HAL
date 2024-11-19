@@ -53,11 +53,13 @@ void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(LED_Alarm_GPIO_Port, LED_Alarm_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, L_LED_Pin|LED_Proc1_Pin|LED_Proc2_Pin|LED_Proc3_Pin
-                          |LED_Proc4_Pin|LED_Proc5_Pin|H_LED_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOA, L_LED_Pin|LED_Proc1_Pin|LED_Proc3_Pin|LED_Proc5_Pin, GPIO_PIN_SET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, LED_Normal_Pin|PluginCheck_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOA, LED_Proc2_Pin|LED_Proc4_Pin|H_LED_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(GPIOB, LED_Normal_Pin|PluginCheck_Pin, GPIO_PIN_SET);
 
   /*Configure GPIO pin : PtPin */
   GPIO_InitStruct.Pin = LED_Alarm_Pin;
