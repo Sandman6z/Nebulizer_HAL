@@ -3,7 +3,7 @@
 <title>Static Call Graph - [Nebulizer_HAL\Nebulizer_HAL.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image Nebulizer_HAL\Nebulizer_HAL.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6210000: Last Updated: Tue Nov 19 14:56:54 2024
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6210000: Last Updated: Tue Nov 19 17:57:05 2024
 <BR><P>
 <H3>Maximum Stack Usage =        264 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -905,7 +905,7 @@ Global Symbols
 <P><STRONG><a name="[2]"></a>HardFault_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32c0xx_it.o(.text.HardFault_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32c031xx.o(RESET)
 </UL>
-<P><STRONG><a name="[97]"></a>MX_ADC1_Init</STRONG> (Thumb, 264 bytes, Stack size 32 bytes, adc.o(.text.MX_ADC1_Init))
+<P><STRONG><a name="[97]"></a>MX_ADC1_Init</STRONG> (Thumb, 144 bytes, Stack size 32 bytes, adc.o(.text.MX_ADC1_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 232<LI>Call Chain = MX_ADC1_Init &rArr; HAL_ADC_Init &rArr; HAL_ADC_MspInit &rArr; HAL_NVIC_SetPriority &rArr; __NVIC_SetPriority
 </UL>
 <BR>[Calls]<UL><LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_ADC_ConfigChannel
@@ -924,8 +924,8 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[29]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[99]"></a>MX_GPIO_Init</STRONG> (Thumb, 200 bytes, Stack size 80 bytes, gpio.o(.text.MX_GPIO_Init))
-<BR><BR>[Stack]<UL><LI>Max Depth = 124<LI>Call Chain = MX_GPIO_Init &rArr; HAL_GPIO_Init
+<P><STRONG><a name="[99]"></a>MX_GPIO_Init</STRONG> (Thumb, 220 bytes, Stack size 72 bytes, gpio.o(.text.MX_GPIO_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 116<LI>Call Chain = MX_GPIO_Init &rArr; HAL_GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
 <LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
@@ -1089,13 +1089,13 @@ Global Symbols
 <P><STRONG><a name="[a5]"></a>calculateCurrentIntegral</STRONG> (Thumb, 64 bytes, Stack size 24 bytes, sweep_freq.o(.text.calculateCurrentIntegral))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = calculateCurrentIntegral &rArr; __aeabi_fadd
 </UL>
-<BR>[Calls]<UL><LI><a href="#[33]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_i2f
-<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fadd
+<BR>[Calls]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fadd
+<LI><a href="#[33]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_i2f
 </UL>
 <BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sweepFreq
 </UL>
 
-<P><STRONG><a name="[29]"></a>main</STRONG> (Thumb, 184 bytes, Stack size 24 bytes, main.o(.text.main))
+<P><STRONG><a name="[29]"></a>main</STRONG> (Thumb, 176 bytes, Stack size 24 bytes, main.o(.text.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 264<LI>Call Chain = main &rArr; MX_TIM1_Init &rArr; HAL_TIM_PWM_Init &rArr; HAL_TIM_PWM_MspInit &rArr; HAL_NVIC_SetPriority &rArr; __NVIC_SetPriority
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_Start_IT
@@ -1125,8 +1125,8 @@ Global Symbols
 <LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Delay
 <LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_Start
 <LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;calculateCurrentIntegral
-<LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidiv
 <LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fcmple
+<LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidiv
 </UL>
 <BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;systemStateMachine
 </UL>

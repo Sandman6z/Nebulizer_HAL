@@ -3,7 +3,7 @@
 #include "adc.h"
 #include "tim.h"
 
-#define START_FREQ 125000
+#define START_FREQ 109000
 #define END_FREQ 130000
 #define STEP_FREQ 500
 

@@ -88,7 +88,6 @@ void Error_Handler(void);
 #define PluginCheck_Pin GPIO_PIN_7
 #define PluginCheck_GPIO_Port GPIOB
 
-#define SELECT_FREQ 120000
 /* USER CODE BEGIN Private defines */
 #define ENABLE_LED
 // #define ENABLE_BUTTON

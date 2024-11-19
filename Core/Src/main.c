@@ -113,8 +113,7 @@ int main(void)
     Error_Handler();
   }
 
-  // HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_3);
-  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
+  //HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
   HAL_TIM_Base_Start_IT(&htim14); // 启动TIM14的定时器中断
   HAL_TIM_Base_Start_IT(&htim16); // 启动TIM16的定时器中断
   HAL_TIM_Base_Start_IT(&htim17); // 启动TIM17的定时器中断
