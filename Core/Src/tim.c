@@ -471,22 +471,22 @@ void HAL_TIM_Base_MspDeInit(TIM_HandleTypeDef* tim_baseHandle)
 }
 
 /* USER CODE BEGIN 1 */
-void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
-{
-   if (htim == htim14)
-   {
-      I_cur /= cnt;
-      if (I_cur > I_max)
-      {
-        Imax = Icur;
-        BestFreq = Fcur;
-      }
-      I_sum = 0;
-      cnt = 0;
+//void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+//{
+//   if (htim == htim14)
+//   {
+//      I_cur /= cnt;
+//      if (I_cur > I_max)
+//      {
+//        Imax = Icur;
+//        BestFreq = Fcur;
+//      }
+//      I_sum = 0;
+//      cnt = 0;
 
 
-      // cnt++
-   }
-   
-}
+//      // cnt++
+//   }
+//   
+//}
 /* USER CODE END 1 */

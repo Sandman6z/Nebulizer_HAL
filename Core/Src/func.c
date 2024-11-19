@@ -3,6 +3,7 @@
 #include "adc.h"
 #include "gpio.h"
 #include "FSM.h"
+#include "main.h"
 
 // 启动扫频
 void startFrequency(void)

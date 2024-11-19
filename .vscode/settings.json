@@ -64,6 +64,7 @@
     "stdint.h": "c",
     "adc_current_filter.h": "c",
     "sweep_freq.h": "c",
-    "fsm.h": "c"
+    "fsm.h": "c",
+    "stm32c0xx_it.h": "c"
   }
 }

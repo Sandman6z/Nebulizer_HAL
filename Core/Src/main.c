@@ -39,7 +39,6 @@
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
 
-#define SELECT_FREQ 120000
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -53,8 +52,8 @@
 SystemState_t currentState = STATE_FREQ_SWEEP;
 ADCData_t adcData = {0};
 
-volatile uint16_t adcBuffer[ADC_BUFFER_SIZE];
-volatile float ADC_Value[ADC_BUFFER_SIZE]; // 声明数组来存储ADC采样结果
+uint16_t adcBuffer[ADC_BUFFER_SIZE];
+float ADC_Value[ADC_BUFFER_SIZE]; // 声明数组来存储ADC采样结果
 uint16_t filtered_adc_values[7];           // 过滤后的ADC
 uint16_t filtered_voltage[7];              // 过滤后的电压
 
@@ -125,7 +124,7 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  sweepFreq();
+//  sweepFreq();
   // 扫频完成后，设置TIM1为最佳频�?
   __HAL_TIM_SET_AUTORELOAD(&htim1, (SystemCoreClock / best_freq) - 1);
   __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_3, (SystemCoreClock / (2 * best_freq))); // 50% 占空�??

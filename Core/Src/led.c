@@ -6,68 +6,65 @@
 
 #ifdef ENABLE_LED
 
-// LED状态枚举
-typedef enum
-{
-    LED_OFF,  // 灭
-    LED_ON,   // 亮
-    LED_BLINK // 闪烁
-} LEDState_t;
+// 进程灯GPIO表
+LEDPin_t processLEDs[INDICATE_LED_Count] = {
+    {LED_Proc1_GPIO_Port, LED_Proc1_Pin},
+    {LED_Proc2_GPIO_Port, LED_Proc2_Pin},
+    {LED_Proc3_GPIO_Port, LED_Proc3_Pin},
+    {LED_Proc4_GPIO_Port, LED_Proc4_Pin},
+    {LED_Proc5_GPIO_Port, LED_Proc5_Pin}};
 
-// LED控制结构
-typedef struct
-{
-    GPIO_TypeDef *port; // GPIO端口
-    uint16_t pin;       // GPIO引脚
-    LEDState_t state;   // 当前状态
-} LED_t;
-
-LED_t leds[] = {
-    {LED_Proc1_GPIO_Port, LED_Proc1_Pin, LED_OFF},  // 进程灯1
-    {LED_Proc2_GPIO_Port, LED_Proc2_Pin, LED_OFF},  // 进程灯2
-    {LED_Proc3_GPIO_Port, LED_Proc3_Pin, LED_OFF},  // 进程灯3
-    {LED_Proc4_GPIO_Port, LED_Proc4_Pin, LED_OFF},  // 进程灯4
-    {LED_Proc5_GPIO_Port, LED_Proc5_Pin, LED_OFF},  // 进程灯5
-    {L_LED_GPIO_Port, L_LED_Pin, LED_OFF},          // 时间灯15min (L_LED)
-    {H_LED_GPIO_Port, H_LED_Pin, LED_OFF},          // 时间灯30min (H_LED)
-    {LED_Normal_GPIO_Port, LED_Normal_Pin, LED_ON}, // 状态灯（上电默认亮）
-    {LED_Alarm_GPIO_Port, LED_Alarm_Pin, LED_OFF}   // 警告灯
+// 时间灯GPIO表
+LEDPin_t timeLEDs[] = {
+    {L_LED_GPIO_Port, L_LED_Pin}, // 15分钟灯
+    {H_LED_GPIO_Port, H_LED_Pin}  // 30分钟灯
 };
 
-// 时间基准变量
-uint32_t lastBlinkTime = 0;    // 闪烁计时
-uint8_t currentProcessLed = 0; // 当前闪烁的进程灯索引
+// 指示灯GPIO表
+LEDPin_t indicateLEDs[] = {
+    {LED_Normal_GPIO_Port, LED_Normal_Pin}, // 状态灯
+    {LED_Alarm_GPIO_Port, LED_Alarm_Pin}    // 报警灯
+};
 
-// GPIO控制函数
-void LED_Control(LED_t *led, LEDState_t state)
+// 闪烁状态记录
+static uint8_t blinkState = 0; // 用于控制闪烁
+
+// 控制进程灯
+void ProcessLED_Ctl(ProcessLED_t led, LEDState_t state)
 {
-    switch (state)
+    if (led >= INDICATE_LED_Count)
+        return;
+    HAL_GPIO_WritePin(processLEDs[led].port, processLEDs[led].pin,
+                      (state == LED_ON) ? GPIO_PIN_SET : GPIO_PIN_RESET);
+    if (state == LED_BLINK)
     {
-    case LED_OFF:
-        HAL_GPIO_WritePin(led->port, led->pin, GPIO_PIN_RESET);
-        break;
-    case LED_ON:
-        HAL_GPIO_WritePin(led->port, led->pin, GPIO_PIN_SET);
-        break;
-    case LED_BLINK:
-        if ((HAL_GetTick() - lastBlinkTime) >= 500)
-        { // 1Hz频率
-            HAL_GPIO_TogglePin(led->port, led->pin);
-            lastBlinkTime = HAL_GetTick();
-        }
-        break;
+        // 这里可以添加到一个闪烁管理表中
     }
 }
 
-// // 全局计数器
-// uint16_t led_alarm_time_counter = 0; // LED_Alarm闪烁计数器
-// uint16_t h_led_time_counter = 0;     // H_LED呼吸灯计数器
-// uint16_t l_led_time_counter = 0;     // L_LED呼吸灯计数器
-// uint16_t proc_led_time_counter = 0;  // LED_Proc1~5顺序控制计数器
+// 控制时间灯
+void TimeLED_Ctl(TimeLED_t led, LEDState_t state)
+{
+    HAL_GPIO_WritePin(timeLEDs[led].port, timeLEDs[led].pin,
+                      (state == LED_ON) ? GPIO_PIN_SET : GPIO_PIN_RESET);
+}
 
-// // 当前LED索引
-// static uint8_t current_proc_led = 0;
-// static uint8_t proc_sequence_phase = 0; // 0: 依次熄灭, 1: 全亮, 2: 依次熄灭
+// 控制指示灯
+void IndicatorLED_Ctl(IndicatorLED_t led, LEDState_t state)
+{
+    HAL_GPIO_WritePin(indicateLEDs[led].port, indicateLEDs[led].pin,
+                      (state == LED_ON) ? GPIO_PIN_SET : GPIO_PIN_RESET);
+}
+
+// 闪烁管理器
+void LED_Blink_Handler(void)
+{
+    blinkState = !blinkState;
+    // 遍历所有需要闪烁的灯，按需开关
+    // 示例代码中没有具体实现闪烁管理表
+}
+
+
 
 // // 初始化LED GPIO
 // void LED_Init(void)
@@ -104,7 +101,7 @@ void LED_Control(LED_t *led, LEDState_t state)
 // }
 
 // // 控制LED_Proc1~5的顺序亮灭
-// void LED_ControlSequence(void)
+// void LED_CtlSequence(void)
 // {
 //     // 重置所有LED
 //     LED_SetState(LED_Proc1_GPIO_Port, LED_Proc1_Pin, LED_OFF);

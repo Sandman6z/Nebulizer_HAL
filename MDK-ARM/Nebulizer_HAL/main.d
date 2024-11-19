@@ -32,6 +32,6 @@ nebulizer_hal/main.o: ..\Core\Src\main.c ..\Core\Inc\main.h \
   ..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr_ex.h \
   ..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim.h \
   ..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim_ex.h \
-  ..\Core\Inc\adc.h ..\Core\Inc\dma.h ..\Core\Inc\tim.h \
-  ..\Core\Inc\gpio.h ..\Core\Inc\sweep_freq.h \
+  ..\Core\Inc\FSM.h ..\Core\Inc\adc.h ..\Core\Inc\dma.h \
+  ..\Core\Inc\tim.h ..\Core\Inc\gpio.h ..\Core\Inc\sweep_freq.h \
   ..\Core\Inc\median_average_filtering.h ..\Core\Inc\adc_calc.h

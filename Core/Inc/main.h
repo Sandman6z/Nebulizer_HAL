@@ -31,7 +31,7 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "FSM.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
@@ -88,6 +88,7 @@ void Error_Handler(void);
 #define PluginCheck_Pin GPIO_PIN_7
 #define PluginCheck_GPIO_Port GPIOB
 
+#define SELECT_FREQ 120000
 /* USER CODE BEGIN Private defines */
 #define ENABLE_LED
 // #define ENABLE_BUTTON
@@ -97,8 +98,8 @@ void Error_Handler(void);
 
 
   /* Exported variables --------------------------------------------------------*/
-extern volatile uint16_t adcBuffer[ADC_BUFFER_SIZE];
-extern volatile float ADC_Value[ADC_BUFFER_SIZE]; // ???????ADC????
+extern uint16_t adcBuffer[ADC_BUFFER_SIZE];
+extern float ADC_Value[ADC_BUFFER_SIZE]; // ???????ADC????
 extern ADCData_t adcData;
 
 extern SystemState_t currentState;

@@ -1,4 +1,3 @@
-#include "config.h"
 #include "button.h"
 #include <stdio.h>
 #include "main.h"

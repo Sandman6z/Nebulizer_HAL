@@ -7,6 +7,7 @@
 #define END_FREQ 130000
 #define STEP_FREQ 500
 
+
 uint32_t best_freq = START_FREQ;
 
 void adcValue(void)
@@ -18,38 +19,38 @@ void adcValue(void)
         switch (i % 7)
         {
         case 0:
-            ADCData.button = (ADC_Value[i] > 1.65f) ? 1 : 0;
+            adcData.button = (ADC_Value[i] > 1.65f) ? 1 : 0;
             break;
         case 1:
-            ADCData.MCU_Temperature = ADC_Value[i];
+            adcData.MCU_Temperature = ADC_Value[i];
             break;
         case 2:
-            ADCData.MCU_Vref = ADC_Value[i];
+            adcData.MCU_Vref = ADC_Value[i];
             break;
         case 3:
-            ADCData.MCU_VDD = ADC_Value[i];
+            adcData.MCU_VDD = ADC_Value[i];
             break;
         case 4:
-            ADCData.MCU_VSS = ADC_Value[i];
+            adcData.MCU_VSS = ADC_Value[i];
             break;
         case 5:
-            ADCData.current_MOS = ADC_Value[i];
+            adcData.current_MOS = ADC_Value[i];
             break;
         case 6:
-            ADCData.voltage_MOS = ADC_Value[i];
+            adcData.voltage_MOS = ADC_Value[i];
             break;
         }
     }
 }
 
-float calculateCurrentIntegral(uint16_t *adcBuffer, size_t N, float samplingFrequency)
+float calculateCurrentIntegral(uint16_t *adcBuffer, size_t N)
 {
     float integral = 0.0f;
-    float deltaT = 1.0f / samplingFrequency;
+
 
     for (size_t i = 0; i < N; i++)
     {
-        integral += adcBuffer[i] * deltaT;
+        integral += adcBuffer[i];
     }
 
     return integral;
@@ -70,7 +71,7 @@ void sweepFreq(void)
         HAL_Delay(1000); // 延迟，确保系统稳定
 
         // 计算当前频率下的积分值
-        float integral = calculateCurrentIntegral(adcBuffer, ADC_BUFFER_SIZE, samplingFrequency);
+        float integral = calculateCurrentIntegral(adcBuffer, ADC_BUFFER_SIZE);
 
         // 比较并更新最大积分值和最佳频率
         if (integral > max_integral)
