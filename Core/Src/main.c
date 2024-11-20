@@ -26,6 +26,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "sweep_freq.h"
+#include "func.h"
 #include "median_average_filtering.h"
 #include "adc_calc.h"
 /* USER CODE END Includes */
@@ -40,7 +41,7 @@
 #define ENABLE_BUTTON 0 // 1 启用功能, 0 禁用功能
 #define WEIGHTED_MOVING_AVERAGE_FILTER 0
 
-#define SELECT_FREQ 109000
+
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -117,6 +118,8 @@ int main(void)
 
   // HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_3);
   HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
+  HAL_TIM_IC_Start_IT(&htim3, TIM_CHANNEL_3);
+
   HAL_TIM_Base_Start_IT(&htim14); // 启动TIM14的定时器中断
   HAL_TIM_Base_Start_IT(&htim16); // 启动TIM16的定时器中断
   HAL_TIM_Base_Start_IT(&htim17); // 启动TIM17的定时器中断
@@ -127,9 +130,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
 //  sweepFreq();
   // 扫频完成后，设置TIM1为最佳频�?
-  __HAL_TIM_SET_AUTORELOAD(&htim1, (SystemCoreClock / SELECT_FREQ) - 1);
-  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_3, (SystemCoreClock / (1.5f * SELECT_FREQ))); // 50% 占空�??
-  HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_3);
+ 
 
   while (1)
   {
