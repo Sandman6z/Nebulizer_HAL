@@ -116,7 +116,6 @@ int main(void)
     Error_Handler();
   }
 
-  // HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_3);
   HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
   HAL_TIM_IC_Start_IT(&htim3, TIM_CHANNEL_3);
 
@@ -129,7 +128,7 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 //  sweepFreq();
-  // 扫频完成后，设置TIM1为最佳频�?
+  // 扫频完成后，设置TIM1为最佳频�?
  
 
   while (1)

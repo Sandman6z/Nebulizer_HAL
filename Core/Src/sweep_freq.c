@@ -8,7 +8,7 @@
 #define END_FREQ 138000
 #define STEP_FREQ 500 
 
-uint32_t best_freq = START_FREQ;
+volatile best_freq = START_FREQ;
 
 void adcValue(void)
 {
