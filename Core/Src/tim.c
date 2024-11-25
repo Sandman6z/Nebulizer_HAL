@@ -1,21 +1,21 @@
 /* USER CODE BEGIN Header */
 /**
-  ******************************************************************************
-  * @file    tim.c
-  * @brief   This file provides code for the configuration
-  *          of the TIM instances.
-  ******************************************************************************
-  * @attention
-  *
-  * Copyright (c) 2024 STMicroelectronics.
-  * All rights reserved.
-  *
-  * This software is licensed under terms that can be found in the LICENSE file
-  * in the root directory of this software component.
-  * If no LICENSE file comes with this software, it is provided AS-IS.
-  *
-  ******************************************************************************
-  */
+ ******************************************************************************
+ * @file    tim.c
+ * @brief   This file provides code for the configuration
+ *          of the TIM instances.
+ ******************************************************************************
+ * @attention
+ *
+ * Copyright (c) 2024 STMicroelectronics.
+ * All rights reserved.
+ *
+ * This software is licensed under terms that can be found in the LICENSE file
+ * in the root directory of this software component.
+ * If no LICENSE file comes with this software, it is provided AS-IS.
+ *
+ ******************************************************************************
+ */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "tim.h"
@@ -25,8 +25,8 @@
 #include "func.h"
 
 volatile uint32_t input_captures[2] = {0}; // ???????
-volatile uint32_t capture_index = 0;      // ????
-volatile uint32_t signal_period = 0;      // ???????
+volatile uint32_t capture_index = 0;       // ????
+volatile uint32_t signal_period = 0;       // ???????
 /* USER CODE END 0 */
 
 TIM_HandleTypeDef htim1;
@@ -43,9 +43,9 @@ void MX_TIM1_Init(void)
 
   /* USER CODE END TIM1_Init 0 */
 
-  TIM_MasterConfigTypeDef sMasterConfig = {0};
-  TIM_OC_InitTypeDef sConfigOC = {0};
-  TIM_BreakDeadTimeConfigTypeDef sBreakDeadTimeConfig = {0};
+  TIM_MasterConfigTypeDef sMasterConfig = {0};               // 存储两个捕获值
+  TIM_OC_InitTypeDef sConfigOC = {0};                        // 捕获索引
+  TIM_BreakDeadTimeConfigTypeDef sBreakDeadTimeConfig = {0}; // 信号周期计数值
 
   /* USER CODE BEGIN TIM1_Init 1 */
 
@@ -100,7 +100,6 @@ void MX_TIM1_Init(void)
 
   /* USER CODE END TIM1_Init 2 */
   HAL_TIM_MspPostInit(&htim1);
-
 }
 /* TIM3 init function */
 void MX_TIM3_Init(void)
@@ -117,9 +116,9 @@ void MX_TIM3_Init(void)
 
   /* USER CODE END TIM3_Init 1 */
   htim3.Instance = TIM3;
-  htim3.Init.Prescaler = 1200-1;
+  htim3.Init.Prescaler = 1200 - 1;
   htim3.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim3.Init.Period = 12000-1;
+  htim3.Init.Period = 12000 - 1;
   htim3.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim3.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_IC_Init(&htim3) != HAL_OK)
@@ -143,7 +142,6 @@ void MX_TIM3_Init(void)
   /* USER CODE BEGIN TIM3_Init 2 */
 
   /* USER CODE END TIM3_Init 2 */
-
 }
 /* TIM14 init function */
 void MX_TIM14_Init(void)
@@ -157,9 +155,9 @@ void MX_TIM14_Init(void)
 
   /* USER CODE END TIM14_Init 1 */
   htim14.Instance = TIM14;
-  htim14.Init.Prescaler = 8000-1;
+  htim14.Init.Prescaler = 8000 - 1;
   htim14.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim14.Init.Period = 100-1;
+  htim14.Init.Period = 100 - 1;
   htim14.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim14.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim14) != HAL_OK)
@@ -169,7 +167,6 @@ void MX_TIM14_Init(void)
   /* USER CODE BEGIN TIM14_Init 2 */
 
   /* USER CODE END TIM14_Init 2 */
-
 }
 /* TIM16 init function */
 void MX_TIM16_Init(void)
@@ -183,9 +180,9 @@ void MX_TIM16_Init(void)
 
   /* USER CODE END TIM16_Init 1 */
   htim16.Instance = TIM16;
-  htim16.Init.Prescaler = 8000-1;
+  htim16.Init.Prescaler = 8000 - 1;
   htim16.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim16.Init.Period = 100-1;
+  htim16.Init.Period = 100 - 1;
   htim16.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim16.Init.RepetitionCounter = 0;
   htim16.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
@@ -196,7 +193,6 @@ void MX_TIM16_Init(void)
   /* USER CODE BEGIN TIM16_Init 2 */
 
   /* USER CODE END TIM16_Init 2 */
-
 }
 /* TIM17 init function */
 void MX_TIM17_Init(void)
@@ -210,9 +206,9 @@ void MX_TIM17_Init(void)
 
   /* USER CODE END TIM17_Init 1 */
   htim17.Instance = TIM17;
-  htim17.Init.Prescaler = 8000-1;
+  htim17.Init.Prescaler = 8000 - 1;
   htim17.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim17.Init.Period = 30-1;
+  htim17.Init.Period = 30 - 1;
   htim17.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim17.Init.RepetitionCounter = 0;
   htim17.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
@@ -223,17 +219,16 @@ void MX_TIM17_Init(void)
   /* USER CODE BEGIN TIM17_Init 2 */
 
   /* USER CODE END TIM17_Init 2 */
-
 }
 
-void HAL_TIM_PWM_MspInit(TIM_HandleTypeDef* tim_pwmHandle)
+void HAL_TIM_PWM_MspInit(TIM_HandleTypeDef *tim_pwmHandle)
 {
 
-  if(tim_pwmHandle->Instance==TIM1)
+  if (tim_pwmHandle->Instance == TIM1)
   {
-  /* USER CODE BEGIN TIM1_MspInit 0 */
+    /* USER CODE BEGIN TIM1_MspInit 0 */
 
-  /* USER CODE END TIM1_MspInit 0 */
+    /* USER CODE END TIM1_MspInit 0 */
     /* TIM1 clock enable */
     __HAL_RCC_TIM1_CLK_ENABLE();
 
@@ -242,21 +237,21 @@ void HAL_TIM_PWM_MspInit(TIM_HandleTypeDef* tim_pwmHandle)
     HAL_NVIC_EnableIRQ(TIM1_BRK_UP_TRG_COM_IRQn);
     HAL_NVIC_SetPriority(TIM1_CC_IRQn, 0, 0);
     HAL_NVIC_EnableIRQ(TIM1_CC_IRQn);
-  /* USER CODE BEGIN TIM1_MspInit 1 */
+    /* USER CODE BEGIN TIM1_MspInit 1 */
 
-  /* USER CODE END TIM1_MspInit 1 */
+    /* USER CODE END TIM1_MspInit 1 */
   }
 }
 
-void HAL_TIM_IC_MspInit(TIM_HandleTypeDef* tim_icHandle)
+void HAL_TIM_IC_MspInit(TIM_HandleTypeDef *tim_icHandle)
 {
 
   GPIO_InitTypeDef GPIO_InitStruct = {0};
-  if(tim_icHandle->Instance==TIM3)
+  if (tim_icHandle->Instance == TIM3)
   {
-  /* USER CODE BEGIN TIM3_MspInit 0 */
+    /* USER CODE BEGIN TIM3_MspInit 0 */
 
-  /* USER CODE END TIM3_MspInit 0 */
+    /* USER CODE END TIM3_MspInit 0 */
     /* TIM3 clock enable */
     __HAL_RCC_TIM3_CLK_ENABLE();
 
@@ -283,70 +278,70 @@ void HAL_TIM_IC_MspInit(TIM_HandleTypeDef* tim_icHandle)
     /* TIM3 interrupt Init */
     HAL_NVIC_SetPriority(TIM3_IRQn, 0, 0);
     HAL_NVIC_EnableIRQ(TIM3_IRQn);
-  /* USER CODE BEGIN TIM3_MspInit 1 */
+    /* USER CODE BEGIN TIM3_MspInit 1 */
 
-  /* USER CODE END TIM3_MspInit 1 */
+    /* USER CODE END TIM3_MspInit 1 */
   }
 }
 
-void HAL_TIM_Base_MspInit(TIM_HandleTypeDef* tim_baseHandle)
+void HAL_TIM_Base_MspInit(TIM_HandleTypeDef *tim_baseHandle)
 {
 
-  if(tim_baseHandle->Instance==TIM14)
+  if (tim_baseHandle->Instance == TIM14)
   {
-  /* USER CODE BEGIN TIM14_MspInit 0 */
+    /* USER CODE BEGIN TIM14_MspInit 0 */
 
-  /* USER CODE END TIM14_MspInit 0 */
+    /* USER CODE END TIM14_MspInit 0 */
     /* TIM14 clock enable */
     __HAL_RCC_TIM14_CLK_ENABLE();
 
     /* TIM14 interrupt Init */
     HAL_NVIC_SetPriority(TIM14_IRQn, 0, 0);
     HAL_NVIC_EnableIRQ(TIM14_IRQn);
-  /* USER CODE BEGIN TIM14_MspInit 1 */
+    /* USER CODE BEGIN TIM14_MspInit 1 */
 
-  /* USER CODE END TIM14_MspInit 1 */
+    /* USER CODE END TIM14_MspInit 1 */
   }
-  else if(tim_baseHandle->Instance==TIM16)
+  else if (tim_baseHandle->Instance == TIM16)
   {
-  /* USER CODE BEGIN TIM16_MspInit 0 */
+    /* USER CODE BEGIN TIM16_MspInit 0 */
 
-  /* USER CODE END TIM16_MspInit 0 */
+    /* USER CODE END TIM16_MspInit 0 */
     /* TIM16 clock enable */
     __HAL_RCC_TIM16_CLK_ENABLE();
 
     /* TIM16 interrupt Init */
     HAL_NVIC_SetPriority(TIM16_IRQn, 0, 0);
     HAL_NVIC_EnableIRQ(TIM16_IRQn);
-  /* USER CODE BEGIN TIM16_MspInit 1 */
+    /* USER CODE BEGIN TIM16_MspInit 1 */
 
-  /* USER CODE END TIM16_MspInit 1 */
+    /* USER CODE END TIM16_MspInit 1 */
   }
-  else if(tim_baseHandle->Instance==TIM17)
+  else if (tim_baseHandle->Instance == TIM17)
   {
-  /* USER CODE BEGIN TIM17_MspInit 0 */
+    /* USER CODE BEGIN TIM17_MspInit 0 */
 
-  /* USER CODE END TIM17_MspInit 0 */
+    /* USER CODE END TIM17_MspInit 0 */
     /* TIM17 clock enable */
     __HAL_RCC_TIM17_CLK_ENABLE();
 
     /* TIM17 interrupt Init */
     HAL_NVIC_SetPriority(TIM17_IRQn, 0, 0);
     HAL_NVIC_EnableIRQ(TIM17_IRQn);
-  /* USER CODE BEGIN TIM17_MspInit 1 */
+    /* USER CODE BEGIN TIM17_MspInit 1 */
 
-  /* USER CODE END TIM17_MspInit 1 */
+    /* USER CODE END TIM17_MspInit 1 */
   }
 }
-void HAL_TIM_MspPostInit(TIM_HandleTypeDef* timHandle)
+void HAL_TIM_MspPostInit(TIM_HandleTypeDef *timHandle)
 {
 
   GPIO_InitTypeDef GPIO_InitStruct = {0};
-  if(timHandle->Instance==TIM1)
+  if (timHandle->Instance == TIM1)
   {
-  /* USER CODE BEGIN TIM1_MspPostInit 0 */
+    /* USER CODE BEGIN TIM1_MspPostInit 0 */
 
-  /* USER CODE END TIM1_MspPostInit 0 */
+    /* USER CODE END TIM1_MspPostInit 0 */
 
     __HAL_RCC_GPIOA_CLK_ENABLE();
     /**TIM1 GPIO Configuration
@@ -359,41 +354,40 @@ void HAL_TIM_MspPostInit(TIM_HandleTypeDef* timHandle)
     GPIO_InitStruct.Alternate = GPIO_AF5_TIM1;
     HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-  /* USER CODE BEGIN TIM1_MspPostInit 1 */
+    /* USER CODE BEGIN TIM1_MspPostInit 1 */
 
-  /* USER CODE END TIM1_MspPostInit 1 */
+    /* USER CODE END TIM1_MspPostInit 1 */
   }
-
 }
 
-void HAL_TIM_PWM_MspDeInit(TIM_HandleTypeDef* tim_pwmHandle)
+void HAL_TIM_PWM_MspDeInit(TIM_HandleTypeDef *tim_pwmHandle)
 {
 
-  if(tim_pwmHandle->Instance==TIM1)
+  if (tim_pwmHandle->Instance == TIM1)
   {
-  /* USER CODE BEGIN TIM1_MspDeInit 0 */
+    /* USER CODE BEGIN TIM1_MspDeInit 0 */
 
-  /* USER CODE END TIM1_MspDeInit 0 */
+    /* USER CODE END TIM1_MspDeInit 0 */
     /* Peripheral clock disable */
     __HAL_RCC_TIM1_CLK_DISABLE();
 
     /* TIM1 interrupt Deinit */
     HAL_NVIC_DisableIRQ(TIM1_BRK_UP_TRG_COM_IRQn);
     HAL_NVIC_DisableIRQ(TIM1_CC_IRQn);
-  /* USER CODE BEGIN TIM1_MspDeInit 1 */
+    /* USER CODE BEGIN TIM1_MspDeInit 1 */
 
-  /* USER CODE END TIM1_MspDeInit 1 */
+    /* USER CODE END TIM1_MspDeInit 1 */
   }
 }
 
-void HAL_TIM_IC_MspDeInit(TIM_HandleTypeDef* tim_icHandle)
+void HAL_TIM_IC_MspDeInit(TIM_HandleTypeDef *tim_icHandle)
 {
 
-  if(tim_icHandle->Instance==TIM3)
+  if (tim_icHandle->Instance == TIM3)
   {
-  /* USER CODE BEGIN TIM3_MspDeInit 0 */
+    /* USER CODE BEGIN TIM3_MspDeInit 0 */
 
-  /* USER CODE END TIM3_MspDeInit 0 */
+    /* USER CODE END TIM3_MspDeInit 0 */
     /* Peripheral clock disable */
     __HAL_RCC_TIM3_CLK_DISABLE();
 
@@ -407,94 +401,108 @@ void HAL_TIM_IC_MspDeInit(TIM_HandleTypeDef* tim_icHandle)
 
     /* TIM3 interrupt Deinit */
     HAL_NVIC_DisableIRQ(TIM3_IRQn);
-  /* USER CODE BEGIN TIM3_MspDeInit 1 */
+    /* USER CODE BEGIN TIM3_MspDeInit 1 */
 
-  /* USER CODE END TIM3_MspDeInit 1 */
+    /* USER CODE END TIM3_MspDeInit 1 */
   }
 }
 
-void HAL_TIM_Base_MspDeInit(TIM_HandleTypeDef* tim_baseHandle)
+void HAL_TIM_Base_MspDeInit(TIM_HandleTypeDef *tim_baseHandle)
 {
 
-  if(tim_baseHandle->Instance==TIM14)
+  if (tim_baseHandle->Instance == TIM14)
   {
-  /* USER CODE BEGIN TIM14_MspDeInit 0 */
+    /* USER CODE BEGIN TIM14_MspDeInit 0 */
 
-  /* USER CODE END TIM14_MspDeInit 0 */
+    /* USER CODE END TIM14_MspDeInit 0 */
     /* Peripheral clock disable */
     __HAL_RCC_TIM14_CLK_DISABLE();
 
     /* TIM14 interrupt Deinit */
     HAL_NVIC_DisableIRQ(TIM14_IRQn);
-  /* USER CODE BEGIN TIM14_MspDeInit 1 */
+    /* USER CODE BEGIN TIM14_MspDeInit 1 */
 
-  /* USER CODE END TIM14_MspDeInit 1 */
+    /* USER CODE END TIM14_MspDeInit 1 */
   }
-  else if(tim_baseHandle->Instance==TIM16)
+  else if (tim_baseHandle->Instance == TIM16)
   {
-  /* USER CODE BEGIN TIM16_MspDeInit 0 */
+    /* USER CODE BEGIN TIM16_MspDeInit 0 */
 
-  /* USER CODE END TIM16_MspDeInit 0 */
+    /* USER CODE END TIM16_MspDeInit 0 */
     /* Peripheral clock disable */
     __HAL_RCC_TIM16_CLK_DISABLE();
 
     /* TIM16 interrupt Deinit */
     HAL_NVIC_DisableIRQ(TIM16_IRQn);
-  /* USER CODE BEGIN TIM16_MspDeInit 1 */
+    /* USER CODE BEGIN TIM16_MspDeInit 1 */
 
-  /* USER CODE END TIM16_MspDeInit 1 */
+    /* USER CODE END TIM16_MspDeInit 1 */
   }
-  else if(tim_baseHandle->Instance==TIM17)
+  else if (tim_baseHandle->Instance == TIM17)
   {
-  /* USER CODE BEGIN TIM17_MspDeInit 0 */
+    /* USER CODE BEGIN TIM17_MspDeInit 0 */
 
-  /* USER CODE END TIM17_MspDeInit 0 */
+    /* USER CODE END TIM17_MspDeInit 0 */
     /* Peripheral clock disable */
     __HAL_RCC_TIM17_CLK_DISABLE();
 
     /* TIM17 interrupt Deinit */
     HAL_NVIC_DisableIRQ(TIM17_IRQn);
-  /* USER CODE BEGIN TIM17_MspDeInit 1 */
+    /* USER CODE BEGIN TIM17_MspDeInit 1 */
 
-  /* USER CODE END TIM17_MspDeInit 1 */
+    /* USER CODE END TIM17_MspDeInit 1 */
   }
 }
 
 /* USER CODE BEGIN 1 */
 void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim)
 {
-    if (htim->Instance == TIM3 && htim->Channel == HAL_TIM_ACTIVE_CHANNEL_3)
+  if (htim->Instance == TIM3 && htim->Channel == HAL_TIM_ACTIVE_CHANNEL_3)
+  {
+    // 读取当前捕获值
+    input_captures[capture_index] = HAL_TIM_ReadCapturedValue(htim, TIM_CHANNEL_3);
+
+    // ????
+    if (capture_index == 1) // 完成两次捕获
     {
-        // ???????
-        input_captures[capture_index] = HAL_TIM_ReadCapturedValue(htim, TIM_CHANNEL_3);
+      if (input_captures[1] >= input_captures[0])
+      {
+        signal_period = input_captures[1] - input_captures[0];
+      }
+      else
+      {
+        signal_period = (htim->Init.Period + 1) + input_captures[1] - input_captures[0];
+      }
 
-        // ????
-        if (capture_index == 1) // ??????
-        {
-            if (input_captures[1] >= input_captures[0])
-            {
-                signal_period = input_captures[1] - input_captures[0];
-            }
-            else
-            {
-                signal_period = (htim->Init.Period + 1) + input_captures[1] - input_captures[0];
-            }
+      // 重置捕获索引
+      capture_index = 0;
 
-            // ??????
-            capture_index = 0;
+      // 在此处理信号周期（例如判断是否为 8Hz）
+      float frequency = 1.0f / (signal_period * (1.0f / 40000)); // 计算频率
 
-            // ????????(??????? 8Hz)
-            float frequency = 1.0f / (signal_period * (1.0f / 40000)); // ????
-            if (frequency > 7.5 && frequency < 8.5)
-            {
-                startNeb();
-            }
-        }
-        else
-        {
-            capture_index++;
-        }
+      // 简单判断频率并调用对应功能
+      if (frequency > 3.5 && frequency < 4.5)
+      {
+        Handle_4Hz_Signal();
+      }
+      else if (frequency > 7.5 && frequency < 8.5)
+      {
+        Handle_8Hz_Signal();
+      }
+      else if (frequency > 15.5 && frequency < 16.5)
+      {
+        Handle_16Hz_Signal();
+      }
+      else
+      {
+        Handle_Unknown_Signal();
+      }
     }
+    else
+    {
+      capture_index++;
+    }
+  }
 }
 
 /* USER CODE END 1 */
