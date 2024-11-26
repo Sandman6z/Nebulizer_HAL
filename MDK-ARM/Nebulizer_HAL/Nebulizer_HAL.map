@@ -2369,10 +2369,9 @@ Image Symbol Table
     __arm_cp.14_2                            0x08000960   Number         4  stm32c0xx_hal_adc.o(.text.ADC_Enable)
     __arm_cp.14_3                            0x08000964   Number         4  stm32c0xx_hal_adc.o(.text.ADC_Enable)
     [Anonymous Symbol]                       0x08000968   Section        0  func.o(.text.CheckSignalTimeout)
-    __arm_cp.1_0                             0x080009c0   Number         4  func.o(.text.CheckSignalTimeout)
-    __arm_cp.1_1                             0x080009c4   Number         4  func.o(.text.CheckSignalTimeout)
-    __arm_cp.1_2                             0x080009c8   Number         4  func.o(.text.CheckSignalTimeout)
-    __arm_cp.1_3                             0x080009cc   Number         4  func.o(.text.CheckSignalTimeout)
+    __arm_cp.1_0                             0x080009c4   Number         4  func.o(.text.CheckSignalTimeout)
+    __arm_cp.1_1                             0x080009c8   Number         4  func.o(.text.CheckSignalTimeout)
+    __arm_cp.1_2                             0x080009cc   Number         4  func.o(.text.CheckSignalTimeout)
     [Anonymous Symbol]                       0x080009d0   Section        0  stm32c0xx_it.o(.text.DMA1_Channel1_IRQHandler)
     __arm_cp.5_0                             0x080009dc   Number         4  stm32c0xx_it.o(.text.DMA1_Channel1_IRQHandler)
     DMA_CalcDMAMUXChannelBaseAndMask         0x080009e1   Thumb Code    60  stm32c0xx_hal_dma.o(.text.DMA_CalcDMAMUXChannelBaseAndMask)
@@ -2858,7 +2857,7 @@ Image Symbol Table
     __semihosting_library_function           0x08000757   Thumb Code     0  indicate_semi.o(.text)
     ADC1_IRQHandler                          0x08000759   Thumb Code    12  stm32c0xx_it.o(.text.ADC1_IRQHandler)
     ADC_Enable                               0x08000869   Thumb Code   240  stm32c0xx_hal_adc.o(.text.ADC_Enable)
-    CheckSignalTimeout                       0x08000969   Thumb Code    88  func.o(.text.CheckSignalTimeout)
+    CheckSignalTimeout                       0x08000969   Thumb Code    92  func.o(.text.CheckSignalTimeout)
     DMA1_Channel1_IRQHandler                 0x080009d1   Thumb Code    12  stm32c0xx_it.o(.text.DMA1_Channel1_IRQHandler)
     Error_Handler                            0x08000ad5   Thumb Code     6  main.o(.text.Error_Handler)
     HAL_ADCEx_ChannelConfigReadyCallback     0x08000adb   Thumb Code     8  stm32c0xx_hal_adc_ex.o(.text.HAL_ADCEx_ChannelConfigReadyCallback)
@@ -3254,7 +3253,7 @@ Image component sizes
 
        468         40          0          0        192       6346   adc.o
         52          4          0          0          0       1799   dma.o
-       242         36          0          0          1       1209   func.o
+       242         32          0          0          1       1209   func.o
        232         20          0          0          0       1978   gpio.o
        250         24          0          0        156       2246   main.o
         56         26        192          0       1536        616   startup_stm32c031xx.o
@@ -3274,7 +3273,7 @@ Image component sizes
       1440        116          0          0        384       9610   tim.o
 
     ----------------------------------------------------------------------
-     18224        938        288         12       2284     146729   Object Totals
+     18224        934        288         12       2284     146729   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         24          0          0          3         11          0   (incl. Padding)
 
@@ -3339,9 +3338,9 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     20280        998        352         12       2380     147377   Grand Totals
-     20280        998        352         12       2380     147377   ELF Image Totals
-     20280        998        352         12          0          0   ROM Totals
+     20280        994        352         12       2380     147377   Grand Totals
+     20280        994        352         12       2380     147377   ELF Image Totals
+     20280        994        352         12          0          0   ROM Totals
 
 ==============================================================================
 

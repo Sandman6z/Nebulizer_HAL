@@ -3,7 +3,7 @@
 #include "tim.h"
 
 
-#define SIGNAL_TIMEOUT_MS 5500 // 超时阈值（单位：毫秒）
+#define SIGNAL_TIMEOUT_MS 1000 // 超时阈值（单位：毫秒）
 
     volatile uint8_t is_signal_lost = 0; // 标志位：信号丢失状态
 
