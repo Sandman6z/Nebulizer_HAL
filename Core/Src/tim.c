@@ -19,6 +19,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "tim.h"
+#include "main.h"
 
 /* USER CODE BEGIN 0 */
 #include "sweep_freq.h"
@@ -26,7 +27,7 @@
 
 volatile uint32_t input_captures[2] = {0}; // ???????
 volatile uint32_t capture_index = 0;       // ????
-volatile uint32_t signal_period = 0;       // ???????
+
 /* USER CODE END 0 */
 
 TIM_HandleTypeDef htim1;
@@ -460,25 +461,24 @@ void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim)
   if (htim->Instance == TIM3 && htim->Channel == HAL_TIM_ACTIVE_CHANNEL_3)
   {
     // 读取当前捕获值
-    input_captures[capture_index] = HAL_TIM_ReadCapturedValue(htim, TIM_CHANNEL_3);
+    uint32_t current_capture = HAL_TIM_ReadCapturedValue(htim, TIM_CHANNEL_3);
+    static uint32_t last_capture = 0;
+    uint32_t elapsed_time = 0;
 
-    // ????
-    if (capture_index == 1) // 完成两次捕获
+    // 更新捕获时间
+    if (current_capture >= last_capture)
     {
-      if (input_captures[1] >= input_captures[0])
-      {
-        signal_period = input_captures[1] - input_captures[0];
-      }
-      else
-      {
-        signal_period = (htim->Init.Period + 1) + input_captures[1] - input_captures[0];
-      }
+      elapsed_time = current_capture - last_capture;
+    }
+    else
+    {
+      elapsed_time = (htim->Init.Period - last_capture + current_capture + 1);
+    }
 
-      // 重置捕获索引
-      capture_index = 0;
-
-      // 在此处理信号周期（例如判断是否为 8Hz）
-      float frequency = 1.0f / (signal_period * (1.0f / 40000)); // 计算频率
+// 判断频率并处理信号
+    if (elapsed_time != 0)
+    {
+      float frequency = 1.0f / (elapsed_time * (1.0f / 40000)); // 计算频率
 
       // 简单判断频率并调用对应功能
       if (frequency > 3.5 && frequency < 4.5)
@@ -498,11 +498,11 @@ void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim)
         Handle_Unknown_Signal();
       }
     }
-    else
-    {
-      capture_index++;
-    }
+     last_interrupt_tick = HAL_GetTick(); // 更新中断时间戳
+        is_signal_lost = 0;                  // 信号已恢复
+        last_capture = current_capture; // 更新捕获时间
   }
+
 }
 
 /* USER CODE END 1 */
