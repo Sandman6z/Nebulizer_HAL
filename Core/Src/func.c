@@ -35,4 +35,5 @@ void Handle_Unknown_Signal(void)
 {
   // printf("Unknown signal frequency: %.2f Hz\n", frequency);
   HAL_TIM_PWM_Stop(&htim1, TIM_CHANNEL_3);
+    //HAL_GPIO_WritePin(GPIOC, GPIO_PIN_15, GPIO_PIN_SET);
 }
