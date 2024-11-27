@@ -2975,8 +2975,8 @@ Image Symbol Table
     htim17                                   0x200002b4   Data          76  tim.o(.bss.htim17)
     htim3                                    0x20000300   Data          76  tim.o(.bss.htim3)
     is_signal_lost                           0x2000034c   Data           1  func.o(.bss.is_signal_lost)
-    last_interrupt_tick                      0x2000034e   Data           2  main.o(.bss.last_interrupt_tick)
-    uwTick                                   0x20000350   Data           4  stm32c0xx_hal.o(.bss.uwTick)
+    last_interrupt_tick                      0x20000350   Data           4  main.o(.bss.last_interrupt_tick)
+    uwTick                                   0x20000354   Data           4  stm32c0xx_hal.o(.bss.uwTick)
 
 
 
@@ -3236,10 +3236,9 @@ Memory Map of the image
     0x200002b4        -       0x0000004c   Zero   RW          175    .bss.htim17         tim.o
     0x20000300        -       0x0000004c   Zero   RW          172    .bss.htim3          tim.o
     0x2000034c        -       0x00000001   Zero   RW           84    .bss.is_signal_lost  func.o
-    0x2000034d   0x080050a4   0x00000001   PAD
-    0x2000034e        -       0x00000002   Zero   RW           99    .bss.last_interrupt_tick  main.o
-    0x20000350        -       0x00000004   Zero   RW          285    .bss.uwTick         stm32c0xx_hal.o
-    0x20000354   0x080050a4   0x00000004   PAD
+    0x2000034d   0x080050a4   0x00000003   PAD
+    0x20000350        -       0x00000004   Zero   RW           99    .bss.last_interrupt_tick  main.o
+    0x20000354        -       0x00000004   Zero   RW          285    .bss.uwTick         stm32c0xx_hal.o
     0x20000358        -       0x00000200   Zero   RW            2    HEAP                startup_stm32c031xx.o
     0x20000558        -       0x00000400   Zero   RW            1    STACK               startup_stm32c031xx.o
 
@@ -3255,7 +3254,7 @@ Image component sizes
         52          4          0          0          0       1799   dma.o
        242         32          0          0          1       1209   func.o
        232         20          0          0          0       1978   gpio.o
-       250         24          0          0        156       2246   main.o
+       250         24          0          0        158       2246   main.o
         56         26        192          0       1536        616   startup_stm32c031xx.o
        204         16          0          5          4       6247   stm32c0xx_hal.o
       4028        100          0          0          0      17495   stm32c0xx_hal_adc.o
@@ -3275,7 +3274,7 @@ Image component sizes
     ----------------------------------------------------------------------
      18224        934        288         12       2284     146729   Object Totals
          0          0         32          0          0          0   (incl. Generated)
-        24          0          0          3         11          0   (incl. Padding)
+        24          0          0          3          9          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
