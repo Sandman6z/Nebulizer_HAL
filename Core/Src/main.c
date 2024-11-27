@@ -41,7 +41,6 @@
 #define ENABLE_BUTTON 0 // 1 启用功能, 0 禁用功能
 #define WEIGHTED_MOVING_AVERAGE_FILTER 0
 
-
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -58,8 +57,9 @@ volatile uint16_t adcBuffer[ADC_BUFFER_SIZE];
 volatile float ADC_Value[ADC_BUFFER_SIZE]; // 声明数组来存储ADC采样结果
 uint16_t filtered_adc_values[7];           // 过滤后的ADC
 uint16_t filtered_voltage[7];              // 过滤后的电压
-uint16_t last_interrupt_tick = 0;
-
+uint32_t last_interrupt_tick = 0;
+uint32_t pulse_cnt = 0; // 在TIM3CH3中断中计数，通过main查询不同的�?�，做不同的操作
+uint32_t starttime, endtime = 0;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -70,8 +70,6 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
-
 
 /* USER CODE END 0 */
 
@@ -112,8 +110,7 @@ int main(void)
   MX_TIM16_Init();
   MX_TIM17_Init();
   /* USER CODE BEGIN 2 */
- 
-  
+
   if (HAL_ADC_Start_DMA(&hadc1, (uint32_t *)adcBuffer, ADC_BUFFER_SIZE) != HAL_OK)
   {
     Error_Handler();
@@ -130,16 +127,84 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-//  sweepFreq();
-  // 扫频完成后，设置TIM1为最佳频�?
- 
+  //  sweepFreq();
+  NebState currentState = NEB_STATE_IDLE;
+  // 扫频完成后，设置TIM1为最佳频�??
 
   while (1)
   {
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
- CheckSignalTimeout();
+    uint16_t pr;
+    CheckSignalTimeout();
+
+    switch (currentState)
+    {
+    case NEB_STATE_IDLE:
+      // 停止雾化逻辑
+      Handle_Unknown_Signal();
+      if (pulse_cnt == 1)
+      {
+        starttime = HAL_GetTick();
+      }
+      else if (pulse_cnt == 10)
+      {
+        endtime = HAL_GetTick();
+        // 计算周期
+        pr = endtime - starttime;
+        if (pr > 900 && pr < 1100)
+        {
+          //8hz喷雾设置
+          
+          //切换状�??
+          currentState = NEB_STATE_NEB;
+        }
+        else if (pr > 1900 && pr < 2100)
+        {
+          //4hz喷雾设置
+
+          //切换状�??
+          currentState = NEB_STATE_NEB;
+        }
+        else
+        {
+          //不正常情�?
+
+        }
+                //清除cnt
+        pulse_cnt =0;
+      }
+      break;
+
+    case NEB_STATE_NEB:
+      //执行喷雾
+      startNeb();
+      //持续�?测周期，并判断停止或通讯错误
+      if (pulse_cnt == 1)
+      {
+        starttime = HAL_GetTick();
+      }
+      else if (pulse_cnt == 10)
+      {
+        endtime = HAL_GetTick();
+        //清除cnt
+        pulse_cnt =0;
+        // 计算周期
+        pr = endtime - starttime;
+        if (pr < 900 && pr > 2100)
+        {
+          //停zhi
+          Handle_Unknown_Signal();
+          //切换状�??
+          currentState = NEB_STATE_IDLE;
+        }
+      }
+      break;
+    default:
+      currentState = NEB_STATE_IDLE;
+      break;
+    }
   }
   /* USER CODE END 3 */
 }

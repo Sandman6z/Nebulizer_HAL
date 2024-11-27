@@ -4,7 +4,7 @@
 #include "stdint.h"
 
 extern volatile uint8_t is_signal_lost;
-    
+
 void startNeb(void);
 void CheckSignalTimeout(void);
 

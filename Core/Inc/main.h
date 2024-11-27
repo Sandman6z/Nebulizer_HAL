@@ -93,11 +93,17 @@ void Error_Handler(void);
 #define SELECT_FREQ 109000
 
   /* Exported variables --------------------------------------------------------*/
-extern volatile uint16_t adcBuffer[ADC_BUFFER_SIZE];
-extern volatile float ADC_Value[ADC_BUFFER_SIZE]; // ???????ADC????
-extern ADCData adcData;
-extern uint16_t last_interrupt_tick;
+  extern volatile uint16_t adcBuffer[ADC_BUFFER_SIZE];
+  extern volatile float ADC_Value[ADC_BUFFER_SIZE]; // ???????ADC????
+  extern ADCData adcData;
+  extern uint32_t last_interrupt_tick;
+  extern uint32_t pulse_cnt;
 
+  // 主状态机枚举
+typedef enum {
+    NEB_STATE_IDLE,        // 无信号状�?
+    NEB_STATE_NEB
+} NebState;
 
 /* USER CODE END Private defines */
 
