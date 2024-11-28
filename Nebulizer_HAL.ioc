@@ -7,7 +7,11 @@ ADC1.EnableAnalogWatchDog1=false
 ADC1.IPParameters=NbrOfConversionFlag,NbrOfConversion,SamplingTimeCommon1,EnableAnalogWatchDog1,WDGCONV1Channel1,ContinuousConvMode,DMAContinuousRequests,DiscontinuousConvMode,DataAlign,master,SelectedChannel
 ADC1.NbrOfConversion=1
 ADC1.NbrOfConversionFlag=0
+<<<<<<< HEAD
 ADC1.SamplingTimeCommon1=ADC_SAMPLETIME_7CYCLES_5
+=======
+ADC1.SamplingTimeCommon1=ADC_SAMPLETIME_3CYCLES_5
+>>>>>>> f3f6ff27607e72e561c9ceb607c171314c566f01
 ADC1.SelectedChannel=ADC_CHANNEL_17|ADC_CHANNEL_18
 ADC1.WDGCONV1Channel1=__NULL
 ADC1.master=1
@@ -106,9 +110,10 @@ PA13.Mode=Serial_Wire
 PA13.Signal=DEBUG_SWDIO
 PA14-BOOT0.Mode=Serial_Wire
 PA14-BOOT0.Signal=DEBUG_SWCLK
-PA15.GPIOParameters=GPIO_Label
+PA15.GPIOParameters=PinState,GPIO_Label
 PA15.GPIO_Label=H_LED
 PA15.Locked=true
+PA15.PinState=GPIO_PIN_SET
 PA15.Signal=GPIO_Output
 PA2.Signal=S_TIM1_CH3
 PA3.GPIOParameters=PinState,GPIO_Label
@@ -233,10 +238,16 @@ TIM17.IPParameters=Prescaler,Period
 TIM17.Period=30-1
 TIM17.Prescaler=8000-1
 TIM3.Channel-Input_Capture3_from_TI3=TIM_CHANNEL_3
+<<<<<<< HEAD
 TIM3.ICFilter_CH3=4
 TIM3.IPParameters=Channel-Input_Capture3_from_TI3,Period,Prescaler,ICFilter_CH3
 TIM3.Period=12000-1
 TIM3.Prescaler=1200-1
+=======
+TIM3.Channel-PWM\ Generation1\ CH1=TIM_CHANNEL_1
+TIM3.IPParameters=Channel-PWM Generation1 CH1,Channel-Input_Capture3_from_TI3,Period
+TIM3.Period=479
+>>>>>>> f3f6ff27607e72e561c9ceb607c171314c566f01
 VP_SYS_VS_Systick.Mode=SysTick
 VP_SYS_VS_Systick.Signal=SYS_VS_Systick
 VP_TIM14_VS_ClockSourceINT.Mode=Enable_Timer

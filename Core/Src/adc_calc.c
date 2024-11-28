@@ -1,4 +1,5 @@
 #include "adc_calc.h"
+#include "main.h"
 
 // 假设VREF是ADC参考电压，这里需要根据实际情况设置
 #define VREF 3.3f // 参考电压，单位：伏特

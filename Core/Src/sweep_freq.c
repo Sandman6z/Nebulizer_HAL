@@ -43,10 +43,22 @@ void adcValue(void)
     }
 }
 
+float calculateCurrentIntegral(uint16_t *adcBuffer, size_t N)
+{
+    float integral = 0.0f;
+
+
+    for (size_t i = 0; i < N; i++)
+    {
+        integral += adcBuffer[i];
+    }
+
+    return integral;
+}
+
 void sweepFreq(void)
 {
-    float power, max_power = 0.0f;
-    
+    float max_integral = 0.0f;
     uint32_t freq = START_FREQ;
 
     for (uint32_t freq = START_FREQ; freq <= END_FREQ; freq += STEP_FREQ)

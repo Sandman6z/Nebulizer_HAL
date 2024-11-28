@@ -420,6 +420,24 @@
               <FilePath>..\Core\Src\sweep_freq.c</FilePath>
             </File>
             <File>
+<<<<<<< HEAD
+=======
+              <FileName>button.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\button.c</FilePath>
+            </File>
+            <File>
+              <FileName>fault.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\fault.c</FilePath>
+            </File>
+            <File>
+              <FileName>FSM.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\FSM.c</FilePath>
+            </File>
+            <File>
+>>>>>>> f3f6ff27607e72e561c9ceb607c171314c566f01
               <FileName>func.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Core\Src\func.c</FilePath>

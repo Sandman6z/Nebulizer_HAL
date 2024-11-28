@@ -25,6 +25,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "FSM.h"
 #include "sweep_freq.h"
 #include "func.h"
 #include "median_average_filtering.h"
@@ -38,8 +39,6 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-#define ENABLE_BUTTON 0 // 1 启用功能, 0 禁用功能
-#define WEIGHTED_MOVING_AVERAGE_FILTER 0
 
 
 /* USER CODE END PD */
@@ -52,10 +51,11 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-ADCData adcData = {0};
+SystemState_t currentState = STATE_FREQ_SWEEP;
+ADCData_t adcData = {0};
 
-volatile uint16_t adcBuffer[ADC_BUFFER_SIZE];
-volatile float ADC_Value[ADC_BUFFER_SIZE]; // 声明数组来存储ADC采样结果
+uint16_t adcBuffer[ADC_BUFFER_SIZE];
+float ADC_Value[ADC_BUFFER_SIZE]; // 声明数组来存储ADC采样结果
 uint16_t filtered_adc_values[7];           // 过滤后的ADC
 uint16_t filtered_voltage[7];              // 过滤后的电压
 uint32_t last_interrupt_tick = 0;
@@ -76,6 +76,9 @@ void SystemClock_Config(void);
 /* USER CODE END 0 */
 
 /**
+  * @brief  The application entry point.
+  * @retval int
+  */
   * @brief  The application entry point.
   * @retval int
   */
@@ -126,6 +129,7 @@ int main(void)
   HAL_TIM_Base_Start_IT(&htim16); // 启动TIM16的定时器中断
   HAL_TIM_Base_Start_IT(&htim17); // 启动TIM17的定时器中断
 
+  // adcValue();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -148,12 +152,17 @@ int main(void)
   * @brief System Clock Configuration
   * @retval None
   */
+  * @brief System Clock Configuration
+  * @retval None
+  */
 void SystemClock_Config(void)
 {
   RCC_OscInitTypeDef RCC_OscInitStruct = {0};
   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
 
   /** Initializes the RCC Oscillators according to the specified parameters
+  * in the RCC_OscInitTypeDef structure.
+  */
   * in the RCC_OscInitTypeDef structure.
   */
   RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
@@ -166,6 +175,9 @@ void SystemClock_Config(void)
   }
 
   /** Initializes the CPU, AHB and APB buses clocks
+  */
+  RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
+                              |RCC_CLOCKTYPE_PCLK1;
   */
   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
                               |RCC_CLOCKTYPE_PCLK1;
@@ -188,6 +200,9 @@ void SystemClock_Config(void)
   * @brief  This function is executed in case of error occurrence.
   * @retval None
   */
+  * @brief  This function is executed in case of error occurrence.
+  * @retval None
+  */
 void Error_Handler(void)
 {
   /* USER CODE BEGIN Error_Handler_Debug */
@@ -200,7 +215,14 @@ void Error_Handler(void)
 }
 
 #ifdef  USE_FULL_ASSERT
+#ifdef  USE_FULL_ASSERT
 /**
+  * @brief  Reports the name of the source file and the source line number
+  *         where the assert_param error has occurred.
+  * @param  file: pointer to the source file name
+  * @param  line: assert_param error line source number
+  * @retval None
+  */
   * @brief  Reports the name of the source file and the source line number
   *         where the assert_param error has occurred.
   * @param  file: pointer to the source file name

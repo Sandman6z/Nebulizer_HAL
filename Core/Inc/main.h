@@ -24,6 +24,7 @@
 
 #ifdef __cplusplus
 extern "C" {
+extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
@@ -36,6 +37,8 @@ extern "C" {
 
 /* Exported types ------------------------------------------------------------*/
 /* USER CODE BEGIN ET */
+/* Exported types ------------------------------------------------------------*/
+/* USER CODE BEGIN ET */
   typedef struct
   {
     uint8_t button; // IN1 PA1
@@ -45,20 +48,29 @@ extern "C" {
     float MCU_VSS;
     float current_MOS; // IN17  PB0
     float voltage_MOS; // IN18  PB1
-  } ADCData;
+  } ADCData_t;
 
+/* USER CODE END ET */
 /* USER CODE END ET */
 
 /* Exported constants --------------------------------------------------------*/
 /* USER CODE BEGIN EC */
+/* Exported constants --------------------------------------------------------*/
+/* USER CODE BEGIN EC */
 
+/* USER CODE END EC */
 /* USER CODE END EC */
 
 /* Exported macro ------------------------------------------------------------*/
 /* USER CODE BEGIN EM */
+/* Exported macro ------------------------------------------------------------*/
+/* USER CODE BEGIN EM */
 
 /* USER CODE END EM */
+/* USER CODE END EM */
 
+/* Exported functions prototypes ---------------------------------------------*/
+void Error_Handler(void);
 /* Exported functions prototypes ---------------------------------------------*/
 void Error_Handler(void);
 
@@ -99,6 +111,7 @@ extern ADCData adcData;
 extern uint32_t last_interrupt_tick;
 
 
+/* USER CODE END Private defines */
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus

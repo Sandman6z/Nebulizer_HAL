@@ -1,8 +1,9 @@
-#include "config.h"
 #include "button.h"
 #include <stdio.h>
+#include "main.h"
 
-#if ENABLE_BUTTON
+#ifdef ENABLE_BUTTON
+
 // 初始化按钮
 void Button_Init(void)
 {
