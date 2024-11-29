@@ -96,7 +96,7 @@ void Error_Handler(void);
 extern volatile uint16_t adcBuffer[ADC_BUFFER_SIZE];
 extern volatile float ADC_Value[ADC_BUFFER_SIZE]; // ???????ADC????
 extern ADCData adcData;
-extern uint16_t last_interrupt_tick;
+extern uint32_t last_interrupt_tick;
 
 
 /* USER CODE END Private defines */

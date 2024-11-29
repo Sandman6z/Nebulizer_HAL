@@ -58,7 +58,7 @@ volatile uint16_t adcBuffer[ADC_BUFFER_SIZE];
 volatile float ADC_Value[ADC_BUFFER_SIZE]; // 声明数组来存储ADC采样结果
 uint16_t filtered_adc_values[7];           // 过滤后的ADC
 uint16_t filtered_voltage[7];              // 过滤后的电压
-uint16_t last_interrupt_tick = 0;
+uint32_t last_interrupt_tick = 0;
 
 /* USER CODE END PV */
 
