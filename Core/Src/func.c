@@ -1,6 +1,7 @@
 #include "func.h"
 #include "main.h"
 #include "tim.h"
+#include "led.h"
 
 
 #define SIGNAL_TIMEOUT_MS 1000 // 超时阈值（单位：毫秒）
@@ -35,14 +36,14 @@ void CheckSignalTimeout(void)
 void Handle_4Hz_Signal(void)
 {
   startNeb(); // 调用喷雾函数
-  // pwm output 4hz
+   LED_SetState(LED_15mins_GPIO_Port, LED_15mins_Pin, LED_ON);
 }
 
 // 处理 8Hz 信号
 void Handle_8Hz_Signal(void)
 {
   startNeb(); // 调用喷雾函数
-  // pwm output 8hz
+   LED_SetState(LED_30mins_GPIO_Port, LED_30mins_Pin, LED_ON);
 }
 
 // 处理 16Hz 信号
