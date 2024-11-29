@@ -53,10 +53,10 @@ void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(LED_Alarm_GPIO_Port, LED_Alarm_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, L_LED_Pin|LED_Proc1_Pin|LED_Proc3_Pin|LED_Proc5_Pin, GPIO_PIN_SET);
+  HAL_GPIO_WritePin(GPIOA, LED_15mins_Pin|LED_Proc1_Pin|LED_Proc3_Pin|LED_Proc5_Pin, GPIO_PIN_SET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, LED_Proc2_Pin|LED_Proc4_Pin|H_LED_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOA, LED_Proc2_Pin|LED_Proc4_Pin|LED_30mins_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOB, LED_Normal_Pin|PluginCheck_Pin, GPIO_PIN_SET);
@@ -70,8 +70,8 @@ void MX_GPIO_Init(void)
 
   /*Configure GPIO pins : PAPin PAPin PAPin PAPin
                            PAPin PAPin PAPin */
-  GPIO_InitStruct.Pin = L_LED_Pin|LED_Proc1_Pin|LED_Proc2_Pin|LED_Proc3_Pin
-                          |LED_Proc4_Pin|LED_Proc5_Pin|H_LED_Pin;
+  GPIO_InitStruct.Pin = LED_15mins_Pin|LED_Proc1_Pin|LED_Proc2_Pin|LED_Proc3_Pin
+                          |LED_Proc4_Pin|LED_Proc5_Pin|LED_30mins_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;

@@ -56,8 +56,7 @@ ADCData adcData = {0};
 
 volatile uint16_t adcBuffer[ADC_BUFFER_SIZE];
 volatile float ADC_Value[ADC_BUFFER_SIZE]; // 声明数组来存储ADC采样结果
-uint16_t filtered_adc_values[7];           // 过滤后的ADC
-uint16_t filtered_voltage[7];              // 过滤后的电压
+
 uint32_t last_interrupt_tick = 0;
 
 /* USER CODE END PV */
@@ -131,7 +130,7 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 //  sweepFreq();
-  // 扫频完成后，设置TIM1为最佳频�?
+  // 扫频完成后，设置TIM1为最佳频�??
  
 
   while (1)
