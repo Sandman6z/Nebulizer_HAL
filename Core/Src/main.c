@@ -18,9 +18,6 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include "adc.h"
-#include "dma.h"
-#include "tim.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
@@ -29,6 +26,7 @@
 #include "func.h"
 #include "median_average_filtering.h"
 #include "adc_calc.h"
+#include "led.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -103,27 +101,20 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_DMA_Init();
-  MX_ADC1_Init();
-  MX_TIM1_Init();
-  MX_TIM3_Init();
-  MX_TIM14_Init();
-  MX_TIM16_Init();
-  MX_TIM17_Init();
   /* USER CODE BEGIN 2 */
  
   
-  if (HAL_ADC_Start_DMA(&hadc1, (uint32_t *)adcBuffer, ADC_BUFFER_SIZE) != HAL_OK)
-  {
-    Error_Handler();
-  }
+//  if (HAL_ADC_Start_DMA(&hadc1, (uint32_t *)adcBuffer, ADC_BUFFER_SIZE) != HAL_OK)
+//  {
+//    Error_Handler();
+//  }
 
-  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
-  HAL_TIM_IC_Start_IT(&htim3, TIM_CHANNEL_3);
+//  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
+//  HAL_TIM_IC_Start_IT(&htim3, TIM_CHANNEL_3);
 
-  HAL_TIM_Base_Start_IT(&htim14); // 启动TIM14的定时器中断
-  HAL_TIM_Base_Start_IT(&htim16); // 启动TIM16的定时器中断
-  HAL_TIM_Base_Start_IT(&htim17); // 启动TIM17的定时器中断
+//  HAL_TIM_Base_Start_IT(&htim14); // 启动TIM14的定时器中断
+//  HAL_TIM_Base_Start_IT(&htim16); // 启动TIM16的定时器中断
+//  HAL_TIM_Base_Start_IT(&htim17); // 启动TIM17的定时器中断
 
   /* USER CODE END 2 */
 
@@ -131,14 +122,30 @@ int main(void)
   /* USER CODE BEGIN WHILE */
 //  sweepFreq();
   // 扫频完成后，设置TIM1为最佳频�??
- 
+     HAL_GPIO_WritePin(LED_15mins_GPIO_Port, LED_15mins_Pin, GPIO_PIN_RESET);
+    HAL_GPIO_WritePin(LED_30mins_GPIO_Port, LED_30mins_Pin, GPIO_PIN_RESET);
+      
+    HAL_GPIO_WritePin(LED_Proc1_GPIO_Port, LED_Proc1_Pin, GPIO_PIN_RESET);
+    //HAL_GPIO_WritePin(LED_Proc5_GPIO_Port, LED_Proc5_Pin, GPIO_PIN_RESET);
 
   while (1)
   {
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
- CheckSignalTimeout();
+ //CheckSignalTimeout();
+     //LED_Init();
+      //HAL_GPIO_TogglePin(LED_Alarm_GPIO_Port, LED_Alarm_Pin);
+      HAL_GPIO_WritePin(LED_Normal_GPIO_Port, LED_Normal_Pin, GPIO_PIN_SET);
+      HAL_GPIO_WritePin(LED_Alarm_GPIO_Port, LED_Alarm_Pin, GPIO_PIN_RESET);
+      HAL_Delay(2500);
+      HAL_GPIO_WritePin(LED_Normal_GPIO_Port, LED_Normal_Pin, GPIO_PIN_RESET);
+      HAL_GPIO_WritePin(LED_Alarm_GPIO_Port, LED_Alarm_Pin, GPIO_PIN_SET);
+      HAL_Delay(2500);
+      
+
+      
+      
   }
   /* USER CODE END 3 */
 }

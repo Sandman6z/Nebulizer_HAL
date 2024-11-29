@@ -1,6 +1,5 @@
 #include "func.h"
 #include "main.h"
-#include "tim.h"
 #include "led.h"
 
 
