@@ -85,7 +85,7 @@ void Error_Handler(void);
 #define PluginCheck_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
-#define ADC_BUFFER_SIZE 77
+#define ADC_BUFFER_SIZE 22
 #define SELECT_FREQ 109000
 
   /* Exported variables --------------------------------------------------------*/
