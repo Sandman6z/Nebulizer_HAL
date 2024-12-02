@@ -1,7 +1,7 @@
 Dependencies for Project 'Nebulizer_HAL', Target 'Nebulizer_HAL': (DO NOT MODIFY !)
 CompilerVersion: 6210000::V6.21::ARMCLANG
-F (startup_stm32c031xx.s)(0x6749888B)(--target=arm-arm-none-eabi -mcpu=cortex-m0plus -masm=auto  -Wa,armasm,--diag_suppress=A1950W -c-gdwarf-4-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 539" -Wa,armasm,--pd,"_RTE_ SETA 1" -Wa,armasm,--pd,"STM32C031xx SETA 1" -Wa,armasm,--pd,"_RTE_ SETA 1"-o nebulizer_hal/startup_stm32c031xx.o)
-F (..\Core\Src\led.c)(0x67498DD3)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/led.o -MD)
+F (startup_stm32c031xx.s)(0x674D5109)(--target=arm-arm-none-eabi -mcpu=cortex-m0plus -masm=auto  -Wa,armasm,--diag_suppress=A1950W -c-gdwarf-4-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 539" -Wa,armasm,--pd,"_RTE_ SETA 1" -Wa,armasm,--pd,"STM32C031xx SETA 1" -Wa,armasm,--pd,"_RTE_ SETA 1"-o nebulizer_hal/startup_stm32c031xx.o)
+F (..\Core\Src\led.c)(0x674D0627)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/led.o -MD)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_system.h)(0x66F90C86)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c0xx.h)(0x66F90C86)
@@ -25,9 +25,9 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_cortex.h)(0x66F90C86)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x67498B20)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x67498B20)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x67498B20)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x66F90C86)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x66F90C86)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_exti.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash_ex.h)(0x66F90C86)
@@ -42,10 +42,10 @@ I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
 F (..\Core\Src\weighted_moving_average_filter.c)(0x67244D14)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/weighted_moving_average_filter.o -MD)
 I (..\Core\Inc\weighted_moving_average_filter.h)(0x67244D14)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-F (..\Core\Src\adc_calc.c)(0x674972AC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/adc_calc.o -MD)
+F (..\Core\Src\adc_calc.c)(0x674D0627)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/adc_calc.o -MD)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-F (..\Core\Src\sweep_freq.c)(0x6749805F)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/sweep_freq.o -MD)
-I (..\Core\Inc\sweep_freq.h)(0x674972AC)
+F (..\Core\Src\sweep_freq.c)(0x674D0627)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/sweep_freq.o -MD)
+I (..\Core\Inc\sweep_freq.h)(0x674D0627)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_system.h)(0x66F90C86)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c0xx.h)(0x66F90C86)
@@ -69,9 +69,9 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_cortex.h)(0x66F90C86)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x67498B20)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x67498B20)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x67498B20)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x66F90C86)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x66F90C86)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_exti.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash_ex.h)(0x66F90C86)
@@ -81,7 +81,7 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim_ex.h)(0x66F90C86)
 I (..\Core\Inc\adc.h0.\Core\Inc\tim.h)(0x00000000)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x6569B012)
-F (..\Core\Src\func.c)(0x67498E08)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/func.o -MD)
+F (..\Core\Src\func.c)(0x674D5187)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/func.o -MD)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
 I (..\Core\Inc\main.he.\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal.h)(0x00000000)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_system.h)(0x66F90C86)
@@ -105,9 +105,9 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_cortex.h)(0x66F90C86)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x67498B20)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x67498B20)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x67498B20)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x66F90C86)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x66F90C86)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_exti.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash_ex.h)(0x66F90C86)
@@ -116,7 +116,7 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim_ex.h)(0x66F90C86)
 I (..\Core\Inc\tim.h0.\Core\Inc\led.h)(0x00000000)
-F (../Core/Src/main.c)(0x67498E30)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/main.o -MD)
+F (../Core/Src/main.c)(0x674D50EB)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/main.o -MD)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_system.h)(0x66F90C86)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c0xx.h)(0x66F90C86)
@@ -140,9 +140,9 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_cortex.h)(0x66F90C86)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x67498B20)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x67498B20)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x67498B20)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x66F90C86)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x66F90C86)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_exti.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash_ex.h)(0x66F90C86)
@@ -153,8 +153,8 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim_ex.h)(0x66F90C86)
 I (..\Core\Inc\adc.h0.\Core\Inc\dma.hc.\Core\Inc\tim.h)(0x00000000)
 I (..\Core\Inc\gpio.h..\Core\Inc\sweep_freq.hI.\Core\Inc\func.h)(0x00000000)
 I (..\Core\Inc\median_average_filtering.he.\Core\Inc\adc_calc.h)(0x00000000)
-I (..\Core\Inc\led.h)(0x674984B3)
-F (../Core/Src/gpio.c)(0x67498B20)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/gpio.o -MD)
+I (..\Core\Inc\led.h)(0x674D0627)
+F (../Core/Src/gpio.c)(0x674D5107)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/gpio.o -MD)
 I (..\Core\Inc\main.h..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal.h)(0x00000000)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_system.h)(0x66F90C86)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c0xx.h)(0x66F90C86)
@@ -178,9 +178,9 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_cortex.h)(0x66F90C86)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x67498B20)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x67498B20)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x67498B20)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x66F90C86)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x66F90C86)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_exti.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash_ex.h)(0x66F90C86)
@@ -212,9 +212,9 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_cortex.h)(0x66F90C86)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x67498B20)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x67498B20)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x67498B20)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x66F90C86)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x66F90C86)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_exti.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash_ex.h)(0x66F90C86)
@@ -246,9 +246,9 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_cortex.h)(0x66F90C86)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x67498B20)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x67498B20)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x67498B20)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x66F90C86)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x66F90C86)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_exti.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash_ex.h)(0x66F90C86)
@@ -256,7 +256,7 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim_ex.h)(0x66F90C86)
-F (../Core/Src/tim.c)(0x67498B20)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/tim.o -MD)
+F (../Core/Src/tim.c)(0x674D0627)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/tim.o -MD)
 I (..\Core\Inc\main.h..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal.h)(0x00000000)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_system.h)(0x66F90C86)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c0xx.h)(0x66F90C86)
@@ -280,9 +280,9 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_cortex.h)(0x66F90C86)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x67498B20)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x67498B20)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x67498B20)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x66F90C86)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x66F90C86)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_exti.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash_ex.h)(0x66F90C86)
@@ -315,9 +315,9 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_cortex.h)(0x66F90C86)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x67498B20)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x67498B20)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x67498B20)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x66F90C86)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x66F90C86)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_exti.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash_ex.h)(0x66F90C86)
@@ -350,9 +350,9 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_cortex.h)(0x66F90C86)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x67498B20)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x67498B20)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x67498B20)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x66F90C86)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x66F90C86)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_exti.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash_ex.h)(0x66F90C86)
@@ -384,9 +384,9 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_cortex.h)(0x66F90C86)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x67498B20)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x67498B20)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x67498B20)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x66F90C86)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x66F90C86)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_exti.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash_ex.h)(0x66F90C86)
@@ -394,7 +394,7 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim_ex.h)(0x66F90C86)
-F (../Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc.c)(0x67498B20)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/stm32c0xx_hal_adc.o -MD)
+F (../Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc.c)(0x66F90C86)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/stm32c0xx_hal_adc.o -MD)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_system.h)(0x66F90C86)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c0xx.h)(0x66F90C86)
@@ -418,9 +418,9 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_cortex.h)(0x66F90C86)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x67498B20)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x67498B20)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x67498B20)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x66F90C86)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x66F90C86)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_exti.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash_ex.h)(0x66F90C86)
@@ -428,7 +428,7 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim_ex.h)(0x66F90C86)
-F (../Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc_ex.c)(0x67498B20)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/stm32c0xx_hal_adc_ex.o -MD)
+F (../Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc_ex.c)(0x66F90C86)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/stm32c0xx_hal_adc_ex.o -MD)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_system.h)(0x66F90C86)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c0xx.h)(0x66F90C86)
@@ -452,9 +452,9 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_cortex.h)(0x66F90C86)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x67498B20)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x67498B20)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x67498B20)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x66F90C86)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x66F90C86)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_exti.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash_ex.h)(0x66F90C86)
@@ -486,9 +486,9 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_cortex.h)(0x66F90C86)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x67498B20)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x67498B20)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x67498B20)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x66F90C86)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x66F90C86)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_exti.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash_ex.h)(0x66F90C86)
@@ -520,9 +520,9 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_cortex.h)(0x66F90C86)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x67498B20)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x67498B20)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x67498B20)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x66F90C86)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x66F90C86)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_exti.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash_ex.h)(0x66F90C86)
@@ -554,9 +554,9 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_cortex.h)(0x66F90C86)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x67498B20)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x67498B20)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x67498B20)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x66F90C86)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x66F90C86)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_exti.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash_ex.h)(0x66F90C86)
@@ -588,9 +588,9 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_cortex.h)(0x66F90C86)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x67498B20)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x67498B20)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x67498B20)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x66F90C86)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x66F90C86)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_exti.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash_ex.h)(0x66F90C86)
@@ -622,9 +622,9 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_cortex.h)(0x66F90C86)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x67498B20)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x67498B20)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x67498B20)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x66F90C86)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x66F90C86)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_exti.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash_ex.h)(0x66F90C86)
@@ -656,9 +656,9 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_cortex.h)(0x66F90C86)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x67498B20)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x67498B20)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x67498B20)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x66F90C86)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x66F90C86)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_exti.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash_ex.h)(0x66F90C86)
@@ -690,9 +690,9 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_cortex.h)(0x66F90C86)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x67498B20)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x67498B20)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x67498B20)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x66F90C86)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x66F90C86)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_exti.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash_ex.h)(0x66F90C86)
@@ -724,9 +724,9 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_cortex.h)(0x66F90C86)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x67498B20)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x67498B20)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x67498B20)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x66F90C86)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x66F90C86)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_exti.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash_ex.h)(0x66F90C86)
@@ -758,9 +758,9 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_cortex.h)(0x66F90C86)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x67498B20)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x67498B20)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x67498B20)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x66F90C86)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x66F90C86)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_exti.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash_ex.h)(0x66F90C86)
@@ -792,9 +792,9 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_cortex.h)(0x66F90C86)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x67498B20)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x67498B20)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x67498B20)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x66F90C86)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x66F90C86)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_exti.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash_ex.h)(0x66F90C86)
@@ -826,9 +826,9 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_cortex.h)(0x66F90C86)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x67498B20)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x67498B20)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x67498B20)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x66F90C86)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x66F90C86)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_exti.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash_ex.h)(0x66F90C86)
@@ -860,9 +860,9 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_cortex.h)(0x66F90C86)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x67498B20)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x67498B20)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x67498B20)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x66F90C86)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x66F90C86)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_exti.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash_ex.h)(0x66F90C86)
@@ -894,9 +894,9 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_cortex.h)(0x66F90C86)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x67498B20)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x67498B20)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x67498B20)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x66F90C86)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x66F90C86)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_exti.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash_ex.h)(0x66F90C86)
@@ -928,9 +928,9 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_cortex.h)(0x66F90C86)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x67498B20)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x67498B20)
-I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x67498B20)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x66F90C86)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x66F90C86)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_exti.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash.h)(0x66F90C86)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash_ex.h)(0x66F90C86)

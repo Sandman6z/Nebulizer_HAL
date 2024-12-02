@@ -132,7 +132,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
 //  sweepFreq();
   // 扫频完成后，设置TIM1为最佳频�??
- //LED_Init();
+// LED_Init();
 
   while (1)
   {

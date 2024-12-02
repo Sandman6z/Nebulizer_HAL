@@ -36,14 +36,14 @@ void CheckSignalTimeout(void)
 void Handle_4Hz_Signal(void)
 {
   startNeb(); // 调用喷雾函数
-   LED_SetState(LED_15mins_GPIO_Port, LED_15mins_Pin, LED_OFF);
+   LED_SetState(LED_15mins_GPIO_Port, LED_15mins_Pin, LED_ON);
 }
 
 // 处理 8Hz 信号
 void Handle_8Hz_Signal(void)
 {
   startNeb(); // 调用喷雾函数
-   LED_SetState(LED_30mins_GPIO_Port, LED_30mins_Pin, LED_OFF);
+   LED_SetState(LED_30mins_GPIO_Port, LED_30mins_Pin, LED_ON);
 }
 
 // 处理 16Hz 信号
@@ -62,5 +62,4 @@ void Handle_Unknown_Signal(void)
        LED_SetState(LED_15mins_GPIO_Port, LED_15mins_Pin, LED_OFF);
        LED_SetState(LED_30mins_GPIO_Port, LED_30mins_Pin, LED_OFF);
     LED_SetState(LED_Normal_GPIO_Port, LED_Normal_Pin, LED_ON);
-    //HAL_GPIO_WritePin(GPIOC, GPIO_PIN_15, GPIO_PIN_SET);
 }
