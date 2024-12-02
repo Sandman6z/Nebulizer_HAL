@@ -136,6 +136,8 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
     CheckSignalTimeout();
+      
+      
   }
   /* USER CODE END 3 */
 }

@@ -87,7 +87,6 @@ extern "C"
 
 /* USER CODE BEGIN Private defines */
 #define ADC_BUFFER_SIZE 22
-#define SELECT_FREQ 109000
 
   /* Exported variables --------------------------------------------------------*/
   extern volatile uint16_t adcBuffer[ADC_BUFFER_SIZE];
