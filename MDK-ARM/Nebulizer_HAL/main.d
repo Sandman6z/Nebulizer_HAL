@@ -35,4 +35,7 @@ nebulizer_hal/main.o: ..\Core\Src\main.c ..\Core\Inc\main.h \
   ..\Core\Inc\adc.h ..\Core\Inc\dma.h ..\Core\Inc\tim.h \
   ..\Core\Inc\gpio.h ..\Core\Inc\sweep_freq.h ..\Core\Inc\func.h \
   ..\Core\Inc\median_average_filtering.h ..\Core\Inc\adc_calc.h \
-  ..\Core\Inc\led.h
+  ..\Core\Inc\led.h ..\Middlewares\SEGGER_RTT\SEGGER_RTT.h \
+  ..\Middlewares\SEGGER_RTT\SEGGER_RTT_Conf.h \
+  C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\stdlib.h \
+  C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\stdarg.h

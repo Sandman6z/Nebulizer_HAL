@@ -30,6 +30,7 @@
 #include "median_average_filtering.h"
 #include "adc_calc.h"
 #include "led.h"
+#include "SEGGER_RTT.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -129,6 +130,9 @@ int main(void)
   //  sweepFreq();
   // 扫频完成后，设置TIM1为最佳频�??
   LED_Init();
+  //SEGGER_RTT INIT
+  SEGGER_RTT_Init();
+SEGGER_RTT_printf(0, "Hello world !");
 
   while (1)
   {

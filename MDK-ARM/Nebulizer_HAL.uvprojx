@@ -340,7 +340,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32C031xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../Drivers/STM32C0xx_HAL_Driver/Inc;../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32C0xx/Include;../Drivers/CMSIS/Include</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/STM32C0xx_HAL_Driver/Inc;../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32C0xx/Include;../Drivers/CMSIS/Include;..\Middlewares\SEGGER_RTT</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -608,6 +608,21 @@
           </Files>
         </Group>
         <Group>
+          <GroupName>Middlewares/SEGGER_RTT</GroupName>
+          <Files>
+            <File>
+              <FileName>SEGGER_RTT.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\SEGGER_RTT\SEGGER_RTT.c</FilePath>
+            </File>
+            <File>
+              <FileName>SEGGER_RTT_printf.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\SEGGER_RTT\SEGGER_RTT_printf.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
           <GroupName>::CMSIS</GroupName>
         </Group>
       </Groups>
@@ -626,5 +641,14 @@
     </components>
     <files/>
   </RTE>
+
+  <LayerInfo>
+    <Layers>
+      <Layer>
+        <LayName>Nebulizer_HAL</LayName>
+        <LayPrjMark>1</LayPrjMark>
+      </Layer>
+    </Layers>
+  </LayerInfo>
 
 </Project>
