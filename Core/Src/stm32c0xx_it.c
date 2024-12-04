@@ -226,7 +226,7 @@ void TIM14_IRQHandler(void)
   /* USER CODE END TIM14_IRQn 0 */
   HAL_TIM_IRQHandler(&htim14);
   /* USER CODE BEGIN TIM14_IRQn 1 */
-    // HAL_GPIO_TogglePin(LED_Proc1_GPIO_Port, LED_Proc1_Pin); // 每次中断切换LED1的状�??
+    // HAL_GPIO_TogglePin(LED_Proc1_GPIO_Port, LED_Proc1_Pin); // 每次中断切换LED1的状�??
     // HAL_GPIO_TogglePin(LED_Proc2_GPIO_Port, LED_Proc2_Pin);
     // HAL_GPIO_TogglePin(LED_Proc3_GPIO_Port, LED_Proc3_Pin);
     // HAL_GPIO_TogglePin(LED_Proc4_GPIO_Port, LED_Proc4_Pin);
@@ -237,7 +237,7 @@ void TIM14_IRQHandler(void)
     //     {
     //         __HAL_TIM_CLEAR_IT(&htim14, TIM_IT_UPDATE);
 
-    //         LED_ControlSequence();  // 控制LED顺序熄灭和点�??
+    //         LED_ControlSequence();  // 控制LED顺序熄灭和点�??
     //     }
     // }
   /* USER CODE END TIM14_IRQn 1 */
@@ -260,7 +260,7 @@ void TIM16_IRQHandler(void)
     // {
     //     TIM16->SR &= ~TIM_SR_UIF;
     //     led_alarm_time_counter++;
-    //     if (led_alarm_time_counter % 10 == 0) // �??100ms更新�??�??
+    //     if (led_alarm_time_counter % 10 == 0) // �??100ms更新�??�??
     //     {
     //         toggle_LED_Alarm(); // 闪烁LED_Alarm
     //     }
