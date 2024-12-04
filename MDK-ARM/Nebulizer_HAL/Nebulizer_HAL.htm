@@ -3,7 +3,7 @@
 <title>Static Call Graph - [Nebulizer_HAL\Nebulizer_HAL.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image Nebulizer_HAL\Nebulizer_HAL.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6210000: Last Updated: Wed Dec  4 11:45:21 2024
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6210000: Last Updated: Wed Dec  4 16:16:16 2024
 <BR><P>
 <H3>Maximum Stack Usage =        536 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -736,7 +736,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_ADC_MspInit
 </UL>
 
-<P><STRONG><a name="[78]"></a>HAL_RCC_ClockConfig</STRONG> (Thumb, 560 bytes, Stack size 24 bytes, stm32c0xx_hal_rcc.o(.text.HAL_RCC_ClockConfig))
+<P><STRONG><a name="[78]"></a>HAL_RCC_ClockConfig</STRONG> (Thumb, 544 bytes, Stack size 24 bytes, stm32c0xx_hal_rcc.o(.text.HAL_RCC_ClockConfig))
 <BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = HAL_RCC_ClockConfig &rArr; HAL_InitTick &rArr; HAL_SYSTICK_Config &rArr; SysTick_Config &rArr; __NVIC_SetPriority
 </UL>
 <BR>[Calls]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_GetSysClockFreq
@@ -746,8 +746,8 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
 </UL>
 
-<P><STRONG><a name="[79]"></a>HAL_RCC_GetSysClockFreq</STRONG> (Thumb, 156 bytes, Stack size 24 bytes, stm32c0xx_hal_rcc.o(.text.HAL_RCC_GetSysClockFreq))
-<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = HAL_RCC_GetSysClockFreq
+<P><STRONG><a name="[79]"></a>HAL_RCC_GetSysClockFreq</STRONG> (Thumb, 132 bytes, Stack size 16 bytes, stm32c0xx_hal_rcc.o(.text.HAL_RCC_GetSysClockFreq))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = HAL_RCC_GetSysClockFreq
 </UL>
 <BR>[Calls]<UL><LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidiv
 </UL>
@@ -1213,7 +1213,7 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32c031xx.o(RESET)
 </UL>
-<P><STRONG><a name="[c5]"></a>SystemClock_Config</STRONG> (Thumb, 104 bytes, Stack size 64 bytes, main.o(.text.SystemClock_Config))
+<P><STRONG><a name="[c5]"></a>SystemClock_Config</STRONG> (Thumb, 116 bytes, Stack size 64 bytes, main.o(.text.SystemClock_Config))
 <BR><BR>[Stack]<UL><LI>Max Depth = 184<LI>Call Chain = SystemClock_Config &rArr; HAL_RCC_OscConfig &rArr; HAL_InitTick &rArr; HAL_SYSTICK_Config &rArr; SysTick_Config &rArr; __NVIC_SetPriority
 </UL>
 <BR>[Calls]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_ClockConfig

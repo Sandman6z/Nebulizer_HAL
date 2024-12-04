@@ -1,7 +1,7 @@
 Dependencies for Project 'Nebulizer_HAL', Target 'Nebulizer_HAL': (DO NOT MODIFY !)
 CompilerVersion: 6210000::V6.21::ARMCLANG
-F (startup_stm32c031xx.s)(0x67500EBB)(--target=arm-arm-none-eabi -mcpu=cortex-m0plus -masm=auto  -Wa,armasm,--diag_suppress=A1950W -c-gdwarf-4-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 539" -Wa,armasm,--pd,"_RTE_ SETA 1" -Wa,armasm,--pd,"STM32C031xx SETA 1" -Wa,armasm,--pd,"_RTE_ SETA 1"-o nebulizer_hal/startup_stm32c031xx.o)
-F (..\Core\Src\led.c)(0x674D58A4)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/led.o -MD)
+F (startup_stm32c031xx.s)(0x67500F9C)(--target=arm-arm-none-eabi -mcpu=cortex-m0plus -masm=auto  -Wa,armasm,--diag_suppress=A1950W -c-gdwarf-4-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 539" -Wa,armasm,--pd,"_RTE_ SETA 1" -Wa,armasm,--pd,"STM32C031xx SETA 1" -Wa,armasm,--pd,"_RTE_ SETA 1"-o nebulizer_hal/startup_stm32c031xx.o)
+F (..\Core\Src\led.c)(0x674D58A4)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/led.o -MD)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_system.h)(0x67500EB2)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c0xx.h)(0x67500EB4)
@@ -13,7 +13,7 @@ I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\cmsis_compiler.h)(
 I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\cmsis_armclang.h)(0x67500EB5)
 I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\mpu_armv7.h)(0x67500EB5)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\system_stm32c0xx.h)(0x67500EB4)
-I (..\Core\Inc\stm32c0xx_hal_conf.h)(0x67500E0C)
+I (..\Core\Inc\stm32c0xx_hal_conf.h)(0x67500F5B)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_def.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x67500EB2)
@@ -36,15 +36,15 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr_ex.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim_ex.h)(0x67500EB2)
 I (..\Core\Inc\led.h0.\Core\Inc\tim.hc.\Core\Inc\stm32c0xx_it.h)(0x00000000)
-F (..\Core\Src\median_average_filtering.c)(0x67244D14)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/median_average_filtering.o -MD)
+F (..\Core\Src\median_average_filtering.c)(0x67244D14)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/median_average_filtering.o -MD)
 I (..\Core\Inc\median_average_filtering.h)(0x67244D14)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-F (..\Core\Src\weighted_moving_average_filter.c)(0x67244D14)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/weighted_moving_average_filter.o -MD)
+F (..\Core\Src\weighted_moving_average_filter.c)(0x67244D14)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/weighted_moving_average_filter.o -MD)
 I (..\Core\Inc\weighted_moving_average_filter.h)(0x67244D14)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-F (..\Core\Src\adc_calc.c)(0x674D0627)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/adc_calc.o -MD)
+F (..\Core\Src\adc_calc.c)(0x674D0627)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/adc_calc.o -MD)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
-F (..\Core\Src\sweep_freq.c)(0x674D0627)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/sweep_freq.o -MD)
+F (..\Core\Src\sweep_freq.c)(0x674D0627)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/sweep_freq.o -MD)
 I (..\Core\Inc\sweep_freq.h)(0x674D0627)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_system.h)(0x67500EB2)
@@ -57,7 +57,7 @@ I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\cmsis_compiler.h)(
 I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\cmsis_armclang.h)(0x67500EB5)
 I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\mpu_armv7.h)(0x67500EB5)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\system_stm32c0xx.h)(0x67500EB4)
-I (..\Core\Inc\stm32c0xx_hal_conf.h)(0x67500E0C)
+I (..\Core\Inc\stm32c0xx_hal_conf.h)(0x67500F5B)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_def.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x67500EB2)
@@ -81,7 +81,7 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim_ex.h)(0x67500EB2)
 I (..\Core\Inc\adc.h0.\Core\Inc\tim.h)(0x00000000)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x6569B012)
-F (..\Core\Src\func.c)(0x674FD051)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/func.o -MD)
+F (..\Core\Src\func.c)(0x674FD051)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/func.o -MD)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
 I (..\Core\Inc\main.he.\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal.h)(0x00000000)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_system.h)(0x67500EB2)
@@ -93,7 +93,7 @@ I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\cmsis_compiler.h)(
 I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\cmsis_armclang.h)(0x67500EB5)
 I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\mpu_armv7.h)(0x67500EB5)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\system_stm32c0xx.h)(0x67500EB4)
-I (..\Core\Inc\stm32c0xx_hal_conf.h)(0x67500E0C)
+I (..\Core\Inc\stm32c0xx_hal_conf.h)(0x67500F5B)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_def.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x67500EB2)
@@ -116,9 +116,8 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr_ex.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim_ex.h)(0x67500EB2)
 I (..\Core\Inc\tim.h0.\Core\Inc\led.h)(0x00000000)
-F (../Core/Src/main.c)(0x67500E0C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/main.o -MD)
-F (../Core/Src/gpio.c)(0x67500E0A)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/gpio.o -MD)
-I (..\Core\Inc\main.h..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal.h)(0x00000000)
+F (../Core/Src/main.c)(0x67500F5B)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/main.o -MD)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_system.h)(0x67500EB2)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c0xx.h)(0x67500EB4)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c031xx.h)(0x67500EB4)
@@ -129,7 +128,7 @@ I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\cmsis_compiler.h)(
 I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\cmsis_armclang.h)(0x67500EB5)
 I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\mpu_armv7.h)(0x67500EB5)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\system_stm32c0xx.h)(0x67500EB4)
-I (..\Core\Inc\stm32c0xx_hal_conf.h)(0x67500E0C)
+I (..\Core\Inc\stm32c0xx_hal_conf.h)(0x67500F5B)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_def.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x67500EB2)
@@ -151,7 +150,14 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr_ex.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim_ex.h)(0x67500EB2)
-F (../Core/Src/adc.c)(0x67500E0B)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/adc.o -MD)
+I (..\Core\Inc\adc.h0.\Core\Inc\dma.hc.\Core\Inc\tim.h)(0x00000000)
+I (..\Core\Inc\gpio.h..\Core\Inc\sweep_freq.hI.\Core\Inc\func.h)(0x00000000)
+I (..\Core\Inc\median_average_filtering.he.\Core\Inc\adc_calc.h)(0x00000000)
+I (..\Core\Inc\led.hn.\Drivers\Middlewares\SEGGER_RTT\SEGGER_RTT.h)(0x00000000)
+I (..\Drivers\Middlewares\SEGGER_RTT\SEGGER_RTT_Conf.h)(0x67500F4B)
+I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x6569B012)
+I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x6569B012)
+F (../Core/Src/gpio.c)(0x67500F5B)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/gpio.o -MD)
 I (..\Core\Inc\main.h..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal.h)(0x00000000)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_system.h)(0x67500EB2)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c0xx.h)(0x67500EB4)
@@ -163,7 +169,7 @@ I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\cmsis_compiler.h)(
 I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\cmsis_armclang.h)(0x67500EB5)
 I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\mpu_armv7.h)(0x67500EB5)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\system_stm32c0xx.h)(0x67500EB4)
-I (..\Core\Inc\stm32c0xx_hal_conf.h)(0x67500E0C)
+I (..\Core\Inc\stm32c0xx_hal_conf.h)(0x67500F5B)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_def.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x67500EB2)
@@ -185,7 +191,7 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr_ex.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim_ex.h)(0x67500EB2)
-F (../Core/Src/dma.c)(0x67498B20)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/dma.o -MD)
+F (../Core/Src/adc.c)(0x67500F5B)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/adc.o -MD)
 I (..\Core\Inc\main.h..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal.h)(0x00000000)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_system.h)(0x67500EB2)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c0xx.h)(0x67500EB4)
@@ -197,7 +203,7 @@ I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\cmsis_compiler.h)(
 I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\cmsis_armclang.h)(0x67500EB5)
 I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\mpu_armv7.h)(0x67500EB5)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\system_stm32c0xx.h)(0x67500EB4)
-I (..\Core\Inc\stm32c0xx_hal_conf.h)(0x67500E0C)
+I (..\Core\Inc\stm32c0xx_hal_conf.h)(0x67500F5B)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_def.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x67500EB2)
@@ -219,7 +225,7 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr_ex.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim_ex.h)(0x67500EB2)
-F (../Core/Src/tim.c)(0x67500E0B)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/tim.o -MD)
+F (../Core/Src/dma.c)(0x67498B20)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/dma.o -MD)
 I (..\Core\Inc\main.h..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal.h)(0x00000000)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_system.h)(0x67500EB2)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c0xx.h)(0x67500EB4)
@@ -231,7 +237,41 @@ I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\cmsis_compiler.h)(
 I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\cmsis_armclang.h)(0x67500EB5)
 I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\mpu_armv7.h)(0x67500EB5)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\system_stm32c0xx.h)(0x67500EB4)
-I (..\Core\Inc\stm32c0xx_hal_conf.h)(0x67500E0C)
+I (..\Core\Inc\stm32c0xx_hal_conf.h)(0x67500F5B)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc.h)(0x67500EB2)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_def.h)(0x67500EB2)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x67500EB2)
+I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x6569B012)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_rcc.h)(0x67500EB2)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc_ex.h)(0x67500EB2)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio.h)(0x67500EB2)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio_ex.h)(0x67500EB2)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma.h)(0x67500EB2)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma_ex.h)(0x67500EB2)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_cortex.h)(0x67500EB2)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc.h)(0x67500EB2)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_adc.h)(0x67500EB2)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_adc_ex.h)(0x67500EB2)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_exti.h)(0x67500EB2)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash.h)(0x67500EB2)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash_ex.h)(0x67500EB2)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr.h)(0x67500EB2)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr_ex.h)(0x67500EB2)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim.h)(0x67500EB2)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim_ex.h)(0x67500EB2)
+F (../Core/Src/tim.c)(0x67500F5B)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/tim.o -MD)
+I (..\Core\Inc\main.h..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal.h)(0x00000000)
+I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_system.h)(0x67500EB2)
+I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c0xx.h)(0x67500EB4)
+I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c031xx.h)(0x67500EB4)
+I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x67500EB5)
+I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
+I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\cmsis_version.h)(0x67500EB5)
+I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\cmsis_compiler.h)(0x67500EB5)
+I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\cmsis_armclang.h)(0x67500EB5)
+I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\mpu_armv7.h)(0x67500EB5)
+I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\system_stm32c0xx.h)(0x67500EB4)
+I (..\Core\Inc\stm32c0xx_hal_conf.h)(0x67500F5B)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_def.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x67500EB2)
@@ -254,7 +294,7 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr_ex.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim_ex.h)(0x67500EB2)
 I (..\Core\Inc\sweep_freq.h_.\Core\Inc\func.h)(0x00000000)
-F (../Core/Src/stm32c0xx_it.c)(0x67500E0B)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/stm32c0xx_it.o -MD)
+F (../Core/Src/stm32c0xx_it.c)(0x67500F5B)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/stm32c0xx_it.o -MD)
 I (..\Core\Inc\main.h0.\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal.h)(0x00000000)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_system.h)(0x67500EB2)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c0xx.h)(0x67500EB4)
@@ -266,7 +306,7 @@ I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\cmsis_compiler.h)(
 I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\cmsis_armclang.h)(0x67500EB5)
 I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\mpu_armv7.h)(0x67500EB5)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\system_stm32c0xx.h)(0x67500EB4)
-I (..\Core\Inc\stm32c0xx_hal_conf.h)(0x67500E0C)
+I (..\Core\Inc\stm32c0xx_hal_conf.h)(0x67500F5B)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_def.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x67500EB2)
@@ -289,7 +329,7 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr_ex.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim_ex.h)(0x67500EB2)
 I (..\Core\Inc\stm32c0xx_it.h)(0x67498B20)
-F (../Core/Src/stm32c0xx_hal_msp.c)(0x67500E0C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/stm32c0xx_hal_msp.o -MD)
+F (../Core/Src/stm32c0xx_hal_msp.c)(0x67500F5B)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/stm32c0xx_hal_msp.o -MD)
 I (..\Core\Inc\main.h0.\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal.h)(0x00000000)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_system.h)(0x67500EB2)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c0xx.h)(0x67500EB4)
@@ -301,7 +341,7 @@ I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\cmsis_compiler.h)(
 I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\cmsis_armclang.h)(0x67500EB5)
 I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\mpu_armv7.h)(0x67500EB5)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\system_stm32c0xx.h)(0x67500EB4)
-I (..\Core\Inc\stm32c0xx_hal_conf.h)(0x67500E0C)
+I (..\Core\Inc\stm32c0xx_hal_conf.h)(0x67500F5B)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_def.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x67500EB2)
@@ -323,7 +363,7 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr_ex.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim_ex.h)(0x67500EB2)
-F (../Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal.c)(0x67500EB2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/stm32c0xx_hal.o -MD)
+F (../Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal.c)(0x67500EB2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/stm32c0xx_hal.o -MD)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_system.h)(0x67500EB2)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c0xx.h)(0x67500EB4)
@@ -335,7 +375,7 @@ I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\cmsis_compiler.h)(
 I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\cmsis_armclang.h)(0x67500EB5)
 I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\mpu_armv7.h)(0x67500EB5)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\system_stm32c0xx.h)(0x67500EB4)
-I (..\Core\Inc\stm32c0xx_hal_conf.h)(0x67500E0C)
+I (..\Core\Inc\stm32c0xx_hal_conf.h)(0x67500F5B)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_def.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x67500EB2)
@@ -357,7 +397,7 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr_ex.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim_ex.h)(0x67500EB2)
-F (../Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc.c)(0x67500EB2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/stm32c0xx_hal_adc.o -MD)
+F (../Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc.c)(0x67500EB2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/stm32c0xx_hal_adc.o -MD)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_system.h)(0x67500EB2)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c0xx.h)(0x67500EB4)
@@ -369,7 +409,7 @@ I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\cmsis_compiler.h)(
 I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\cmsis_armclang.h)(0x67500EB5)
 I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\mpu_armv7.h)(0x67500EB5)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\system_stm32c0xx.h)(0x67500EB4)
-I (..\Core\Inc\stm32c0xx_hal_conf.h)(0x67500E0C)
+I (..\Core\Inc\stm32c0xx_hal_conf.h)(0x67500F5B)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_def.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x67500EB2)
@@ -391,7 +431,7 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr_ex.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim_ex.h)(0x67500EB2)
-F (../Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc_ex.c)(0x67500EB2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/stm32c0xx_hal_adc_ex.o -MD)
+F (../Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc_ex.c)(0x67500EB2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/stm32c0xx_hal_adc_ex.o -MD)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_system.h)(0x67500EB2)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c0xx.h)(0x67500EB4)
@@ -403,7 +443,7 @@ I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\cmsis_compiler.h)(
 I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\cmsis_armclang.h)(0x67500EB5)
 I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\mpu_armv7.h)(0x67500EB5)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\system_stm32c0xx.h)(0x67500EB4)
-I (..\Core\Inc\stm32c0xx_hal_conf.h)(0x67500E0C)
+I (..\Core\Inc\stm32c0xx_hal_conf.h)(0x67500F5B)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_def.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x67500EB2)
@@ -425,7 +465,7 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr_ex.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim_ex.h)(0x67500EB2)
-F (../Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_dma.c)(0x67500EB2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/stm32c0xx_hal_dma.o -MD)
+F (../Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_dma.c)(0x67500EB2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/stm32c0xx_hal_dma.o -MD)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_system.h)(0x67500EB2)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c0xx.h)(0x67500EB4)
@@ -437,7 +477,7 @@ I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\cmsis_compiler.h)(
 I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\cmsis_armclang.h)(0x67500EB5)
 I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\mpu_armv7.h)(0x67500EB5)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\system_stm32c0xx.h)(0x67500EB4)
-I (..\Core\Inc\stm32c0xx_hal_conf.h)(0x67500E0C)
+I (..\Core\Inc\stm32c0xx_hal_conf.h)(0x67500F5B)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_def.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x67500EB2)
@@ -459,7 +499,7 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr_ex.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim_ex.h)(0x67500EB2)
-F (../Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_dma_ex.c)(0x67500EB2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/stm32c0xx_hal_dma_ex.o -MD)
+F (../Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_dma_ex.c)(0x67500EB2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/stm32c0xx_hal_dma_ex.o -MD)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_system.h)(0x67500EB2)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c0xx.h)(0x67500EB4)
@@ -471,7 +511,7 @@ I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\cmsis_compiler.h)(
 I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\cmsis_armclang.h)(0x67500EB5)
 I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\mpu_armv7.h)(0x67500EB5)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\system_stm32c0xx.h)(0x67500EB4)
-I (..\Core\Inc\stm32c0xx_hal_conf.h)(0x67500E0C)
+I (..\Core\Inc\stm32c0xx_hal_conf.h)(0x67500F5B)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_def.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x67500EB2)
@@ -493,7 +533,7 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr_ex.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim_ex.h)(0x67500EB2)
-F (../Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_rcc.c)(0x67500EB2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/stm32c0xx_hal_rcc.o -MD)
+F (../Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_rcc.c)(0x67500EB2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/stm32c0xx_hal_rcc.o -MD)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_system.h)(0x67500EB2)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c0xx.h)(0x67500EB4)
@@ -505,7 +545,7 @@ I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\cmsis_compiler.h)(
 I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\cmsis_armclang.h)(0x67500EB5)
 I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\mpu_armv7.h)(0x67500EB5)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\system_stm32c0xx.h)(0x67500EB4)
-I (..\Core\Inc\stm32c0xx_hal_conf.h)(0x67500E0C)
+I (..\Core\Inc\stm32c0xx_hal_conf.h)(0x67500F5B)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_def.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x67500EB2)
@@ -527,7 +567,7 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr_ex.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim_ex.h)(0x67500EB2)
-F (../Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_rcc_ex.c)(0x67500EB2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/stm32c0xx_hal_rcc_ex.o -MD)
+F (../Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_rcc_ex.c)(0x67500EB2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/stm32c0xx_hal_rcc_ex.o -MD)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_system.h)(0x67500EB2)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c0xx.h)(0x67500EB4)
@@ -539,7 +579,7 @@ I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\cmsis_compiler.h)(
 I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\cmsis_armclang.h)(0x67500EB5)
 I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\mpu_armv7.h)(0x67500EB5)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\system_stm32c0xx.h)(0x67500EB4)
-I (..\Core\Inc\stm32c0xx_hal_conf.h)(0x67500E0C)
+I (..\Core\Inc\stm32c0xx_hal_conf.h)(0x67500F5B)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_def.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x67500EB2)
@@ -561,7 +601,7 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr_ex.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim_ex.h)(0x67500EB2)
-F (../Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash.c)(0x67500EB2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/stm32c0xx_hal_flash.o -MD)
+F (../Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash.c)(0x67500EB2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/stm32c0xx_hal_flash.o -MD)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_system.h)(0x67500EB2)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c0xx.h)(0x67500EB4)
@@ -573,7 +613,7 @@ I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\cmsis_compiler.h)(
 I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\cmsis_armclang.h)(0x67500EB5)
 I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\mpu_armv7.h)(0x67500EB5)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\system_stm32c0xx.h)(0x67500EB4)
-I (..\Core\Inc\stm32c0xx_hal_conf.h)(0x67500E0C)
+I (..\Core\Inc\stm32c0xx_hal_conf.h)(0x67500F5B)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_def.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x67500EB2)
@@ -595,7 +635,7 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr_ex.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim_ex.h)(0x67500EB2)
-F (../Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash_ex.c)(0x67500EB2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/stm32c0xx_hal_flash_ex.o -MD)
+F (../Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash_ex.c)(0x67500EB2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/stm32c0xx_hal_flash_ex.o -MD)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_system.h)(0x67500EB2)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c0xx.h)(0x67500EB4)
@@ -607,7 +647,7 @@ I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\cmsis_compiler.h)(
 I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\cmsis_armclang.h)(0x67500EB5)
 I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\mpu_armv7.h)(0x67500EB5)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\system_stm32c0xx.h)(0x67500EB4)
-I (..\Core\Inc\stm32c0xx_hal_conf.h)(0x67500E0C)
+I (..\Core\Inc\stm32c0xx_hal_conf.h)(0x67500F5B)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_def.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x67500EB2)
@@ -629,7 +669,7 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr_ex.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim_ex.h)(0x67500EB2)
-F (../Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_gpio.c)(0x67500EB2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/stm32c0xx_hal_gpio.o -MD)
+F (../Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_gpio.c)(0x67500EB2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/stm32c0xx_hal_gpio.o -MD)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_system.h)(0x67500EB2)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c0xx.h)(0x67500EB4)
@@ -641,7 +681,7 @@ I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\cmsis_compiler.h)(
 I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\cmsis_armclang.h)(0x67500EB5)
 I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\mpu_armv7.h)(0x67500EB5)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\system_stm32c0xx.h)(0x67500EB4)
-I (..\Core\Inc\stm32c0xx_hal_conf.h)(0x67500E0C)
+I (..\Core\Inc\stm32c0xx_hal_conf.h)(0x67500F5B)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_def.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x67500EB2)
@@ -663,7 +703,7 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr_ex.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim_ex.h)(0x67500EB2)
-F (../Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_pwr.c)(0x67500EB2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/stm32c0xx_hal_pwr.o -MD)
+F (../Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_pwr.c)(0x67500EB2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/stm32c0xx_hal_pwr.o -MD)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_system.h)(0x67500EB2)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c0xx.h)(0x67500EB4)
@@ -675,7 +715,7 @@ I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\cmsis_compiler.h)(
 I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\cmsis_armclang.h)(0x67500EB5)
 I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\mpu_armv7.h)(0x67500EB5)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\system_stm32c0xx.h)(0x67500EB4)
-I (..\Core\Inc\stm32c0xx_hal_conf.h)(0x67500E0C)
+I (..\Core\Inc\stm32c0xx_hal_conf.h)(0x67500F5B)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_def.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x67500EB2)
@@ -697,7 +737,7 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr_ex.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim_ex.h)(0x67500EB2)
-F (../Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_pwr_ex.c)(0x67500EB2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/stm32c0xx_hal_pwr_ex.o -MD)
+F (../Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_pwr_ex.c)(0x67500EB2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/stm32c0xx_hal_pwr_ex.o -MD)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_system.h)(0x67500EB2)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c0xx.h)(0x67500EB4)
@@ -709,7 +749,7 @@ I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\cmsis_compiler.h)(
 I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\cmsis_armclang.h)(0x67500EB5)
 I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\mpu_armv7.h)(0x67500EB5)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\system_stm32c0xx.h)(0x67500EB4)
-I (..\Core\Inc\stm32c0xx_hal_conf.h)(0x67500E0C)
+I (..\Core\Inc\stm32c0xx_hal_conf.h)(0x67500F5B)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_def.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x67500EB2)
@@ -731,7 +771,7 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr_ex.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim_ex.h)(0x67500EB2)
-F (../Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_cortex.c)(0x67500EB2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/stm32c0xx_hal_cortex.o -MD)
+F (../Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_cortex.c)(0x67500EB2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/stm32c0xx_hal_cortex.o -MD)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_system.h)(0x67500EB2)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c0xx.h)(0x67500EB4)
@@ -743,7 +783,7 @@ I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\cmsis_compiler.h)(
 I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\cmsis_armclang.h)(0x67500EB5)
 I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\mpu_armv7.h)(0x67500EB5)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\system_stm32c0xx.h)(0x67500EB4)
-I (..\Core\Inc\stm32c0xx_hal_conf.h)(0x67500E0C)
+I (..\Core\Inc\stm32c0xx_hal_conf.h)(0x67500F5B)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_def.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x67500EB2)
@@ -765,7 +805,7 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr_ex.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim_ex.h)(0x67500EB2)
-F (../Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_exti.c)(0x67500EB2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/stm32c0xx_hal_exti.o -MD)
+F (../Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_exti.c)(0x67500EB2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/stm32c0xx_hal_exti.o -MD)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_system.h)(0x67500EB2)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c0xx.h)(0x67500EB4)
@@ -777,7 +817,7 @@ I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\cmsis_compiler.h)(
 I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\cmsis_armclang.h)(0x67500EB5)
 I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\mpu_armv7.h)(0x67500EB5)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\system_stm32c0xx.h)(0x67500EB4)
-I (..\Core\Inc\stm32c0xx_hal_conf.h)(0x67500E0C)
+I (..\Core\Inc\stm32c0xx_hal_conf.h)(0x67500F5B)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_def.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x67500EB2)
@@ -799,7 +839,7 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr_ex.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim_ex.h)(0x67500EB2)
-F (../Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_tim.c)(0x67500EB2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/stm32c0xx_hal_tim.o -MD)
+F (../Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_tim.c)(0x67500EB2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/stm32c0xx_hal_tim.o -MD)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_system.h)(0x67500EB2)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c0xx.h)(0x67500EB4)
@@ -811,7 +851,7 @@ I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\cmsis_compiler.h)(
 I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\cmsis_armclang.h)(0x67500EB5)
 I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\mpu_armv7.h)(0x67500EB5)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\system_stm32c0xx.h)(0x67500EB4)
-I (..\Core\Inc\stm32c0xx_hal_conf.h)(0x67500E0C)
+I (..\Core\Inc\stm32c0xx_hal_conf.h)(0x67500F5B)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_def.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x67500EB2)
@@ -833,7 +873,7 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr_ex.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim_ex.h)(0x67500EB2)
-F (../Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_tim_ex.c)(0x67500EB2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/stm32c0xx_hal_tim_ex.o -MD)
+F (../Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_tim_ex.c)(0x67500EB2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/stm32c0xx_hal_tim_ex.o -MD)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_system.h)(0x67500EB2)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c0xx.h)(0x67500EB4)
@@ -845,7 +885,7 @@ I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\cmsis_compiler.h)(
 I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\cmsis_armclang.h)(0x67500EB5)
 I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\mpu_armv7.h)(0x67500EB5)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\system_stm32c0xx.h)(0x67500EB4)
-I (..\Core\Inc\stm32c0xx_hal_conf.h)(0x67500E0C)
+I (..\Core\Inc\stm32c0xx_hal_conf.h)(0x67500F5B)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_def.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x67500EB2)
@@ -867,7 +907,7 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr_ex.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim_ex.h)(0x67500EB2)
-F (../Core/Src/system_stm32c0xx.c)(0x67244D14)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/system_stm32c0xx.o -MD)
+F (../Core/Src/system_stm32c0xx.c)(0x67244D14)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/system_stm32c0xx.o -MD)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c0xx.h)(0x67500EB4)
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c031xx.h)(0x67500EB4)
 I (..\Drivers\CMSIS\Include\core_cm0plus.h)(0x67500EB5)
@@ -879,7 +919,7 @@ I (C:\Users\Bitch\Desktop\Nebulizer_HAL\Drivers\CMSIS\Include\mpu_armv7.h)(0x675
 I (..\Drivers\CMSIS\Device\ST\STM32C0xx\Include\system_stm32c0xx.h)(0x67500EB4)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_system.h)(0x67500EB2)
-I (..\Core\Inc\stm32c0xx_hal_conf.h)(0x67500E0C)
+I (..\Core\Inc\stm32c0xx_hal_conf.h)(0x67500F5B)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_def.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x67500EB2)
@@ -901,16 +941,16 @@ I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr_ex.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim.h)(0x67500EB2)
 I (..\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_tim_ex.h)(0x67500EB2)
-F (..\Middlewares\SEGGER_RTT\SEGGER_RTT.c)(0x00000000)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/segger_rtt.o -MD)
-I (..\Middlewares\SEGGER_RTT\SEGGER_RTT.h)(0x00000000)
-I (..\Middlewares\SEGGER_RTT\SEGGER_RTT_Conf.h)(0x00000000)
+F (..\Drivers\Middlewares\SEGGER_RTT\SEGGER_RTT.c)(0x67500F4B)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/segger_rtt.o -MD)
+I (..\Drivers\Middlewares\SEGGER_RTT\SEGGER_RTT.h)(0x67500F4B)
+I (..\Drivers\Middlewares\SEGGER_RTT\SEGGER_RTT_Conf.h)(0x67500F4B)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x6569B012)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x6569B012)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\string.h)(0x6569B012)
-F (..\Middlewares\SEGGER_RTT\SEGGER_RTT_printf.c)(0x00000000)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/segger_rtt_printf.o -MD)
-I (..\Middlewares\SEGGER_RTT\SEGGER_RTT.h)(0x00000000)
-I (..\Middlewares\SEGGER_RTT\SEGGER_RTT_Conf.h)(0x00000000)
+F (..\Drivers\Middlewares\SEGGER_RTT\SEGGER_RTT_printf.c)(0x67500F4B)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc -I ../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/Middlewares/SEGGER_RTT-I./RTE/_Nebulizer_HAL-IC:/Users/Bitch/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Bitch/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32C031xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32C031xx-o nebulizer_hal/segger_rtt_printf.o -MD)
+I (..\Drivers\Middlewares\SEGGER_RTT\SEGGER_RTT.h)(0x67500F4B)
+I (..\Drivers\Middlewares\SEGGER_RTT\SEGGER_RTT_Conf.h)(0x67500F4B)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x6569B012)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x6569B012)
 I (C:\Program Files\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
