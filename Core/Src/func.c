@@ -51,9 +51,7 @@ void Handle_8Hz_Signal(void)
     {
   ProgressLED_SetState(i, LED_BLINK);
     }
-    
-    
-    
+
 }
 
 // 处理 16Hz 信号
@@ -67,10 +65,6 @@ void Handle_16Hz_Signal(void)
 // 处理未知信号
 void Handle_Unknown_Signal(void)
 {
-  // printf("Unknown signal frequency: %.2f Hz\n", frequency);
-  HAL_TIM_PWM_Stop(&htim1, TIM_CHANNEL_3);
-    ProgressLED_Init();
-  LED_SetState(LED_15mins_GPIO_Port, LED_15mins_Pin, LED_OFF);
-  LED_SetState(LED_30mins_GPIO_Port, LED_30mins_Pin, LED_OFF);
-  LED_SetState(LED_Normal_GPIO_Port, LED_Normal_Pin, LED_ON);
+
+  startNeb(); // 调用喷雾函数
 }
