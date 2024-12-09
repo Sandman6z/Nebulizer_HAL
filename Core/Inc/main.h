@@ -63,10 +63,14 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define LED_Alarm_Pin GPIO_PIN_14
+#define LED_Normal_Pin GPIO_PIN_14
+#define LED_Normal_GPIO_Port GPIOC
+#define LED_Alarm_Pin GPIO_PIN_15
 #define LED_Alarm_GPIO_Port GPIOC
 #define LED_15mins_Pin GPIO_PIN_0
 #define LED_15mins_GPIO_Port GPIOA
+#define PWM_Generate_Pin GPIO_PIN_2
+#define PWM_Generate_GPIO_Port GPIOA
 #define LED_Proc1_Pin GPIO_PIN_3
 #define LED_Proc1_GPIO_Port GPIOA
 #define LED_Proc2_Pin GPIO_PIN_4
@@ -77,12 +81,18 @@ void Error_Handler(void);
 #define LED_Proc4_GPIO_Port GPIOA
 #define LED_Proc5_Pin GPIO_PIN_7
 #define LED_Proc5_GPIO_Port GPIOA
+#define ADC_Current_Pin GPIO_PIN_0
+#define ADC_Current_GPIO_Port GPIOB
+#define ADC_Voltage_Pin GPIO_PIN_1
+#define ADC_Voltage_GPIO_Port GPIOB
 #define LED_30mins_Pin GPIO_PIN_15
 #define LED_30mins_GPIO_Port GPIOA
-#define LED_Normal_Pin GPIO_PIN_6
-#define LED_Normal_GPIO_Port GPIOB
+#define PWM_Capture_Pin GPIO_PIN_6
+#define PWM_Capture_GPIO_Port GPIOB
 #define PluginCheck_Pin GPIO_PIN_7
 #define PluginCheck_GPIO_Port GPIOB
+#define PWM_Output_Pin GPIO_PIN_8
+#define PWM_Output_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 #define ADC_BUFFER_SIZE 22
