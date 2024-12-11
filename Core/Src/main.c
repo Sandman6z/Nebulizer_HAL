@@ -40,8 +40,6 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-#define ENABLE_BUTTON 0 // 1 启用功能, 0 禁用功能
-#define WEIGHTED_MOVING_AVERAGE_FILTER 0
 
 /* USER CODE END PD */
 
