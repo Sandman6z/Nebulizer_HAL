@@ -1,89 +1,89 @@
-T0DBC 000:005.148   SEGGER J-Link V8.10k Log File
-T0DBC 000:005.250   DLL Compiled: Dec  5 2024 12:00:13
-T0DBC 000:005.255   Logging started @ 2024-12-11 12:01
-T0DBC 000:005.259   Process: C:\Program Files\Keil_v5\UV4\UV4.exe
-T0DBC 000:005.267 - 5.263ms 
-T0DBC 000:005.283 JLINK_SetWarnOutHandler(...)
-T0DBC 000:005.287 - 0.013ms 
-T0DBC 000:005.294 JLINK_OpenEx(...)
-T0DBC 000:009.134   Firmware: J-Link V9 compiled May  7 2021 16:26:12
-T0DBC 000:010.154   Firmware: J-Link V9 compiled May  7 2021 16:26:12
-T0DBC 000:010.289   Decompressing FW timestamp took 108 us
-T0DBC 000:016.537   Hardware: V9.70
-T0DBC 000:016.552   S/N: 59768904
-T0DBC 000:016.560   OEM: SEGGER
-T0DBC 000:016.568   Feature(s): RDI, GDB, FlashDL, FlashBP, JFlash
-T0DBC 000:017.946   Bootloader: (FW returned invalid version)
-T0DBC 000:019.132   TELNET listener socket opened on port 19021
-T0DBC 000:019.238   WEBSRV WEBSRV_Init(): Starting webserver thread(s)
-T0DBC 000:019.407   WEBSRV Webserver running on local port 19080
-T0DBC 000:019.513   Looking for J-Link GUI Server exe at: C:\Program Files\Keil_v5\ARM\Segger\JLinkGUIServer.exe
-T0DBC 000:019.606   Looking for J-Link GUI Server exe at: C:\Program Files\SEGGER\JLink\JLinkGUIServer.exe
-T0DBC 000:019.640   Forking J-Link GUI Server: C:\Program Files\SEGGER\JLink\JLinkGUIServer.exe
-T0DBC 000:047.426   J-Link GUI Server info: "J-Link GUI server V8.10k "
-T0DBC 000:049.692 - 44.391ms returns "O.K."
-T0DBC 000:049.718 JLINK_GetEmuCaps()
-T0DBC 000:049.727 - 0.007ms returns 0xB9FF7BBF
-T0DBC 000:049.741 JLINK_TIF_GetAvailable(...)
-T0DBC 000:049.949 - 0.209ms 
-T0DBC 000:049.971 JLINK_SetErrorOutHandler(...)
-T0DBC 000:049.978 - 0.006ms 
-T0DBC 000:050.001 JLINK_ExecCommand("ProjectFile = "C:\Users\Bitch\Desktop\Nebulizer_HAL\MDK-ARM\JLinkSettings.ini"", ...). 
-T0DBC 000:061.264   Ref file found at: C:\Program Files\Keil_v5\ARM\Segger\JLinkDevices.ref
-T0DBC 000:061.396   REF file references invalid XML file: C:\Program Files\SEGGER\JLink\JLinkDevices.xml
-T0DBC 000:065.063   Device "STM32C031G6" selected.
-T0DBC 000:065.298 - 15.298ms returns 0x00
-T0DBC 000:067.500 JLINK_ExecCommand("Device = STM32C031G6Ux", ...). 
-T0DBC 000:069.170   Device "STM32C031G6" selected.
-T0DBC 000:069.360 - 1.847ms returns 0x00
-T0DBC 000:069.371 JLINK_ExecCommand("DisableConnectionTimeout", ...). 
-T0DBC 000:069.389   ERROR: Unknown command
-T0DBC 000:069.401 - 0.020ms returns 0x01
-T0DBC 000:069.419 JLINK_GetHardwareVersion()
-T0DBC 000:069.424 - 0.005ms returns 97000
-T0DBC 000:069.430 JLINK_GetDLLVersion()
-T0DBC 000:069.435 - 0.004ms returns 81011
-T0DBC 000:069.440 JLINK_GetOEMString(...)
-T0DBC 000:069.446 JLINK_GetFirmwareString(...)
-T0DBC 000:069.450 - 0.004ms 
-T0DBC 000:073.709 JLINK_GetDLLVersion()
-T0DBC 000:073.720 - 0.011ms returns 81011
-T0DBC 000:073.726 JLINK_GetCompileDateTime()
-T0DBC 000:073.730 - 0.004ms 
-T0DBC 000:075.059 JLINK_GetFirmwareString(...)
-T0DBC 000:075.069 - 0.010ms 
-T0DBC 000:076.729 JLINK_GetHardwareVersion()
-T0DBC 000:076.740 - 0.011ms returns 97000
-T0DBC 000:078.078 JLINK_GetSN()
-T0DBC 000:078.088 - 0.010ms returns 59768904
-T0DBC 000:079.439 JLINK_GetOEMString(...)
-T0DBC 000:082.087 JLINK_TIF_Select(JLINKARM_TIF_SWD)
-T0DBC 000:082.992 - 0.904ms returns 0x00
-T0DBC 000:083.005 JLINK_HasError()
-T0DBC 000:083.016 JLINK_SetSpeed(1000)
-T0DBC 000:083.107 - 0.093ms 
-T0DBC 000:083.116 JLINK_GetId()
-T0DBC 000:084.760   InitTarget() start
-T0DBC 000:084.773    J-Link Script File: Executing InitTarget()
-T0DBC 000:086.756   SWD selected. Executing JTAG -> SWD switching sequence.
-T0DBC 000:193.091   Error: Failed to initialized DAP.
-T0DBC 000:194.769   Can not attach to CPU. Trying connect under reset.
-T0DBC 000:247.575   SWD selected. Executing JTAG -> SWD switching sequence.
-T0DBC 000:353.814   Error: Failed to initialized DAP.
-T0DBC 000:355.748   Connecting to CPU via connect under reset failed.
-T0DBC 000:408.249   InitTarget() end - Took 321ms
-T0DBC 000:410.159   Connect failed. Resetting via Reset pin and trying again.
-T0DBC 000:473.688   InitTarget() start
-T0DBC 000:473.709    J-Link Script File: Executing InitTarget()
-T0DBC 000:476.284   SWD selected. Executing JTAG -> SWD switching sequence.
-T0DBC 000:582.556   Error: Failed to initialized DAP.
-T0DBC 000:584.219   Can not attach to CPU. Trying connect under reset.
-T0DBC 000:637.256   SWD selected. Executing JTAG -> SWD switching sequence.
-T0DBC 000:743.827   Error: Failed to initialized DAP.
-T0DBC 000:745.522   Connecting to CPU via connect under reset failed.
-T0DBC 000:798.708   InitTarget() end - Took 322ms
-T0DBC 000:798.732 - 715.616ms returns 0x00000000
-T0DBC 002:125.883 JLINK_Close()
-T0DBC 002:137.967 - 12.083ms
-T0DBC 002:137.981   
-T0DBC 002:137.987   Closed
+T5DD0 000:009.180   SEGGER J-Link V8.10k Log File
+T5DD0 000:009.617   DLL Compiled: Dec  5 2024 12:00:13
+T5DD0 000:009.622   Logging started @ 2024-12-12 08:35
+T5DD0 000:009.626   Process: C:\Program Files\Keil_v5\UV4\UV4.exe
+T5DD0 000:009.961 - 9.630ms 
+T5DD0 000:010.078 JLINK_SetWarnOutHandler(...)
+T5DD0 000:010.085 - 0.114ms 
+T5DD0 000:010.093 JLINK_OpenEx(...)
+T5DD0 000:014.405   Firmware: J-Link V9 compiled May  7 2021 16:26:12
+T5DD0 000:015.188   Firmware: J-Link V9 compiled May  7 2021 16:26:12
+T5DD0 000:015.756   Decompressing FW timestamp took 434 us
+T5DD0 000:022.040   Hardware: V9.70
+T5DD0 000:022.053   S/N: 59768904
+T5DD0 000:022.060   OEM: SEGGER
+T5DD0 000:022.068   Feature(s): RDI, GDB, FlashDL, FlashBP, JFlash
+T5DD0 000:023.159   Bootloader: (FW returned invalid version)
+T5DD0 000:024.016   TELNET listener socket opened on port 19021
+T5DD0 000:024.133   WEBSRV WEBSRV_Init(): Starting webserver thread(s)
+T5DD0 000:024.284   WEBSRV Webserver running on local port 19080
+T5DD0 000:024.388   Looking for J-Link GUI Server exe at: C:\Program Files\Keil_v5\ARM\Segger\JLinkGUIServer.exe
+T5DD0 000:024.473   Looking for J-Link GUI Server exe at: C:\Program Files\SEGGER\JLink\JLinkGUIServer.exe
+T5DD0 000:024.519   Forking J-Link GUI Server: C:\Program Files\SEGGER\JLink\JLinkGUIServer.exe
+T5DD0 000:224.282   J-Link GUI Server info: "J-Link GUI server V8.10k "
+T5DD0 000:224.943 - 214.696ms returns "O.K."
+T5DD0 000:224.966 JLINK_GetEmuCaps()
+T5DD0 000:225.081 - 0.005ms returns 0xB9FF7BBF
+T5DD0 000:225.101 JLINK_TIF_GetAvailable(...)
+T5DD0 000:225.263 - 0.163ms 
+T5DD0 000:225.271 JLINK_SetErrorOutHandler(...)
+T5DD0 000:225.275 - 0.004ms 
+T5DD0 000:225.402 JLINK_ExecCommand("ProjectFile = "C:\Users\Bitch\Desktop\Nebulizer_HAL\MDK-ARM\JLinkSettings.ini"", ...). 
+T5DD0 000:264.056   Ref file found at: C:\Program Files\Keil_v5\ARM\Segger\JLinkDevices.ref
+T5DD0 000:264.186   REF file references invalid XML file: C:\Program Files\SEGGER\JLink\JLinkDevices.xml
+T5DD0 000:269.828   Device "STM32C031G6" selected.
+T5DD0 000:270.118 - 44.717ms returns 0x00
+T5DD0 000:272.011 JLINK_ExecCommand("Device = STM32C031G6Ux", ...). 
+T5DD0 000:274.169   Device "STM32C031G6" selected.
+T5DD0 000:274.351 - 2.326ms returns 0x00
+T5DD0 000:274.362 JLINK_ExecCommand("DisableConnectionTimeout", ...). 
+T5DD0 000:274.491   ERROR: Unknown command
+T5DD0 000:274.501 - 0.132ms returns 0x01
+T5DD0 000:274.507 JLINK_GetHardwareVersion()
+T5DD0 000:274.512 - 0.005ms returns 97000
+T5DD0 000:274.517 JLINK_GetDLLVersion()
+T5DD0 000:274.521 - 0.004ms returns 81011
+T5DD0 000:274.526 JLINK_GetOEMString(...)
+T5DD0 000:274.532 JLINK_GetFirmwareString(...)
+T5DD0 000:274.536 - 0.004ms 
+T5DD0 000:279.790 JLINK_GetDLLVersion()
+T5DD0 000:279.805 - 0.014ms returns 81011
+T5DD0 000:279.812 JLINK_GetCompileDateTime()
+T5DD0 000:279.818 - 0.006ms 
+T5DD0 000:281.572 JLINK_GetFirmwareString(...)
+T5DD0 000:281.586 - 0.014ms 
+T5DD0 000:283.345 JLINK_GetHardwareVersion()
+T5DD0 000:283.356 - 0.010ms returns 97000
+T5DD0 000:284.697 JLINK_GetSN()
+T5DD0 000:284.707 - 0.010ms returns 59768904
+T5DD0 000:286.098 JLINK_GetOEMString(...)
+T5DD0 000:288.828 JLINK_TIF_Select(JLINKARM_TIF_SWD)
+T5DD0 000:289.318 - 0.489ms returns 0x00
+T5DD0 000:289.333 JLINK_HasError()
+T5DD0 000:289.346 JLINK_SetSpeed(1000)
+T5DD0 000:289.614 - 0.269ms 
+T5DD0 000:289.632 JLINK_GetId()
+T5DD0 000:292.619   InitTarget() start
+T5DD0 000:292.636    J-Link Script File: Executing InitTarget()
+T5DD0 000:295.341   SWD selected. Executing JTAG -> SWD switching sequence.
+T5DD0 000:403.654   Error: Failed to initialized DAP.
+T5DD0 000:405.655   Can not attach to CPU. Trying connect under reset.
+T5DD0 000:458.396   SWD selected. Executing JTAG -> SWD switching sequence.
+T5DD0 000:564.503   Error: Failed to initialized DAP.
+T5DD0 000:566.453   Connecting to CPU via connect under reset failed.
+T5DD0 000:620.124   InitTarget() end - Took 324ms
+T5DD0 000:623.257   Connect failed. Resetting via Reset pin and trying again.
+T5DD0 000:687.678   InitTarget() start
+T5DD0 000:687.700    J-Link Script File: Executing InitTarget()
+T5DD0 000:689.744   SWD selected. Executing JTAG -> SWD switching sequence.
+T5DD0 000:796.577   Error: Failed to initialized DAP.
+T5DD0 000:798.324   Can not attach to CPU. Trying connect under reset.
+T5DD0 000:851.127   SWD selected. Executing JTAG -> SWD switching sequence.
+T5DD0 000:958.299   Error: Failed to initialized DAP.
+T5DD0 000:959.772   Connecting to CPU via connect under reset failed.
+T5DD0 001:012.613   InitTarget() end - Took 322ms
+T5DD0 001:012.641 - 723.009ms returns 0x00000000
+T5DD0 002:111.435 JLINK_Close()
+T5DD0 002:122.906 - 11.470ms
+T5DD0 002:122.943   
+T5DD0 002:122.949   Closed
