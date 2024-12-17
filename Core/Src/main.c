@@ -125,10 +125,10 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  //  sweepFreq();
+    //sweepFreq();
   // 扫频完成后，设置TIM1为最佳频�??
   LED_Init();
-  //SEGGER_RTT INIT
+
   SEGGER_RTT_Init();
 SEGGER_RTT_printf(0, "Hello world !");
 
@@ -137,6 +137,7 @@ SEGGER_RTT_printf(0, "Hello world !");
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+      //sweepFreq();
     CheckSignalTimeout();
   }
   /* USER CODE END 3 */
