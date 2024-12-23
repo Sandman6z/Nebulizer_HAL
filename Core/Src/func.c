@@ -68,9 +68,7 @@ void Handle_Unknown_Signal(void)
     //startNeb();
   HAL_TIM_PWM_Stop(&htim1, TIM_CHANNEL_3);
     ProgressLED_Init();
-    LED_SetState(LED_Proc1_GPIO_Port, LED_Proc1_Pin, LED_ON);
-    LED_SetState(LED_Proc5_GPIO_Port, LED_Proc5_Pin, LED_ON);
-//  LED_SetState(LED_15mins_GPIO_Port, LED_15mins_Pin, LED_OFF);
-//  LED_SetState(LED_30mins_GPIO_Port, LED_30mins_Pin, LED_OFF);
-//  LED_SetState(LED_Normal_GPIO_Port, LED_Normal_Pin, LED_ON);
+  LED_SetState(LED_15mins_GPIO_Port, LED_15mins_Pin, LED_OFF);
+  LED_SetState(LED_30mins_GPIO_Port, LED_30mins_Pin, LED_OFF);
+  LED_SetState(LED_Normal_GPIO_Port, LED_Normal_Pin, LED_ON);
 }

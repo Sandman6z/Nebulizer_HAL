@@ -12,3 +12,11 @@
 - V采样电阻max p-p = 740mV
 - V杯空但连接max = 64V
 - V杯未连接max = 180V
+
+---
+
+> STM32C031 -> STM32G031 change
+  1. PWM Generation:`TIM1 CH3 -> TIM1 CH1`
+  2. PWM Output:`TIM3 CH1 -> TIM2 CH1`
+  3. PWM Input: `TIM3 CH3 -> TIM2 CH2`
+  4. 
