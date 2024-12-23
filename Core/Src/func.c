@@ -9,7 +9,7 @@ volatile uint8_t is_signal_lost = 0; // 标志位：信号丢失状态
 void StartPWM(TIM_HandleTypeDef *htim, uint32_t channel, uint32_t freq)
 {
   __HAL_TIM_SET_AUTORELOAD(htim, (SystemCoreClock / freq) - 1);            // SELECT_FREQ
-  __HAL_TIM_SET_COMPARE(htim, channel, (SystemCoreClock / (2 * freq))); // 50% 占空比
+  __HAL_TIM_SET_COMPARE(htim, channel, (SystemCoreClock / (1.5f * freq))); // 50% 占空比
   HAL_TIM_PWM_Start(htim, channel);
 }
 
