@@ -1,8 +1,8 @@
 #include "main.h"
 #include "led.h"
 #include "tim.h"
-#include "stm32c0xx_it.h"
-#include "stm32c0xx_hal_tim.h"
+#include "stm32g0xx_it.h"
+#include "stm32g0xx_hal_tim.h"
 
 // 定义进度灯的 GPIO 配置
 static GPIO_TypeDef *progress_led_ports[] = {

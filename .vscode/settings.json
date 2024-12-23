@@ -4,7 +4,7 @@
   "C_Cpp_Runner.debuggerPath": "gdb",
   "C_Cpp_Runner.cStandard": "",
   "C_Cpp_Runner.cppStandard": "",
-  "C_Cpp_Runner.msvcBatchPath": "",
+  "C_Cpp_Runner.msvcBatchPath": "C:/Program Files/Microsoft Visual Studio/VR_NR/Community/VC/Auxiliary/Build/vcvarsall.bat",
   "C_Cpp_Runner.useMsvc": false,
   "C_Cpp_Runner.warnings": [
     "-Wall",
@@ -55,17 +55,5 @@
   "C_Cpp_Runner.useLeakSanitizer": false,
   "C_Cpp_Runner.showCompilationTime": false,
   "C_Cpp_Runner.useLinkTimeOptimization": false,
-  "C_Cpp_Runner.msvcSecureNoWarnings": false,
-  "files.associations": {
-    "main.h": "c",
-    "led.h": "c",
-    "tim.h": "c",
-    "stm32c0xx_hal.h": "c",
-    "stdint.h": "c",
-    "adc_current_filter.h": "c",
-    "sweep_freq.h": "c",
-    "func.h": "c",
-    "stm32c0xx_hal_tim.h": "c",
-    "stm32c0xx_it.h": "c"
-  }
+  "C_Cpp_Runner.msvcSecureNoWarnings": false
 }

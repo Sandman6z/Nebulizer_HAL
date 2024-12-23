@@ -1,9 +1,5 @@
 #include "sweep_freq.h"
-#include "main.h"
-#include "adc.h"
-#include "tim.h"
-#include <stdio.h>
-#include "SEGGER_RTT.h"
+
 
 #define START_FREQ 105000
 #define END_FREQ 115000
@@ -31,16 +27,12 @@ void adcValue(void)
 
 void sweepFreq(void)
 {
-    float power, max_power = 0.0f;
-    
     uint32_t freq = START_FREQ;
 
-    for (uint32_t freq = START_FREQ; freq <= END_FREQ; freq += STEP_FREQ)
+    for (freq = START_FREQ; freq <= END_FREQ; freq += STEP_FREQ)
     {
         // 设置PWM频率
-        __HAL_TIM_SET_AUTORELOAD(&htim1, (SystemCoreClock / freq) - 1);
-        __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_3, (SystemCoreClock / (1.5f * freq))); // 50% 占空比
-        HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_3);
+        StartPWM(&htim1, TIM_CHANNEL_1, freq); // 调用喷雾函数
         SEGGER_RTT_printf(0, "Freq: %lu Hz, Current: %.2f V\n", freq, adcBuffer);
 
         HAL_Delay(500); // 延迟，确保系统稳定

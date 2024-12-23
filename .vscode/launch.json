@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Bitch/Desktop/Nebulizer_HAL/Core/Src",
-      "program": "c:/Users/Bitch/Desktop/Nebulizer_HAL/Core/Src/build/Debug/outDebug",
+      "cwd": "c:/Users/Bitch/Desktop/Medical_Nebulizer_HAL/Core/Src",
+      "program": "c:/Users/Bitch/Desktop/Medical_Nebulizer_HAL/Core/Src/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
