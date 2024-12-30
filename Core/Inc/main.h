@@ -38,7 +38,6 @@ extern "C" {
 /* USER CODE BEGIN ET */
   typedef struct
   {
-
     float current_MOS; // IN17  PB0
     float voltage_MOS; // IN18  PB1
   } ADCData;

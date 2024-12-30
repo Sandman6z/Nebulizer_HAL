@@ -10,6 +10,7 @@
 
 extern uint32_t best_freq;
 
+void adcValue(void);
 void sweepFreq(void);
 
 #endif /* __SWEEP_FREQ_H */

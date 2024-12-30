@@ -120,6 +120,7 @@ int main(void)
   // sweepFreq();  //// 扫频完成后，设置TIM1为最佳频频率
   SEGGER_RTT_Init();
   SEGGER_RTT_printf(0, "Hello world !");
+  adcValue();
 
   while (1)
   {
@@ -127,7 +128,7 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
     // sweepFreq();
-    CheckSignalTimeout();
+    StartPWM(&htim1, TIM_CHANNEL_1, 109000);
     //  Handle_8Hz_Signal();
   }
   /* USER CODE END 3 */
