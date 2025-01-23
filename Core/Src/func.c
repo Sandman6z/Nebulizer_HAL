@@ -63,7 +63,7 @@ void Handle_Unknown_Signal(void)
 {
   // printf("Unknown signal frequency: %.2f Hz\n", frequency);
   StartPWM(&htim1, TIM_CHANNEL_1, SELECT_FREQ); // 调用喷雾函数
-    //HAL_TIM_PWM_Stop(&htim1, TIM_CHANNEL_1);
+  //HAL_TIM_PWM_Stop(&htim1, TIM_CHANNEL_1);
   
   ProgressLED_Init();
   LED_SetState(LED_15mins_GPIO_Port, LED_15mins_Pin, LED_OFF);
